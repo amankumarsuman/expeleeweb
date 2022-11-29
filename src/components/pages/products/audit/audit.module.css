@@ -1,0 +1,112 @@
+.blockchain {
+    /* background-image: url("../../assets/Ellipse.png"); */
+    background-repeat: no-repeat;
+    padding: 3vu!important;
+    /* border:1px solid red!important; */
+    position: relative;
+    height: 400px;
+  }
+  .smallEclipse{
+    /* background-image: url("../../assets/Ellipse.png"); */
+    background-repeat: no-repeat;
+  /* background-position: center; */
+    /* border: 1px solid teal !important; */
+    position:absolute;
+    /* top:10; */
+  margin-top: 5vu;
+  background-size: contain !important;
+  margin-bottom: 10px;
+  width:320px;
+  height: 280px;
+  /* left:50; */
+    /* margin-top: 5px; */
+    /* width: 80%; */
+    /* padding: 10em !important; */
+  
+    /* border: 1px solid red !important; */
+  }
+  .textGradient{
+    /* border: 1px solid red; */
+    font-size: 3.7em !important;
+    /* background: -webkit-linear-gradient( white,#33BBCF); */
+    background: #3d75ed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      
+  }
+  .textGradient2{
+    /* border: 1px solid red; */
+  
+    /* background: -webkit-linear-gradient( white,#33BBCF); */
+    background: #3d75ed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      
+  }
+  .para{
+    color:grey  ;
+    width:85%;
+    /* font-size: 1.5em!important; */
+    margin-top: 0.3em;
+  }
+  .paperDiv{
+    width:85%;
+   margin-top: 5em !important;
+   margin-bottom: 5em !important;
+    margin: auto;
+    /* border: 1px solid red; */
+    background-color: #2E2A34 !important;
+    padding: 2em 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+  
+  }
+  .paperDiv2{
+    width:90vw;
+   margin-top: 5em !important;
+   margin-bottom: 5em !important;
+    margin: auto;
+    /* border: 1px solid red; */
+    background-color: #17121F !important;
+    padding: 2em 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+  
+  }
+  .productsBanner{
+    /* background: -webkit-linear-gradient(white, #33BBCF); */
+  background: #3d75ed;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .splineDiv{
+      position: absolute;
+       margin: 0;
+        top: 0;
+         right: 0;
+         width: 300px;
+      height: 300px;
+      /* border: 1px solid red; */
+  }
+  .panel{
+    /* background: linear-gradient(to right bottom,
+    #1e1e1e,
+    black,
+    #2E2A34,
+    black,
+    #1e1e1e); */
+    background-color: #17121F !important;
+    /* display: flex; */text-align: center;
+    padding: 2em;
+    margin-bottom: 2em;
+  }

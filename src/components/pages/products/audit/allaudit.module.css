@@ -1,0 +1,62 @@
+.mainPaper {
+
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background: linear-gradient(
+      to right,
+      #1e1e1e,
+      black,
+      #1e1e1e,
+      black,
+      #1e1e1e,
+     
+      #1e1e1e
+      
+    );
+}
+.textGradient{
+    /* border: 1px solid red; */
+  
+    /* background: -webkit-linear-gradient( white,#33BBCF); */
+    background: #3d75ed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+  }
+  .allauditCardBackground {
+    /* width: 95%;
+    margin-top: 5em !important;
+    margin-bottom: 5em !important;
+    margin: auto;
+    border-radius: 25px; */
+    
+    background: linear-gradient(to right bottom,
+      #1e1e1e,
+      black,
+      #2E2A34,
+      black,
+      #1e1e1e);
+    padding: 1em 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    /* width:"95% !important " */
+    width:"100%"
+  }
+  .social-icon::before {
+   
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+.social-icon:hover::before {
+    transform: scale(1);
+}
+.social-icon  img {
+	/* width: 40%; */
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.social-icon :hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}

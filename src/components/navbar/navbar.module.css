@@ -1,0 +1,42 @@
+.linkDecoration {
+  text-decoration: none;
+  color: white;
+}
+.linkDecoration :hover {
+  cursor: pointer;
+  /* color: green; */
+}
+.saveBtn {
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: 1em;
+  height: 1.6em;
+  width: 1.7em;
+}
+.saveText {
+  font-weight: bold;
+  font-size: 15px;
+}
+.telegramIcon {
+  font-size: 1em;
+
+  color: white;
+}
+/* py-7 flex justify-between items-center md:pr-0 pr-5 group */
+.textGradient{
+  font-size: 2em;
+  /* background: -webkit-linear-gradient( white,#33BBCF); */
+  background: #3d75ed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Source Sans Pro", sans-serif;
+    justify-content: space-between;
+}
+/* .showNavbarDropdown{
+  position: absolute;
+  top: 20;
+  visibility: hidden;
+} */
+/* className="absolute top-20 hidden group-hover:md:block hover:md:block" */

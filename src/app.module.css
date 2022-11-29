@@ -1,0 +1,34 @@
+.mainDiv {
+
+  /* width: 100%; */
+  /* height: 100vh; */
+  background: linear-gradient(
+    to right,
+    #1e1e1e,
+    black,
+    #1e1e1e,
+    black,
+    #1e1e1e,
+   
+    #1e1e1e
+    
+  );
+  
+  /* background: linear-gradient
+    (
+      to right,
+      #1e1e1e,
+      black,
+      #1e1e1e,
+      black,
+      #1e1e1e,
+      #1a2980,
+      #1e1e1e,
+      #1a2980
+    ); */
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

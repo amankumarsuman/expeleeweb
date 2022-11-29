@@ -1,0 +1,65 @@
+
+  .textGradient{
+    font-size: 3em;
+    /* background: -webkit-linear-gradient( white,#33BBCF); */
+    /* background: -webkit-linear-gradient( white,blue); */
+    background: #3d75ed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: bold !important;
+  }
+  .para{
+    color:grey ;
+    width: 83%;
+    /* font-size: 3.5em!important; */
+    margin-top: 0.3em;
+  }
+  .paperDiv{
+    width:98%;
+   margin-top: 6em !important;
+   margin-bottom: 8em !important;
+    margin: auto;
+    /* border: 1px solid red; */
+    background-color: #2E2A34 !important;
+    padding: 2em 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+  
+  }
+  .productsBanner{
+    /* background: -webkit-linear-gradient(white, #33BBCF); */
+    background: #3d75ed;
+    
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .splineDiv{
+      position: absolute;
+       margin: 0;
+        top: 0;
+         right: 0;
+         width: 300px;
+      height: 300px;
+      border: 1px solid red;
+  }
+  .mainDiv {
+  
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background: linear-gradient(
+      to right,
+      #1e1e1e,
+      black,
+      #1e1e1e,
+      black,
+      #1e1e1e,
+     
+      #1e1e1e
+      
+    ) !important;
+  }

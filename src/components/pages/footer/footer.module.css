@@ -1,0 +1,44 @@
+.circle {
+    border: 1px dotted white;
+    border-radius: 50%;
+    /* padding: 0.3em 0.3; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    background-color:  #3d75ed;
+    margin-right:2%;
+    text-decoration: none;
+}
+
+.mediumCircle {
+    border: 1px dotted white;
+    border-radius: 50%;
+    /* padding: 0.3em; */
+    /* padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px; */
+    background-color:#3d75ed;
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+.linkDecoration {
+    text-decoration: none;
+    color: white;
+}
+
+.linkDecoration :hover {
+    cursor: pointer;
+    color: black;
+    /* background-color: #0C352D; */
+}
+.textGradient {
+    /* font-size: 2.2vu; */
+    /* background: -webkit-linear-gradient(white, #33BBCF); */
+    background: #3d75ed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+}
