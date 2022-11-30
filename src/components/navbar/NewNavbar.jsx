@@ -68,8 +68,9 @@ console.log(shows,"shows")
           {shows?<div
               style={{
                 width: "70%",
-                background:
-                  "linear-gradient(to right bottom,#1e1e1e,black,#2E2A34, black,#1e1e1e)",
+                // background:
+                //   "linear-gradient(to right bottom,#1e1e1e,black,#2E2A34, black,#1e1e1e)",
+                background:"#17121F"
                
               }}
               className="sticky top-0 z-50"

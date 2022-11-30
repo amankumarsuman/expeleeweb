@@ -57,6 +57,7 @@ body{
   background: black;
   /* background: linear-gradient( to right bottom,black,#10093f,#19143C); */
   background-image:linear-gradient(to right,black,#19143C);
+  /* background: red !important; */
  /* background: "-webkit-gradient(linear, left top, left bottom, from(red), to(yellow))"; */
   /* background: black; */
   /* font-family: 'Sono', sans-serif; */

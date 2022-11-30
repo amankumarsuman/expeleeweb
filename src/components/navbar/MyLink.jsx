@@ -28,7 +28,7 @@ export const links = [
     submenu: true,
     sublinks: [
       {
-        Head: "Product List",
+        // Head: "Product List",
         sublink: [
           {
             name: "Expelee Audits",
@@ -49,7 +49,7 @@ export const links = [
         
       },
       {
-        Head: "Product List 2",
+        // Head: "Product List 2",
         sublink: [
           {
             name: "Expe dApp Creator",
@@ -82,7 +82,7 @@ export const links = [
     submenu: true,
     sublinks: [
       {
-        Head: "Blockchain",
+        // Head: "Blockchain",
         sublink: [
           {
             name: "BlockChain Development",
@@ -111,7 +111,7 @@ export const links = [
     submenu: true,
     sublinks: [
       {
-        Head: "Social Media",
+        // Head: "Social Media",
         sublink: [
           {
             name: "Telegram",
@@ -148,7 +148,7 @@ export const links = [
     submenu: true,
     sublinks: [
       {
-        Head: "company",
+        // Head: "company",
         sublink: [
           { name: "About Us", link: "/about-us", logo: <InfoIcon /> },
           { name: "Team", link: "/team", logo: <Diversity3Icon /> },

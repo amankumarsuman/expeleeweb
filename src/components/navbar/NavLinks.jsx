@@ -424,11 +424,11 @@ const handleClick=()=>{
                         ? setSubHeading(slinks.Head)
                         : setSubHeading("")
                     }
-                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
+                    // className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
                   >
-                    {slinks.Head}
+                    {/* {slinks.Head} */}
 
-                    <span className=" md:mt-1 md:ml-2 inline">
+                    {/* <span className=" md:mt-1 md:ml-2 inline">
                       <ion-icon
                         name={`${
                           subHeading === slinks.Head
@@ -436,13 +436,13 @@ const handleClick=()=>{
                             : "chevron-down"
                         }`}
                       ></ion-icon>
-                    </span>
+                    </span> */}
                   </h1>
                    <div
                  
-                    className={`${
-                      subHeading === slinks.Head ? "md:hidden" : "hidden"
-                    }`}
+                    // className={`${
+                    //   subHeading === slinks.Head ? "md:hidden" : "hidden"
+                    // }`}
                   >
                     {slinks.sublink.map((slink) => (
                       <List>

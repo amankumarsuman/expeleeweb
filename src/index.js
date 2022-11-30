@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 // import { theme } from "./components/coreComponents/themeStyle";
 import { ColorModeContext, useMode } from "./theme";
@@ -12,17 +12,23 @@ import CryptoContext from "./components/cryptohunting/CryptoContext";
 // import CryptoContext from "./CryptoContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+    
 
-      <CryptoContext>
-        <HashRouter>
-          <App />
-        </HashRouter>
-      </CryptoContext>
+    <ThemeProvider theme={theme}>
+    <CssBaseline />
+
+    <CryptoContext>
+    <BrowserRouter>
+
+
+      <App />
+    </BrowserRouter>
+    </CryptoContext>
     </ThemeProvider>
+   
   </React.StrictMode>
 );
 
