@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Avatar, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 // import hedgepay from "../../assets/hedgepay.png";
 // import hamiNetwork from "../../assets/hami.png";
@@ -39,7 +39,7 @@ function AboutAudit() {
         <img src={whyAuditPic} />
       </Grid>
       <Grid item xs={12} md={6}>
-        <Typography className={styles.textGradient}>Why Choose Us ?</Typography>
+        <Typography style={{fontSize:"1.5em"}} className={styles.textGradient}>Why Choose Us ?</Typography>
         <Typography className={styles.para}>
           Our team of experts does a thorough analysis of smart contracts in
           multiple steps and informs the team of any potential issues with their
@@ -59,11 +59,14 @@ function AboutAudit() {
             display: "flex",
             color: "white",
             justifyContent: "space-between",
-            width: "25%",
+            width: "35%",
             marginTop: "1em",
           }}
         >
-          <img src={schedule} alt="schedule" width="20%" />
+          <Avatar sx={{background:"#3d75ed",border:"1.5px dotted grey"}}>
+          <img src={schedule} alt="schedule" width="50%" />
+
+          </Avatar>
           <Typography variant="h5">Rapid Delivery</Typography>
         </div>
         <div
@@ -71,11 +74,15 @@ function AboutAudit() {
             display: "flex",
             color: "white",
             justifyContent: "space-between",
-            width: "30%",
+            width: "43%",
             marginTop: "1em",
           }}
         >
-          <img src={victory} alt="victory" width="20%" />
+          <Avatar sx={{background:"#3d75ed",border:"1.5px dotted grey"}}>
+          {/* <img src={schedule} alt="schedule" width="50%" /> */}
+
+          <img src={victory} alt="victory" width="50%" />
+          </Avatar>
           <Typography variant="h5">High Success Rate</Typography>
         </div>
       </Grid>

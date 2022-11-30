@@ -221,7 +221,7 @@ function AuditPage() {
         <SimpleButton
               // onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
               sx={{
-                width: "15vw",
+                width: "50% !important",
                 padding: "1.5em",
                 // fontFamily: "poppins",
                 color: "white",
@@ -246,9 +246,12 @@ function AuditPage() {
             >
               Want to get your Audit Done?{" "}
             </Typography>
-            <div style={{ width: "10%", margin: "auto" }}>
+            <Typography sx={{ width: "12%", margin:"auto" ,display:{xs:"none",md:"flex"} }}>
               <AnimatedButton text={"Contact Us"} />
-            </div>
+            </Typography>
+            <Typography sx={{ marginLeft:"2em",width: "12%" ,display:{md:"none"} }}>
+              <AnimatedButton text={"Contact Us"} />
+            </Typography>
           </Paper>
         </Grid>
        

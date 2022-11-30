@@ -8,11 +8,11 @@ function PaperComponent({count1="10",name1="Products",count2="2000",name2="Commu
 
   return (
     <Paper  className={styles.paperDiv} sx={{borderRadius:"15px", }} elevation={5}>
-      <Grid sx={{ width: "100%", margin: "auto" }} container spacing={2}>
-        {/* <Grid item md={1}>
+      <Grid container spacing={2}>
+        <Grid item md={0.2}>
 
-        </Grid> */}
-        <Grid style={{marginLeft:"4em"}} item xs={12} md={2}>
+        </Grid>
+        <Grid  item xs={12} md={3}>
           <Typography
             style={{
               color: "white",

@@ -30,7 +30,7 @@ import { Animator, ScrollPage } from "react-scroll-motion";
 import { ScrollContainer, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 import AliceCarousel from "react-alice-carousel";
 import PartnerAliceCarousel from "./PartnerAliceCarousel";
-
+import dashboardPic from "../../assets/bg.png"
 
 function Dashboard() {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
@@ -65,16 +65,15 @@ const FadeUp = batch(Fade(), Move(), Sticky());
         container
         spacing={2}
       >
-        <Grid item xs={12} md={8}>
-        {/* <SmallHeading title={'All web3.0 Products & Services in One Place'} identifier={'Before'} /> */}
+        <Grid  item xs={12} md={8}>
+       
           <Typography
             sx={{
               // color: colors.greenAccent[600],
               color:"white",
 fontWeight:"bold",
               fontSize: "3.2em",
-              // fontFamily: "Sono",
-              // textAlign:"center"
+           
             }}
             variant="h6"
           >
@@ -83,7 +82,7 @@ fontWeight:"bold",
           <Typography
             sx={{ 
               
-              // fontFamily: "poppins", 
+           
               
               fontSize: "3.3em" }}
             className={styles.textGradient}
@@ -178,60 +177,9 @@ fontWeight:"bold",
 
         {/* <AnimatedDashboard /> */}
 
-        <Grid
-          className={styles.blockchain}
-          item
-          xs={12}
-          md={4}
-          sx={{
-            textAlign: "end",
-            padding: "10em",
-
-            display: {
-              xs: "none",
-              md: "flex",
-              // border:"1px solid red"
-            },
-          }}
-        >
-          <div
-            className={styles.smallEclipse}
-            sx={
-              {
-                // backgroundColor: "transparent",
-              }
-            }
-          >
-            <img
-              src={blockchain}
-              style={{
-                position: "absolute",
-                top: -100,
-                left: 100,
-              }}
-              alt="blockchain frame"
-            />
-            <img
-              src={web3}
-              style={{
-                position: "absolute",
-                top: 120,
-                left: -180,
-              }}
-              alt="web3"
-            />
-            <img
-              src={talent}
-              style={{
-                position: "absolute",
-                top: 250,
-                left: -150,
-              }}
-              alt="talent"
-            />
-            {/* <Paper elevation={5}></Paper> */}
-          </div>
-        </Grid>
+       <Grid sx={{marginTop:"2em"}} xs={12} md={4}>
+<img src={dashboardPic} alt="dashboardpic"/>
+       </Grid>
       </Grid>
     {/* </MainAreaStyled> */}
      {/* <AliceCarousel

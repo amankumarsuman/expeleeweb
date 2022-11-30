@@ -42,7 +42,7 @@
     font-size: 2.5em;
     /* background: -webkit-linear-gradient(white, #33BBCF); */
   background: #3d75ed;
-
+font-weight: bold !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* font-family: Teko; */

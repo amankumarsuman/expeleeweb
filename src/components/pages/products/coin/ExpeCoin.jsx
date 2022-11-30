@@ -78,7 +78,8 @@ function ExpeCoin() {
             <SimpleButton
               onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
               sx={{
-                width: "35vw",
+                width: "250px",
+
                 padding: "1.5em",
                 // fontFamily: "poppins",
                 color: "white",

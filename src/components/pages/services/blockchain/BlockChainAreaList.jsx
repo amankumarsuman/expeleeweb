@@ -19,7 +19,7 @@ export default function BlockChainAreaList() {
     <List
       sx={{
         width: "100%",
-        maxWidth: "48%",
+        width: "50vw",
         margin: "Auto",
         bgcolor: "grey",
         borderRadius: "20px",
