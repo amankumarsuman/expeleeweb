@@ -5,6 +5,7 @@ import blockchain from "../../../assets/blockchain2.png";
 import styles from "./blockchain.module.css";
 import BlockChainAreaList from "./BlockChainAreaList";
 import { SimpleButton } from "../tokenGeneration/CustomButton";
+import GoToTop from "../../../coreComponents/GoToTop";
 
 function BlockchainDevelopment() {
   const handleNavigate = (link) => {
@@ -13,7 +14,7 @@ function BlockchainDevelopment() {
   return (
     <>
       <FormMainHeadingContainer headingText="Blockchain Development">
-        <Grid sx={{marginTop:"2em"}} container spacing={2}>
+        <Grid sx={{ marginTop: "2em" }} container spacing={2}>
           <Grid item xs={12} md={6}>
             <img src={blockchain} alt="blockchain pic" />
           </Grid>
@@ -27,7 +28,6 @@ function BlockchainDevelopment() {
               Blockchain Development
             </Typography>
             <Typography
-              
               fontSize="1.1em"
               color="grey"
               sx={{ marginTop: "2em", marginBottom: "2em" }}
@@ -49,7 +49,6 @@ function BlockchainDevelopment() {
               OUR SERVICES INCLUDE
             </Typography>
             <Typography
-              
               fontSize="1.1em"
               color="grey"
               sx={{ marginTop: "2em", marginBottom: "2em" }}
@@ -114,7 +113,7 @@ function BlockchainDevelopment() {
             >
               CONTACT US
             </Button> */}
-                <SimpleButton
+            <SimpleButton
               onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
               sx={{
                 width: "250px",
@@ -134,6 +133,7 @@ function BlockchainDevelopment() {
           </Grid>
         </Grid>
       </FormMainHeadingContainer>
+      <GoToTop />
     </>
   );
 }

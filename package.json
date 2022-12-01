@@ -1,7 +1,7 @@
 {
   "name": "expelee",
   "version": "0.1.0",
-  
+  "homepage": "https://expelee.sadibazar.tech/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

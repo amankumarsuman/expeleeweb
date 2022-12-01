@@ -5,6 +5,7 @@ import kyc from "../../../assets/KYCNew.png";
 import styles from "./expeKyc.module.css";
 import kycbg from "../../../assets/kycbg.png";
 import { SimpleButton } from "../../services/tokenGeneration/CustomButton";
+import GoToTop from "../../../coreComponents/GoToTop";
 function ExpeKyc() {
   const handleNavigate = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
@@ -12,7 +13,7 @@ function ExpeKyc() {
   return (
     <>
       <FormMainHeadingContainer headingText="Expe KYC">
-        <Grid sx={{marginTop:"2em"}} container>
+        <Grid sx={{ marginTop: "2em" }} container>
           <Grid item xs={12} md={6}>
             <img style={{ marginTop: "1em" }} src={kyc} alt="vetting pic" />
           </Grid>
@@ -25,13 +26,11 @@ function ExpeKyc() {
               <Typography
                 variant="h4"
                 textAlign="center"
-              
                 className={styles.textGradient}
               >
                 KYC & Certification
               </Typography>
               <Typography
-               
                 fontSize="1.1em"
                 color="grey"
                 sx={{ marginTop: "2em", marginBottom: "2em" }}
@@ -202,6 +201,7 @@ function ExpeKyc() {
           </SimpleButton>
         </Grid>
       </FormMainHeadingContainer>
+      <GoToTop />
     </>
   );
 }

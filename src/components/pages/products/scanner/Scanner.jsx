@@ -16,6 +16,7 @@ import Select from "@mui/material/Select";
 import axios from "axios";
 import { ethers } from "ethers";
 import ScannerDataTable from "./ScannerDataTable";
+import GoToTop from "../../../coreComponents/GoToTop";
 function Scanner() {
   let allresultsElements = [
     "tokenName",
@@ -44,7 +45,6 @@ function Scanner() {
   const [data, setData] = useState([]);
   const [transactionData, setTransactionData] = useState([]);
 
-
   // let firstTimeStamp, finalTimeStamp;
   // let contribs = 0;
   // let biggestContrib = 0;
@@ -52,12 +52,12 @@ function Scanner() {
   // let finalized = false;
   // let currency;
 
-  const [firstTimeStamp,setFirstTimeStamp]=useState(null)
-  const [contribs,setContribs]=useState(0)
-  const [biggestContrib,setBiggestContrib]=useState(0)
-  const [poolBalance,setPoolBalance]=useState(0)
-  const [finalized,setFinalized]=useState(false)
-  const [currency,setCurrency]=useState(null)
+  const [firstTimeStamp, setFirstTimeStamp] = useState(null);
+  const [contribs, setContribs] = useState(0);
+  const [biggestContrib, setBiggestContrib] = useState(0);
+  const [poolBalance, setPoolBalance] = useState(0);
+  const [finalized, setFinalized] = useState(false);
+  const [currency, setCurrency] = useState(null);
   const handleInputChange = (event) => {
     // const { name, value } = event.target;
     setContract(event.target.value);
@@ -579,6 +579,8 @@ function Scanner() {
       <div id="shortAudit"></div>
 
       <ScannerDataTable data={transactionData} />
+
+      <GoToTop />
     </div>
   );
 }

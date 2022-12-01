@@ -18,10 +18,11 @@ import fomolab from "../../../assets/fomolab.png";
 import blocvault from "../../../assets/blocvault.png";
 import qroniswap from "../../../assets/qroniswap.png";
 import AllAuditCard from "./AllAuditCard";
-import auditProcess from "../../../assets/AuditNew.png"
+import auditProcess from "../../../assets/AuditNew.png";
 import AboutAudit from "./aboutaudit/AboutAudit";
 import { fontWeight } from "@mui/system";
 import PaperComponent from "./PaperComponent";
+import GoToTop from "../../../coreComponents/GoToTop";
 // import { MdOutlineSchedule } from 'react-icons';
 function AuditPage() {
   const data = [
@@ -50,7 +51,7 @@ function AuditPage() {
     <>
       <Grid
         sx={{
-          paddingTop: "150px",
+          paddingTop: "2em",
           // marginRight: "125.1px",
           // maarginRight: "50%",
 
@@ -60,22 +61,25 @@ function AuditPage() {
         container
         spacing={2}
       >
+        <Grid sx={{ marginTop: "2em", display: { md: "none" } }} xs={12} md={4}>
+          <img src={auditMainImage} alt="auditMainImage" />
+        </Grid>
         <Grid item xs={12} md={6}>
           <Typography
-            sx={
-              {
-                // fontFamily: "poppins"
-              }
-            }
+            sx={{
+              // fontFamily: "poppins"
+              fontWeight: "bold",
+              fontSize: "3.2em",
+            }}
             className={styles.textGradient}
-            variant="h3"
+            variant="h6"
           >
             Expelee Audits
           </Typography>
           <Typography
             sx={{
               // fontFamily: "open-sans",
-              fontSize: "1.5em",
+              fontSize: "1.2em",
             }}
             className={styles.para}
           >
@@ -101,7 +105,7 @@ function AuditPage() {
           </div>
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid sx={{ display: { xs: "none", md: "flex" } }} item xs={12} md={6}>
           <img src={auditMainImage} width="100%" />
         </Grid>
 
@@ -124,17 +128,13 @@ function AuditPage() {
 
         <Paper className={styles.paperDiv2} elevation={5}>
           <Typography
-          variant="h4"
-          sx={{textAlign:"center",
-          color:"#3d75ed",
-          fontWeight:"bold"
-        }}
+            variant="h4"
+            sx={{ textAlign: "center", color: "#3d75ed", fontWeight: "bold" }}
           >
-
-          Audit Process
+            Audit Process
           </Typography>
         </Paper>
-          <img src={auditProcess} alt="auditprocess"/>
+        <img src={auditProcess} alt="auditprocess" />
         {/* <Grid item md={12}> */}
         <PaperComponent
           count="100"
@@ -193,7 +193,6 @@ function AuditPage() {
             >
               Smart Contract Auditing Report
             </Typography>
-      
           </Paper>
         </Grid>
         {/* <Paper className={styles.mainPaper}> */}
@@ -207,7 +206,7 @@ function AuditPage() {
     </Paper>
 </Grid> */}
           {data?.map((el) => (
-            <Grid   item xs={12} key={el.title} md={4}>
+            <Grid item xs={12} key={el.title} md={4}>
               <AllAuditCard
                 title={el.title}
                 image={el.image}
@@ -216,9 +215,9 @@ function AuditPage() {
             </Grid>
           ))}
         </Grid>
-        <Grid sx={{textAlign:"center",marginTop:"2em"}} xs={12} md={12}>
-        <Link to="/audit/all-audit">
-        <SimpleButton
+        <Grid sx={{ textAlign: "center", marginTop: "2em" }} xs={12} md={12}>
+          <Link to="/audit/all-audit">
+            <SimpleButton
               // onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
               sx={{
                 width: "50% !important",
@@ -232,9 +231,9 @@ function AuditPage() {
               }}
               variant="contained"
             >
-             See All Audit
+              See All Audit
             </SimpleButton>
-            </Link>
+          </Link>
         </Grid>
         {/* </Paper> */}
         <Grid sx={{ marginTop: "3em" }} item xs={12} md={12}>
@@ -246,16 +245,24 @@ function AuditPage() {
             >
               Want to get your Audit Done?{" "}
             </Typography>
-            <Typography sx={{ width: "12%", margin:"auto" ,display:{xs:"none",md:"flex"} }}>
+            <Typography
+              sx={{
+                width: "12%",
+                margin: "auto",
+                display: { xs: "none", md: "flex" },
+              }}
+            >
               <AnimatedButton text={"Contact Us"} />
             </Typography>
-            <Typography sx={{ marginLeft:"2em",width: "12%" ,display:{md:"none"} }}>
+            <Typography
+              sx={{ marginLeft: "2em", width: "12%", display: { md: "none" } }}
+            >
               <AnimatedButton text={"Contact Us"} />
             </Typography>
           </Paper>
         </Grid>
-       
       </Grid>
+      <GoToTop />
     </>
   );
 }

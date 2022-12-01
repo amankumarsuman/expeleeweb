@@ -72,7 +72,6 @@ const NikeLogo = styled.div`
 `;
 
 export function TeamDetails(props) {
-
   const handleNavigate = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
   };
@@ -81,22 +80,31 @@ export function TeamDetails(props) {
     <DetailsContainer>
       <SmallText>EXPELEE TEAM</SmallText>
       <SpacedHorizontalContainer>
-        <MediumText className={styles.textGradient}>{props.name}</MediumText>
+        {/* <MediumText className={styles.textGradient}>{props.name}</MediumText> */}
         {/* <MediumText>¥856</MediumText> */}
+
+        <MediumText className={styles.textGradient}>{props.name}</MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin="1.2em" />
       <SpacedHorizontalContainer>
         <MediumText>{props.desg}</MediumText>
       </SpacedHorizontalContainer>
       <SpacedHorizontalContainer>
-        <div style={{display:"flex",justifyContent:"space-between",width:"60%",margin:"auto",paddingBottom:"2em"}}>
-
-        <BuyButton onClick={()=>handleNavigate(props.linkedLink)}>
-          <LinkedInIcon />
-        </BuyButton>
-        <BuyButton onClick={()=>handleNavigate(props.telegramLink)}>
-          <TelegramIcon />
-        </BuyButton>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "60%",
+            margin: "auto",
+            paddingBottom: "2em",
+          }}
+        >
+          <BuyButton onClick={() => handleNavigate(props.linkedLink)}>
+            <LinkedInIcon />
+          </BuyButton>
+          <BuyButton onClick={() => handleNavigate(props.telegramLink)}>
+            <TelegramIcon />
+          </BuyButton>
         </div>
       </SpacedHorizontalContainer>
       {/* <NikeLogo>

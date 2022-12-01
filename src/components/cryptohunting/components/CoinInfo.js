@@ -5,7 +5,6 @@ import { Line } from "react-chartjs-2";
 import {
   CircularProgress,
   createTheme,
-
   ThemeProvider,
 } from "@material-ui/core";
 import SelectButton from "./SelectButton";
@@ -19,7 +18,7 @@ const CoinInfo = ({ coin }) => {
   const [historicData, setHistoricData] = useState();
   const [days, setDays] = useState(1);
   const { currency } = CryptoState();
-  const [flag,setflag] = useState(false);
+  const [flag, setflag] = useState(false);
 
   // const useStyles = makeStyles((theme) =>createStyles ({
   //   container: {
@@ -66,7 +65,7 @@ const CoinInfo = ({ coin }) => {
   return (
     <ThemeProvider theme={darkTheme}>
       <div className={classes.container}>
-        {!historicData | flag===false ? (
+        {!historicData | (flag === false) ? (
           <CircularProgress
             style={{ color: "gold" }}
             size={250}
@@ -112,7 +111,8 @@ const CoinInfo = ({ coin }) => {
               {chartDays.map((day) => (
                 <SelectButton
                   key={day.value}
-                  onClick={() => {setDays(day.value);
+                  onClick={() => {
+                    setDays(day.value);
                     setflag(false);
                   }}
                   selected={day.value === days}
@@ -123,7 +123,6 @@ const CoinInfo = ({ coin }) => {
             </div>
           </>
         )}
-      
       </div>
     </ThemeProvider>
   );

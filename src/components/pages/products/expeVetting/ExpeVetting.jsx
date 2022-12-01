@@ -5,6 +5,7 @@ import vet from "../../../assets/vet.png";
 import styles from "./expeVetting.module.css";
 import vettingProcess from "../../../assets/VettingNew.png";
 import { SimpleButton } from "../../services/tokenGeneration/CustomButton";
+import GoToTop from "../../../coreComponents/GoToTop";
 function ExpeVetting() {
   const handleNavigate = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
@@ -12,7 +13,7 @@ function ExpeVetting() {
   return (
     <>
       <FormMainHeadingContainer headingText="Expe Vetting">
-        <Grid sx={{marginTop:"2em"}} container spacing={2}>
+        <Grid sx={{ marginTop: "2em" }} container spacing={2}>
           <Grid item xs={12} md={6}>
             <img src={vet} alt="vetting pic" />
           </Grid>
@@ -21,7 +22,7 @@ function ExpeVetting() {
             <Typography
               variant="h4"
               textAlign="center"
-              style={{fontWeight:"bold"}}
+              style={{ fontWeight: "bold" }}
               className={styles.textGradient}
             >
               Vetting & Certification
@@ -56,7 +57,7 @@ function ExpeVetting() {
             <Typography
               variant="h4"
               textAlign="center"
-              sx={{fontWeight:"bold"}}
+              sx={{ fontWeight: "bold" }}
               className={styles.textGradient}
             >
               What is Expe Vetting ?
@@ -116,7 +117,7 @@ Vetting is something that goes above and beyond the requirements of KYC & Audits
             <Typography
               variant="h4"
               textAlign="center"
-              sx={{fontWeight:"bold"}}
+              sx={{ fontWeight: "bold" }}
               className={styles.textGradient}
             >
               Benefits of Being Vetted
@@ -204,6 +205,7 @@ Vetting is something that goes above and beyond the requirements of KYC & Audits
           </Grid>
         </Grid>
       </FormMainHeadingContainer>
+      <GoToTop />
     </>
   );
 }

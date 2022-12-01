@@ -4,6 +4,7 @@ import { FormMainHeadingContainer } from "../../../coreComponents/FormMainHeadin
 import design from "../../../assets/design.png";
 import styles from "./expeDesign.module.css";
 import { SimpleButton } from "../../services/tokenGeneration/CustomButton";
+import GoToTop from "../../../coreComponents/GoToTop";
 
 function ExpeDesign() {
   const handleNavigate = (link) => {
@@ -12,7 +13,7 @@ function ExpeDesign() {
   return (
     <>
       <FormMainHeadingContainer headingText="Expe Design">
-        <Grid sx={{marginTop:"2em"}} container spacing={2}>
+        <Grid sx={{ marginTop: "2em" }} container spacing={2}>
           <Grid item xs={12} md={6}>
             <img src={design} alt="design pic" />
           </Grid>
@@ -191,6 +192,7 @@ Enterprise On the blockchain, tokens serve as a representation of physical or di
           </Grid>
         </Grid>
       </FormMainHeadingContainer>
+      <GoToTop />
     </>
   );
 }

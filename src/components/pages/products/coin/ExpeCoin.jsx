@@ -4,6 +4,7 @@ import { FormMainHeadingContainer } from "../../../coreComponents/FormMainHeadin
 import coin from "../../../assets/coin.png";
 import styles from "./expeCoin.module.css";
 import { SimpleButton } from "../../services/tokenGeneration/CustomButton";
+import GoToTop from "../../../coreComponents/GoToTop";
 
 function ExpeCoin() {
   const handleNavigate = (link) => {
@@ -12,7 +13,7 @@ function ExpeCoin() {
   return (
     <>
       <FormMainHeadingContainer headingText="Expe Coin Level">
-        <Grid sx={{marginTop:"2em"}} container spacing={2}>
+        <Grid sx={{ marginTop: "2em" }} container spacing={2}>
           <Grid item xs={12} md={6}>
             <img src={coin} alt="coin pic" />
           </Grid>
@@ -95,6 +96,7 @@ function ExpeCoin() {
           </Grid>
         </Grid>
       </FormMainHeadingContainer>
+      <GoToTop />
     </>
   );
 }

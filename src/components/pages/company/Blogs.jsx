@@ -6,10 +6,11 @@ import blockchainblog from "../../assets/blockchainblog.jpg";
 import brain from "../../assets/brain.png";
 import blockchainblog2 from "../../assets/blockchain2.jpg";
 import { Grid } from "@mui/material";
+import GoToTop from "../../coreComponents/GoToTop";
 function Blogs() {
   return (
     <>
-      <Grid sx={{width:"90%"}} margin="auto" container spacing={3}>
+      <Grid sx={{ width: "90%" }} margin="auto" container spacing={3}>
         <Grid item xs={12} md={3}>
           <BlogsCard
             image={nft}
@@ -17,7 +18,6 @@ function Blogs() {
             description="NFT or Non-fungible token is a digital asset that portrays real-world objects such as videos, music, art, in-game items, and even memes. You can buy and sell NFTs online more often with cryptocurrency. Furthermore, the same underlying software used in crypto encodes them."
             link="https://medium.com/@expelee/what-is-nft-all-about-4c103aa7763a"
             padding="3em"
-
           />
         </Grid>
         <Grid item xs={12} md={3}>
@@ -26,9 +26,6 @@ function Blogs() {
             heading="The Historic Ethereum Merge is finally completed"
             description="The most awaited Ethereum Merge is finally Completed and Ethereum Blockchain made its historic shift from Proof-of-Work to Proof-to-Stake Consensus Mechanism. In this Blog we list some points to know more about Merge."
             link="https://medium.com/@expelee/the-historic-ethereum-merge-is-finally-completed-8c3981b7a8dd"
-          
-       
-          
           />
         </Grid>
         <Grid item xs={12} md={3}>
@@ -57,6 +54,7 @@ function Blogs() {
           />
         </Grid>
       </Grid>
+      <GoToTop />
     </>
   );
 }

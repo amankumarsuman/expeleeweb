@@ -4,6 +4,7 @@ import { FormMainHeadingContainer } from "../../../coreComponents/FormMainHeadin
 import nft from "../../../assets/nft2.png";
 import styles from "./expeNft.module.css";
 import { SimpleButton } from "../../services/tokenGeneration/CustomButton";
+import GoToTop from "../../../coreComponents/GoToTop";
 
 function ExpeNft() {
   const handleNavigate = (link) => {
@@ -12,7 +13,7 @@ function ExpeNft() {
   return (
     <>
       <FormMainHeadingContainer headingText="Expe NFT">
-        <Grid sx={{marginTop:"2em"}} container spacing={2}>
+        <Grid sx={{ marginTop: "2em" }} container spacing={2}>
           <Grid item xs={12} md={6}>
             <img src={nft} alt="design pic" />
           </Grid>
@@ -153,7 +154,6 @@ Enterprise On the blockchain, tokens serve as a representation of physical or di
               fontSize="1.3em"
               color="#3d75ed"
               fontWeight="bold"
-              
               sx={{ marginTop: "2em", marginBottom: "2em" }}
             >
               1 Conceptualization and Advice
@@ -271,6 +271,7 @@ Enterprise On the blockchain, tokens serve as a representation of physical or di
           </Grid>
         </Grid>
       </FormMainHeadingContainer>
+      <GoToTop />
     </>
   );
 }

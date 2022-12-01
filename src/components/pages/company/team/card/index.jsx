@@ -38,7 +38,7 @@ const CircleWrapper = styled.div`
   top: 0;
   left: 0;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 77%;
   overflow: hidden;
   border-top-right-radius: 25px;
 `;
@@ -101,7 +101,7 @@ const NikeText = styled.h1`
 
 const ShoesWrapper = styled.div`
   width: 100%;
-  height: 80%;
+  height: 111%;
   position: absolute;
   display: flex;
   align-items: center;
@@ -130,7 +130,8 @@ const Shoes = styled(motion.div)`
     width: auto;
     height: 100%;
     user-select: none;
-  }`
+  }
+`;
 const amanpics = styled(motion.div)`
   width: auto;
   height: 200px;
@@ -143,9 +144,10 @@ const amanpics = styled(motion.div)`
 
   img {
     width: auto;
-    height: 103%;
+    height: 80%;
     user-select: none;
-  }`
+  }
+`;
 const ShoesResize = styled(motion.div)`
   width: auto;
   height: 220px;
@@ -203,82 +205,95 @@ export function TeamCard(props) {
         whileTap={{ cursor: "grabbing" }}
       >
         <TopContainer>
-          {props.resize? <CircleWrapperResize>
-            <CircleResize/>
-          </CircleWrapperResize>: <CircleWrapper>
-            <Circle />
-          </CircleWrapper> }
+          {props.resize ? (
+            <CircleWrapperResize>
+              <CircleResize />
+            </CircleWrapperResize>
+          ) : (
+            <CircleWrapper>
+              <Circle />
+            </CircleWrapper>
+          )}
           {/* <CircleWrapper>
             <Circle />
           </CircleWrapper> */}
-        {props.resize?  <ShoesWrapperResize>
-            <ShoesResize
-              style={{
-                x,
-                y,
-                rotateX,
-                rotateY,
-                // rotate: "-25deg",
-                z: 100000,
-                borderRadius: "15px",
-              }}
-              drag
-              dragElastic={0.12}
-              whileTap={{ cursor: "grabbing" }}
-            >
-              <img src={props.image}  />
-            </ShoesResize>
-          </ShoesWrapperResize>: props.height?<ShoesWrapperAdedo>
-            <ShoesAdedo
-              style={{
-                // x,
-                // y,
-                // rotateX,
-                // rotateY,
-                // rotate: "-25deg",
-                z: 100000,
-                borderRadius: "15px",
-              }}
-              drag
-              dragElastic={0.12}
-              whileTap={{ cursor: "grabbing" }}
-            >
-              <img src={props.image}  />
-            </ShoesAdedo>
-          </ShoesWrapperAdedo>:<ShoesWrapper>
-            {props.width?<amanPics
-              style={{
-                // x,
-                // y,
-                // rotateX,
-                // rotateY,
-                // rotate: "-25deg",
-                z: 100000,
-                borderRadius: "15px",
-              }}
-              drag
-              dragElastic={0.12}
-              whileTap={{ cursor: "grabbing" }}
-            >
-              <img src={props.image}  />
-            </amanPics>:<Shoes
-              style={{
-                // x,
-                // y,
-                // rotateX,
-                // rotateY,
-                // rotate: "-25deg",
-                z: 100000,
-                borderRadius: "15px",
-              }}
-              drag
-              dragElastic={0.12}
-              whileTap={{ cursor: "grabbing" }}
-            >
-              <img src={props.image}  />
-            </Shoes>}
-           
-          </ShoesWrapper>}
+          {props.resize ? (
+            <ShoesWrapperResize>
+              <ShoesResize
+                style={{
+                  x,
+                  y,
+                  rotateX,
+                  rotateY,
+                  // rotate: "-25deg",
+                  z: 100000,
+                  borderRadius: "15px",
+                }}
+                drag
+                dragElastic={0.12}
+                whileTap={{ cursor: "grabbing" }}
+              >
+                <img src={props.image} />
+              </ShoesResize>
+            </ShoesWrapperResize>
+          ) : props.height ? (
+            <ShoesWrapperAdedo>
+              <ShoesAdedo
+                style={{
+                  // x,
+                  // y,
+                  // rotateX,
+                  // rotateY,
+                  // rotate: "-25deg",
+                  z: 100000,
+                  borderRadius: "15px",
+                }}
+                drag
+                dragElastic={0.12}
+                whileTap={{ cursor: "grabbing" }}
+              >
+                <img src={props.image} />
+              </ShoesAdedo>
+            </ShoesWrapperAdedo>
+          ) : (
+            <ShoesWrapper>
+              {props.width ? (
+                <amanPics
+                  style={{
+                    // x,
+                    // y,
+                    // rotateX,
+                    // rotateY,
+                    // rotate: "-25deg",
+                    z: 100000,
+                    borderRadius: "15px",
+                  }}
+                  drag
+                  dragElastic={0.12}
+                  whileTap={{ cursor: "grabbing" }}
+                >
+                  <img src={props.image} />
+                </amanPics>
+              ) : (
+                <Shoes
+                  style={{
+                    // x,
+                    // y,
+                    // rotateX,
+                    // rotateY,
+                    // rotate: "-25deg",
+                    z: 100000,
+                    borderRadius: "15px",
+                  }}
+                  drag
+                  dragElastic={0.12}
+                  whileTap={{ cursor: "grabbing" }}
+                >
+                  <img src={props.image} />
+                </Shoes>
+              )}
+            </ShoesWrapper>
+          )}
           {/* <NikeText>EXPELEE TEAM</NikeText> */}
         </TopContainer>
         <BottomContainer>

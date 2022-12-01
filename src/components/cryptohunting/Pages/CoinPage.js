@@ -7,17 +7,18 @@ import CoinInfo from "../components/CoinInfo";
 import { SingleCoin } from "../config/api";
 import { numberWithCommas } from "../components/CoinsTable";
 import { CryptoState } from "../CryptoContext";
-import { makeStyles,createStyles } from "@mui/styles";
+import { makeStyles, createStyles } from "@mui/styles";
 import useStyles from "../components/style";
 import { Button } from "@mui/material";
 import { SimpleButton } from "../../pages/services/tokenGeneration/CustomButton";
+import GoToTop from "../../coreComponents/GoToTop";
 
 const CoinPage = () => {
   const { id } = useParams();
   const [coin, setCoin] = useState();
 
   const { currency, symbol } = CryptoState();
-const navigate=useNavigate()
+  const navigate = useNavigate();
   const fetchCoin = async () => {
     const { data } = await axios.get(SingleCoin(id));
 
@@ -29,58 +30,58 @@ const navigate=useNavigate()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-//   const useStyles = makeStyles((theme) =>
-//   createStyles({
-//     container: {
-//       display: "flex",
-//       [theme.breakpoints.down("md")]: {
-//         flexDirection: "column",
-//         alignItems: "center",
-//       },
-//     },
-//     sidebar: {
-//       width: "30%",
-//       [theme.breakpoints.down("md")]: {
-//         width: "100%",
-//       },
-//       display: "flex",
-//       flexDirection: "column",
-//       alignItems: "center",
-//       marginTop: 25,
-//       borderRight: "2px solid grey",
-//     },
-//     heading: {
-//       fontWeight: "bold",
-//       marginBottom: 20,
-//       fontFamily: "Montserrat",
-//     },
-//     description: {
-//       width: "100%",
-//       fontFamily: "Montserrat",
-//       padding: 25,
-//       paddingBottom: 15,
-//       paddingTop: 0,
-//       textAlign: "justify",
-//     },
-//     marketData: {
-//       alignSelf: "start",
-//       padding: 25,
-//       paddingTop: 10,
-//       width: "100%",
-//       [theme.breakpoints.down("md")]: {
-//         display: "flex",
-//         justifyContent: "space-around",
-//       },
-//       [theme.breakpoints.down("sm")]: {
-//         flexDirection: "column",
-//         alignItems: "center",
-//       },
-//       [theme.breakpoints.down("xs")]: {
-//         alignItems: "start",
-//       },
-//     },
-//   }),
-// );
+  //   const useStyles = makeStyles((theme) =>
+  //   createStyles({
+  //     container: {
+  //       display: "flex",
+  //       [theme.breakpoints.down("md")]: {
+  //         flexDirection: "column",
+  //         alignItems: "center",
+  //       },
+  //     },
+  //     sidebar: {
+  //       width: "30%",
+  //       [theme.breakpoints.down("md")]: {
+  //         width: "100%",
+  //       },
+  //       display: "flex",
+  //       flexDirection: "column",
+  //       alignItems: "center",
+  //       marginTop: 25,
+  //       borderRight: "2px solid grey",
+  //     },
+  //     heading: {
+  //       fontWeight: "bold",
+  //       marginBottom: 20,
+  //       fontFamily: "Montserrat",
+  //     },
+  //     description: {
+  //       width: "100%",
+  //       fontFamily: "Montserrat",
+  //       padding: 25,
+  //       paddingBottom: 15,
+  //       paddingTop: 0,
+  //       textAlign: "justify",
+  //     },
+  //     marketData: {
+  //       alignSelf: "start",
+  //       padding: 25,
+  //       paddingTop: 10,
+  //       width: "100%",
+  //       [theme.breakpoints.down("md")]: {
+  //         display: "flex",
+  //         justifyContent: "space-around",
+  //       },
+  //       [theme.breakpoints.down("sm")]: {
+  //         flexDirection: "column",
+  //         alignItems: "center",
+  //       },
+  //       [theme.breakpoints.down("xs")]: {
+  //         alignItems: "start",
+  //       },
+  //     },
+  //   }),
+  // );
 
   // const useStyles = makeStyles((theme) => ({
   //   container: {
@@ -162,7 +163,7 @@ const navigate=useNavigate()
               variant="h4"
               style={{
                 fontFamily: "Montserrat",
-                color:"white"
+                color: "white",
               }}
             >
               {numberWithCommas(coin?.market_cap_rank)}
@@ -178,7 +179,7 @@ const navigate=useNavigate()
               variant="h4"
               style={{
                 fontFamily: "Montserrat",
-                color:"white "
+                color: "white ",
               }}
             >
               {symbol}{" "}
@@ -196,8 +197,7 @@ const navigate=useNavigate()
               variant="h4"
               style={{
                 fontFamily: "Montserrat",
-                color:"white"
-
+                color: "white",
               }}
             >
               {symbol}{" "}
@@ -210,24 +210,25 @@ const navigate=useNavigate()
             </Typography>
           </span>
           <SimpleButton
-          onClick={()=>navigate("/live-chart")}
-                  sx={{
-                    width: "14vu",
-                    padding: "1.5em",
-                    // fontFamily: "poppins",
-                    color:"white",
-                    // fontSize: "15px",
-    fontSize: "1em",
+            onClick={() => navigate("/live-chart")}
+            sx={{
+              width: "14vu",
+              padding: "1.5em",
+              // fontFamily: "poppins",
+              color: "white",
+              // fontSize: "15px",
+              fontSize: "1em",
 
-                    background:"#3d75ed"
-                  }}
-                  variant="contained"
-                >
-                  Go Back To Table
-                </SimpleButton>
+              background: "#3d75ed",
+            }}
+            variant="contained"
+          >
+            Go Back To Table
+          </SimpleButton>
         </div>
       </div>
       <CoinInfo coin={coin} />
+      <GoToTop />
     </div>
   );
 };

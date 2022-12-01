@@ -27,35 +27,50 @@ import SmallHeading from "../../coreComponents/SmallHeading";
 import styled from "styled-components";
 import { tokens } from "../../../theme";
 import { Animator, ScrollPage } from "react-scroll-motion";
-import { ScrollContainer, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+import {
+  ScrollContainer,
+  batch,
+  Fade,
+  FadeIn,
+  FadeOut,
+  Move,
+  MoveIn,
+  MoveOut,
+  Sticky,
+  StickyIn,
+  StickyOut,
+  Zoom,
+  ZoomIn,
+  ZoomOut,
+} from "react-scroll-motion";
 import AliceCarousel from "react-alice-carousel";
 import PartnerAliceCarousel from "./PartnerAliceCarousel";
-import dashboardPic from "../../assets/bg.png"
+import dashboardPic from "../../assets/bg.png";
+import GoToTop from "../../coreComponents/GoToTop";
 
 function Dashboard() {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-const FadeUp = batch(Fade(), Move(), Sticky());
+  const FadeUp = batch(Fade(), Move(), Sticky());
 
   const theme = useTheme();
   // const theme = useTheme();
   const colors = tokens(theme.palette.mode);
- const handleNavigate = (link) => {
+  const handleNavigate = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
   };
   //dynamic title show
   UseDocumentTitle("Expelee-Home");
   return (
     <>
-    {/* <ScrollPage>
+      {/* <ScrollPage>
 <Animator  animation={batch(Fade(), Sticky(), MoveOut(0, -200))}> */}
 
- 
-    {/* <MainAreaStyled>
+      {/* <MainAreaStyled>
     <video src={business} muted playsInline autoPlay loop></video> */}
 
       <Grid
         sx={{
-          paddingTop: "150px",
+          paddingTop: "2em",
           // marginRight: "125.1px",
           // maarginRight: "50%",
           // border: "1px solid red",
@@ -65,43 +80,43 @@ const FadeUp = batch(Fade(), Move(), Sticky());
         container
         spacing={2}
       >
-        <Grid  item xs={12} md={8}>
-       
+        <Grid sx={{ marginTop: "2em", display: { md: "none" } }} xs={12} md={4}>
+          <img src={dashboardPic} alt="dashboardpic" />
+        </Grid>
+        <Grid item xs={12} md={8}>
           <Typography
             sx={{
               // color: colors.greenAccent[600],
-              color:"white",
-fontWeight:"bold",
+              color: "white",
+              fontWeight: "bold",
               fontSize: "3.2em",
-           
             }}
             variant="h6"
           >
             Building the Futuristic
           </Typography>
           <Typography
-            sx={{ 
-              
-           
-              
-              fontSize: "3.3em" }}
+            sx={{
+              fontSize: "3.3em",
+            }}
             className={styles.textGradient}
             variant="h3"
           >
             Blockchain Ecosystem
           </Typography>
           <Typography
-            sx={{ 
-              fontFamily:"Centra,sans-serif !important",
-              // fontFamily: "open-sans", 
-              fontSize: "1.5em" }}
-              className={styles.para}
-              color={colors.grey[800]}
+            sx={{
+              fontFamily: "Centra,sans-serif !important",
+              // fontFamily: "open-sans",
+              fontSize: "1.5em",
+            }}
+            className={styles.para}
+            color={colors.grey[800]}
           >
             On the way to build numerous products that will empower Blockchain
             Industry in upcoming years
           </Typography>
-          
+
           {/* <Grid sx={{ border: "1px solid red" }} container spacing={2}> */}
           <div
             style={{
@@ -130,18 +145,17 @@ fontWeight:"bold",
                 </SimpleButton>
               </Grid> */}
               <Grid item xs={12} md={6}>
-
-              <SimpleButton
-              onClick={() => handleNavigate("https://t.me/Expelee")}
+                <SimpleButton
+                  onClick={() => handleNavigate("https://t.me/Expelee")}
                   sx={{
                     width: "14vu",
                     padding: "1.5em",
                     // fontFamily: "poppins",
-                    color:"white",
+                    color: "white",
                     // fontSize: "15px",
-    fontSize: "1em",
+                    fontSize: "1em",
 
-                    background:"#3d75ed"
+                    background: "#3d75ed",
                   }}
                   variant="contained"
                 >
@@ -177,12 +191,16 @@ fontWeight:"bold",
 
         {/* <AnimatedDashboard /> */}
 
-       <Grid sx={{marginTop:"2em"}} xs={12} md={4}>
-<img src={dashboardPic} alt="dashboardpic"/>
-       </Grid>
+        <Grid
+          sx={{ marginTop: "2em", display: { xs: "none", md: "flex" } }}
+          xs={12}
+          md={4}
+        >
+          <img src={dashboardPic} alt="dashboardpic" />
+        </Grid>
       </Grid>
-    {/* </MainAreaStyled> */}
-     {/* <AliceCarousel
+      {/* </MainAreaStyled> */}
+      {/* <AliceCarousel
         mouseTracking
         infinite
         autoPlayInterval={1000}
@@ -193,7 +211,7 @@ fontWeight:"bold",
         items={items}
         autoPlay
       /> */}
-      <PartnerAliceCarousel/>
+      <PartnerAliceCarousel />
       <PaperComponent />
       <AboutExpelee />
       <ExpeleeProducts />
@@ -202,31 +220,31 @@ fontWeight:"bold",
       <TryOurServices />
       <Partner />
       <RoadMap />
-        
-{/* </Animator>
+
+      {/* </Animator>
       </ScrollPage> */}
+      <GoToTop />
     </>
   );
 }
 const MainAreaStyled = styled.header`
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  .overlay {
     width: 100%;
-    height: 85vh;
-    position: relative;
-    overflow: hidden;
-    .overlay{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        right: -400px;
-        top: -300px;
-        
-    }
-    video{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.7;
-    }
+    height: 100%;
+    position: absolute;
+    right: -400px;
+    top: -300px;
+  }
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+  }
 `;
 
 export default Dashboard;

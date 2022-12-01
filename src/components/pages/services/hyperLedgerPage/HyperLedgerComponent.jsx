@@ -4,6 +4,7 @@ import { FormMainHeadingContainer } from "../../../coreComponents/FormMainHeadin
 import hyperledger from "../../../assets/hyperledger.png";
 import styles from "./hyperledger.module.css";
 import { SimpleButton } from "../tokenGeneration/CustomButton";
+import GoToTop from "../../../coreComponents/GoToTop";
 
 function ExpeHyperLedger() {
   const handleNavigate = (link) => {
@@ -44,33 +45,27 @@ function ExpeHyperLedger() {
                 Hyperledger Chain code Development (Smart Contracts)
               </Typography>
             </Paper>
-            <Typography fontSize="1.1em"
-            color="grey" sx={{ marginTop: "2em" }}>
+            <Typography fontSize="1.1em" color="grey" sx={{ marginTop: "2em" }}>
               Currently we are working on and helping clients with the following
               Hyperledger Chain code Development (Smart Contracts)
             </Typography>
-            <Typography fontSize="1.1em"
-            color="grey">
+            <Typography fontSize="1.1em" color="grey">
               - Blockchain smart contract-powered secure payment processing
               solutions
             </Typography>
-            <Typography fontSize="1.1em"
-            color="grey">
+            <Typography fontSize="1.1em" color="grey">
               - Supply chain management solutions for industries with tracking
               and traceability
             </Typography>
-            <Typography fontSize="1.1em"
-            color="grey">
+            <Typography fontSize="1.1em" color="grey">
               - Automated invoice reconciliation, claim settlement, and more
               processes
             </Typography>
-            <Typography fontSize="1.1em"
-            color="grey">
+            <Typography fontSize="1.1em" color="grey">
               - Secure and efficient asset/ownership transfer tracking and
               management
             </Typography>
-            <Typography fontSize="1.1em"
-            color="grey">
+            <Typography fontSize="1.1em" color="grey">
               - Business solutions for verifiable digital identities,
               certificates, and more
             </Typography>
@@ -165,6 +160,7 @@ function ExpeHyperLedger() {
           </Grid>
         </Grid>
       </FormMainHeadingContainer>
+      <GoToTop />
     </>
   );
 }

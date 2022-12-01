@@ -7,6 +7,7 @@ import web3 from "../../assets/quarterPlan.png";
 import talent from "../../assets/threeYearPlan.png";
 import PlanAccordian from "../../customComponents/accordian/PlanAccordian";
 import CustomizedAccordions from "./RoadMapMobile";
+import GoToTop from "../../coreComponents/GoToTop";
 function RoadMap() {
   const handleNavigate = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
@@ -31,24 +32,28 @@ function RoadMap() {
           >
             <Typography
               className={styles.textGradient}
-              sx={{ color: "white", 
-              // fontFamily: "poppins"
-             }}
+              sx={{
+                color: "white",
+                // fontFamily: "poppins"
+              }}
               variant="h3"
             >
               Road Map
             </Typography>
             <Typography
-              sx={{ color: "grey", 
-              // fontFamily: "open-sans",
-               fontSize: "1.5em" }}
+              sx={{
+                color: "grey",
+                // fontFamily: "open-sans",
+                fontSize: "1.5em",
+              }}
             >
               On the way to develop our Blockchain Ecosystem, this is the
               roadmap we will be following in our journey.
             </Typography>
             <AnimatedButton
               onClick={() => handleNavigate("https://t.me/Expelee")}
-            text={"Get Started"} />
+              text={"Get Started"}
+            />
           </div>
         </Grid>
         {/* <Grid item xs={12} md={6}> */}
@@ -145,8 +150,9 @@ function RoadMap() {
         </Grid>
       </Grid>
       <div className="md:hidden">
-        <CustomizedAccordions/>
+        <CustomizedAccordions />
       </div>
+      <GoToTop />
     </div>
   );
 }

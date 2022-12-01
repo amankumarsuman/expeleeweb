@@ -11,6 +11,7 @@ import dev from "../../assets/web-development-gif.gif";
 import deal from "../../assets/dealani-unscreen.gif";
 // import deal from "../../assets/Data-report-4.gif";
 import StarBorderPurple500Icon from "@mui/icons-material/StarBorderPurple500";
+import GoToTop from "../../coreComponents/GoToTop";
 
 function AboutExpelee() {
   const handleNavigate = (link) => {
@@ -41,7 +42,7 @@ function AboutExpelee() {
                 // fontFamily: "Sono",
                 fontSize: "3em",
                 // width: "65%",
-                textAlign:"center"
+                textAlign: "center",
               }}
               className={styles.textGradient}
               variant="h3"
@@ -49,14 +50,15 @@ function AboutExpelee() {
               About Expelee Visionary Projects
             </Typography>
             <Typography
-              sx={{ color: "grey", 
-              fontFamily:"Centra,sans-serif !important",
-              
-              // fontFamily: "open-sans",
-              marginBottom:"2em",
-              fontSize: "1.2em",
-            marginTop:"2em" 
-          }}
+              sx={{
+                color: "grey",
+                fontFamily: "Centra,sans-serif !important",
+
+                // fontFamily: "open-sans",
+                marginBottom: "2em",
+                fontSize: "1.2em",
+                marginTop: "2em",
+              }}
             >
               Expelee is a product-based aspirational Web3 Start-up. Coping up
               with numerous solutions for blockchain Security and constructing a
@@ -65,10 +67,7 @@ function AboutExpelee() {
               blockchain.
             </Typography>
 
-            <div
-            
-            style={{ textAlign: "center" }}>
-          
+            <div style={{ textAlign: "center" }}>
               <AnimatedButton text={"Get Started"} />
             </div>
           </div>
@@ -104,6 +103,7 @@ function AboutExpelee() {
           </Grid>
         </Grid>
       </Grid>
+      <GoToTop />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import anay from "../../../assets/anayNew.png";
 import divyesh from "../../../assets/divyeshNew.png";
 import aman from "../../../assets/aman.png";
 import adedoyin from "../../../assets/adedoyin.png";
+import GoToTop from "../../../coreComponents/GoToTop";
 // const TeamContainer = styled.div`
 //   width: 100%;
 //   height: 100%;
@@ -25,7 +26,7 @@ function Team() {
         <TeamCard />
         <TeamCard />
       </TeamContainer> */}
-      <Grid sx={{marginTop:"3em"}} container spacing={4}>
+      <Grid sx={{ marginTop: "3em" }} container spacing={4}>
         <Grid item xs={12} md={3}>
           <TeamCard
             name="Anandhu Santhosh Kumar"
@@ -64,9 +65,9 @@ function Team() {
             resize={true}
           />
         </Grid>
-        <Grid sx={{marginTop:"3em"}} item xs={12} md={3}>
+        <Grid sx={{ marginTop: "3em" }} item xs={12} md={3}>
           <TeamCard
-          width={true}
+            width={true}
             name="Aman Kumar"
             image={aman}
             desg="Front End Developer"
@@ -75,7 +76,7 @@ function Team() {
             resize={true}
           />
         </Grid>
-        <Grid sx={{marginTop:"3em"}}  item xs={12} md={3}>
+        <Grid sx={{ marginTop: "3em" }} item xs={12} md={3}>
           <TeamCard
             name="Temitayo Adedoyin"
             image={adedoyin}
@@ -87,6 +88,7 @@ function Team() {
           />
         </Grid>
       </Grid>
+      <GoToTop />
     </>
   );
 }
