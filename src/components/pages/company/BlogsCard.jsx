@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import styles from "./blogsCard.module.css";
+import { SimpleButton } from "../services/tokenGeneration/CustomButton";
 export default function BlogsCard({ image, heading, description, link,padding }) {
   const handleNavigate = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
@@ -13,7 +14,7 @@ export default function BlogsCard({ image, heading, description, link,padding })
   return (
     <Card
       className={styles.blogsCardBackground}
-      sx={{ maxWidth: 345, borderRadius: "15px",height:"500px" }}
+      sx={{ maxWidth: 345, borderRadius: "15px",height:"570px" }}
     >
       <CardActionArea>
         <CardMedia  component="img" height="140" image={image} alt={heading} />
@@ -35,7 +36,61 @@ export default function BlogsCard({ image, heading, description, link,padding })
           </Typography>
         </CardContent>
       </CardActionArea>
-        {padding? <CardActions sx={{marginTop:`${padding}em`,textAlign:"center"}}>
+
+      {/* <SimpleButton
+            onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
+            sx={{
+              width: "250px",
+
+              padding: "1.5em",
+              // fontFamily: "poppins",
+              color: "white",
+              // fontSize: "15px",
+              fontSize: "1em",
+              fontWeight: "bold",
+              background: "#3d75ed",
+            }}
+            variant="contained"
+          >
+            Get Your KYC
+          </SimpleButton> */}
+        {padding? <CardActions sx={{marginTop:`${padding}em`,display:"flex",justifyContent:"center",}}>
+        <SimpleButton
+        
+          onClick={() => handleNavigate(link)}
+          // size="small"
+          // color="primary"
+          // variant="contained"
+          sx={{background:"#3d75ed",
+          padding: "1.2em",
+          color: "white",
+          fontWeight: "bold",
+        
+        }}
+        >
+          Read More
+        </SimpleButton>
+      </CardActions>: <CardActions >
+        <SimpleButton
+        
+          onClick={() => handleNavigate(link)}
+          // size="small"
+          // color="primary"
+          // variant="contained"
+          sx={{background:"#3d75ed",display:"flex",justifyContent:"center",
+          padding: "1.2em",
+          color: "white",
+          fontWeight: "bold",
+        
+        }}
+
+        >
+          Read More
+        </SimpleButton>
+      </CardActions>
+      
+      }
+        {/* {padding? <CardActions sx={{marginTop:`${padding}em`,textAlign:"center"}}>
         <Button
         
           onClick={() => handleNavigate(link)}
@@ -58,18 +113,10 @@ export default function BlogsCard({ image, heading, description, link,padding })
         >
           READ MORE
         </Button>
-      </CardActions>}
-      {/* <CardActions >
-        <Button
-        
-          onClick={() => handleNavigate(link)}
-          size="small"
-          color="primary"
-          variant="contained"
-        >
-          READ MORE
-        </Button>
-      </CardActions> */}
+      </CardActions>
+      
+      } */}
+  
     </Card>
   );
 }

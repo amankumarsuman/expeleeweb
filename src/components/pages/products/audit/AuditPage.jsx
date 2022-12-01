@@ -31,18 +31,30 @@ function AuditPage() {
       description:
         "Fomo Lab, the leading intellectual property specialist guides Web2 / traditional brands as they pursue their NFT & Metaverse activations to become part of the Web3 revolution. Fomo Lab are bringing an entire DeFi product ecosystem to the market which will be powered with the $FOMO token.",
       image: fomolab,
+      audit:"https://github.com/expelee-co/Smart-Contract-Audit/tree/main/FOMO%20lab%20Audit%20Details",
+      nft:"https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114259081114982429576146150684774591540994320681143592246875756388686709653505",
+      contract:"https://etherscan.io/address/0xb0cfb062de74f0410430a37305b878b7ad65903b",
+      date:"27 Sept 2022"
     },
     {
       title: "Qroniswap",
       description:
         "Qroniswap is a DeFi protocol and ecosystem covering cross-chain crypto trading and swapping, NFT ticketings, and fiat on-ramp payments. Qroniswap’s robust ecosystem is such that allows for deep liquidity and seamless crypto transactions, all spiced up with incentivized earning models.",
       image: qroniswap,
+      contract:"https://bscscan.com/address/0x78e893603c7c481263c7a0cfd5fb49936576c9c1",
+      audit:"https://github.com/expelee-co/Smart-Contract-Audit/tree/main/Qroniswap%20Staking%20Audit%20Details",
+      nft:"https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114259081114982429576146150684774591540994320681143592246875756374393058492417",
+      date:"24 Sept 2022"
     },
     {
       title: "Bloc Vault",
       description:
         "The BlocVault ecosystem is a suite of modules that will bring together all you need to trade and access your tokens online. Our products can be accessed online here or in your hand through the BlocVault App on the go. Our advanced architecture will set the bar for ecosystems of the future.",
       image: blocvault,
+      contract:"https://bscscan.com/address/0x592032513b329a0956b3f14d661119880f2361a6#writeContract",
+      audit:"https://github.com/expelee-co/Smart-Contract-Audit/tree/main/Block%20Vest%20Audit%20Details",
+      nft:"https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114259081114982429576146150684774591540994320681143592246875756387587198025729",
+      date:"26 Sept 2022"
     },
   ];
   //dynamic title show
@@ -211,6 +223,10 @@ function AuditPage() {
                 title={el.title}
                 image={el.image}
                 description={el.description}
+                contract={el.contract}
+                nft={el.nft}
+                audit={el.audit}
+                date={el.date}
               />
             </Grid>
           ))}
@@ -240,8 +256,9 @@ function AuditPage() {
           <Paper className={styles.panel}>
             <Typography
               variant="h6"
+              fontWeight="bold"
               // fontFamily="poppins"
-              className={styles.textGradient}
+              className={styles.auditDone}
             >
               Want to get your Audit Done?{" "}
             </Typography>

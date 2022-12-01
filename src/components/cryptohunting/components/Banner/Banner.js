@@ -39,8 +39,9 @@ function Banner() {
             variant="h2"
             style={{
               fontWeight: "bold",
+              color:"#3d75ed",
               marginBottom: 15,
-              fontFamily: "Montserrat",
+              // fontFamily: "Montserrat",
             }}
           >
            Expe Crypto Hunter
@@ -49,8 +50,8 @@ function Banner() {
             variant="subtitle2"
             style={{
               color: "darkgrey",
-              textTransform: "capitalize",
-              fontFamily: "Montserrat",
+              // textTransform: "capitalize",
+              // fontFamily: "Montserrat",
             }}
           >
             Get all the Info regarding your favorite Crypto Currency

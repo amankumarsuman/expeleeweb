@@ -229,7 +229,7 @@ const handleClick=()=>{
                                   >
                                     {/* <VerifiedUserIcon /> */}
                                     <Avatar
-                                  sx={{background:"transparent",marginLeft:-1}}
+                                  sx={{background:"grey",marginLeft:-1,color:"grey"}}
                                     
                                     >
 
@@ -387,11 +387,11 @@ const handleClick=()=>{
                                
                                 >
                                   <ListItemIcon
-                                  sx={{background:"transparent"}}
+                                  sx={{background:"transparent",color:"grey",}}
                                   
                                   >
                                     <Avatar
-                                  sx={{background:"transparent",marginLeft:-1}}
+                                  sx={{background:"grey",marginLeft:-1,color:"grey",}}
                                     
                                     >
 
@@ -479,11 +479,11 @@ const handleClick=()=>{
                                
                                 >
                                   <ListItemIcon
-                                  sx={{background:"transparent"}}
+                                  sx={{background:"transparent",color:"grey",}}
                                   
                                   >
                                     <Avatar
-                                  sx={{background:"transparent",marginLeft:-1}}
+                                  sx={{background:"grey",marginLeft:-1,color:"grey"}}
                                     
                                     >
 

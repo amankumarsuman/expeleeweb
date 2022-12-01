@@ -16,7 +16,7 @@
 }
 .textGradient{
     /* border: 1px solid red; */
-  
+  cursor: pointer;
     /* background: -webkit-linear-gradient( white,#33BBCF); */
     background: #3d75ed;
       -webkit-background-clip: text;

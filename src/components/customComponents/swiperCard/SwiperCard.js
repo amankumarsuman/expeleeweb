@@ -84,7 +84,7 @@ function SwiperCard() {
       link:"design"
     },
     {
-      title: "Marketing & Consultation",
+      title: "Expe Marketing",
       description:
         "With our team of experts marketers, get your Crypto project reached up by good investors in the market.",
       image: metanmore,

@@ -34,7 +34,11 @@ import { Paper,  Container,
   TableRow,
   TableHead,
   TableContainer,
-  Table, } from "@mui/material";
+  Table,
+  Select,
+  MenuItem,
+  Grid, } from "@mui/material";
+
 
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -46,7 +50,8 @@ export default function CoinsTable() {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
 
-  const { currency, symbol } = CryptoState();
+  const { currency, symbol,setCurrency } = CryptoState();
+ 
 
 //   const useStyles = makeStyles((theme) =>
 //   createStyles({
@@ -115,23 +120,45 @@ export default function CoinsTable() {
     );
   };
 
+
   return (
     <ThemeProvider theme={darkTheme}>
       <Container style={{ textAlign: "center" }}>
         <Typography
           variant="h4"
-          style={{ margin: 18, fontFamily: "Montserrat" }}
+          style={{ margin: 18, color:"#3d75ed"}}
         >
           Cryptocurrency Prices by Market Cap
         </Typography>
+       
+        {/* <Header/> */}
         <TextField
           label="Search For a Crypto Currency.."
           variant="outlined"
           
-          style={{ marginBottom: 20, width: "100%",background:"white" }}
+          style={{ marginBottom: 20, width: "100%",background:"#3d75ed" }}
           onChange={(e) => setSearch(e.target.value)}
         />
+             <div style={{background:"transparent",marginBottom:"2em",padding:"10px",display:"flex",justifyContent:"space-between"}}>
+
+<div>
+
+</div>
+<Select
+sx={{background:"#3d75ed",textAlign:"end"}}
+      variant="outlined"
+      labelId="demo-simple-select-label"
+      id="demo-simple-select"
+      value={currency}
+      style={{ width: 100, height: 40, marginLeft: 15 }}
+      onChange={(e) => setCurrency(e.target.value)}
+    >
+      <MenuItem value={"USD"}>USD</MenuItem>
+      <MenuItem value={"INR"}>INR</MenuItem>
+    </Select>
+  </div>
         <TableContainer component={Paper}>
+     
           {loading ? (
             <LinearProgress style={{ backgroundColor: "gold" }} />
           ) : (

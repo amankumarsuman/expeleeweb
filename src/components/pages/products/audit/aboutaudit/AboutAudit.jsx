@@ -30,7 +30,7 @@ function AboutAudit() {
               }}
               className={styles.textGradient}
             >
-              ABOUT EXPELEE AUDIT
+              About Expelee Audit
             </h1>
           </Grid>
         </Grid>

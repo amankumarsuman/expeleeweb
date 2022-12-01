@@ -20,6 +20,7 @@ import PlagiarismIcon from '@mui/icons-material/Plagiarism';
 import TokenIcon from '@mui/icons-material/Token';
 import styles from "./allaudit.module.css"
 import { ListItem, ListItemAvatar, ListItemText } from '@mui/material';
+import { Link } from 'react-router-dom';
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -43,13 +44,15 @@ const CustomizedListText = styled(ListItemText)`
                 
               },
 `;
-export default function AllAuditCard({title,image,description}) {
+export default function AllAuditCard({title,image,description,contract,nft,audit,date}) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
+  const handleNavigate = (link) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
   return (
     <div  className="social-icon">
 
@@ -58,8 +61,11 @@ export default function AllAuditCard({title,image,description}) {
       
       className={styles.textGradient}
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar  onClick={()=>handleNavigate(contract)} sx={{ bgcolor: red[500] }} aria-label="recipe">
+         
+            
             <GitHubIcon/>
+        
           </Avatar>
         }
         action={
@@ -69,7 +75,7 @@ export default function AllAuditCard({title,image,description}) {
         }
         
         title={title}
-        subheader="September 14, 2016"
+        subheader={date}
       />
       <CardMedia
         component="img"
@@ -89,9 +95,14 @@ export default function AllAuditCard({title,image,description}) {
             
           <PlagiarismIcon />
         </IconButton> */}
-          <ListItem>
+          <ListItem
+          sx={{cursor:"pointer"}}
+           onClick={()=>handleNavigate(contract)}
+          >
               <ListItemAvatar>
+                
                 <Avatar
+             
                   sx={{
                     border: "1.5px dotted white",
                     backgroundColor: "#0C352D",
@@ -99,6 +110,7 @@ export default function AllAuditCard({title,image,description}) {
                 >
                 <PlagiarismIcon />
                 </Avatar>
+              
               </ListItemAvatar>
               <CustomizedListText
                 primary="Contract"
@@ -106,7 +118,11 @@ export default function AllAuditCard({title,image,description}) {
               />
             </ListItem>
           <ListItem>
-              <ListItemAvatar>
+              <ListItemAvatar
+                onClick={()=>handleNavigate(audit)}
+          sx={{cursor:"pointer"}}
+              
+              >
                 <Avatar
                   sx={{
                     border: "1.5px dotted white",
@@ -122,7 +138,11 @@ export default function AllAuditCard({title,image,description}) {
               />
             </ListItem>
           <ListItem>
-              <ListItemAvatar>
+              <ListItemAvatar
+                onClick={()=>handleNavigate(nft)}
+          sx={{cursor:"pointer"}}
+              
+              >
                 <Avatar
                   sx={{
                     border: "1.5px dotted white",

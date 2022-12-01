@@ -133,7 +133,7 @@ function Footer() {
           onClick={()=>handleNavigate("https://metanmore.com/")}
             sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
           >
-            Marketing & Consultation
+           Expe Marketing
           </Typography>
           <Link to="nft">
           

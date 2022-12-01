@@ -76,8 +76,9 @@ export default function CustomizedAccordions({
           id="panel1d-header"
         >
           <Typography
-            variant="h3"
+            variant="h4"
             textAlign="center"
+            fontWeight="bold"
             className={styles.textGradient}
             display="flex"
             // fontFamily="poppins"
@@ -106,9 +107,11 @@ export default function CustomizedAccordions({
             <Grid item xs={12} md={6}>
               <div>
                 <Typography
-                  variant="h3"
+                  variant="h4"
                   textAlign="center"
                   marginBottom="2em"
+            fontWeight="bold"
+
                   className={styles.textGradient}
                 >
                   {heading}

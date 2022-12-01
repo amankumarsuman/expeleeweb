@@ -15,7 +15,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import medium from "../assets/medium.png";
+import medium from "../assets/mediumLogoW.png";
 import InfoIcon from "@mui/icons-material/Info";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import HandshakeIcon from "@mui/icons-material/Handshake";
@@ -60,7 +60,7 @@ export const links = [
             logo: <AddTaskIcon />,
           },
           {
-            name: "Marketing & Consultation",
+            name: "Expe Marketing",
             link: "https://metanmore.com/",
             logo: <SupportAgentIcon />,
           },
