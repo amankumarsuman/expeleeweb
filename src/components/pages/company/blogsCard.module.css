@@ -5,6 +5,7 @@
     margin: auto;
     border-radius: 25px; */
       /* border: 1px solid red; */
+      height:400 !important;
       background: linear-gradient(to right bottom,
               #1e1e1e,
               black,
@@ -16,6 +17,7 @@
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -o-border-radius: 5px;
+      
   }
   .textGradient {
       /* border: 1px solid red; */

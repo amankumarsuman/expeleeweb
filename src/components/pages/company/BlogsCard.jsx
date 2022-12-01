@@ -13,7 +13,7 @@ export default function BlogsCard({ image, heading, description, link,padding })
   return (
     <Card
       className={styles.blogsCardBackground}
-      sx={{ maxWidth: 345, borderRadius: "15px" }}
+      sx={{ maxWidth: 345, borderRadius: "15px",height:"500px" }}
     >
       <CardActionArea>
         <CardMedia  component="img" height="140" image={image} alt={heading} />
@@ -35,13 +35,14 @@ export default function BlogsCard({ image, heading, description, link,padding })
           </Typography>
         </CardContent>
       </CardActionArea>
-        {padding? <CardActions sx={{paddingBottom:padding}}>
+        {padding? <CardActions sx={{marginTop:`${padding}em`,textAlign:"center"}}>
         <Button
         
           onClick={() => handleNavigate(link)}
           size="small"
           color="primary"
           variant="contained"
+          sx={{background:"#3d75ed"}}
         >
           READ MORE
         </Button>
@@ -52,6 +53,8 @@ export default function BlogsCard({ image, heading, description, link,padding })
           size="small"
           color="primary"
           variant="contained"
+          sx={{background:"#3d75ed",textAlign:"center"}}
+
         >
           READ MORE
         </Button>

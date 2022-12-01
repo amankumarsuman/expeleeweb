@@ -17,7 +17,7 @@ function Blogs() {
             heading="What Is NFT all about?"
             description="NFT or Non-fungible token is a digital asset that portrays real-world objects such as videos, music, art, in-game items, and even memes. You can buy and sell NFTs online more often with cryptocurrency. Furthermore, the same underlying software used in crypto encodes them."
             link="https://medium.com/@expelee/what-is-nft-all-about-4c103aa7763a"
-            padding="3em"
+            padding={1}
           />
         </Grid>
         <Grid item xs={12} md={3}>
@@ -34,7 +34,7 @@ function Blogs() {
             heading="Exposing Brain Soup Token Scam"
             description="A project that had undergone auditing and KYC procedures launched its pre-sale on PinkSale.finance and ran off with 500 BNB from investors. though how? Read the blog to know how this occurred and what can be done to prevent similar events from occurring in the future."
             // link="https://medium.com/@expelee/breaking-into-the-blockchain-space-246e3940401d"
-            padding="5em"
+            padding={3}
           />
         </Grid>
         <Grid item xs={12} md={3}>
@@ -51,6 +51,8 @@ function Blogs() {
             heading="What is a Consortium Blockchain?"
             description="Blockchain is the latest and one of the most in-demand developments of the 21st century. Cryptocurrencies and bitcoins have become popular medium of exchange in the trading world today. Blockchain is a ledger and chain system-based network used for its application."
             link="https://medium.com/the-capital/what-is-a-consortium-blockchain-c336f011c781"
+            padding={3}
+          
           />
         </Grid>
       </Grid>

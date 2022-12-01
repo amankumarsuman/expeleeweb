@@ -69,7 +69,7 @@ export default function AnimatedButton({ text }) {
           </div>
         </motion.div>
         <motion.div
-         onClick={() => handleNavigate("https://t.me/Expelee")}
+         onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
           variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
           className="label"
         >

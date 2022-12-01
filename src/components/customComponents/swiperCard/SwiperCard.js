@@ -14,7 +14,7 @@ import audit from "../../assets/Auditp.jpg";
 import coinLevel from "../../assets/coinp.jpg";
 import expeDesign from "../../assets/Designp.jpg";
 import AliceCarousel from "react-alice-carousel";
-import kyc from "../../assets/aml-kyc.png";
+import kyc from "../../assets/KYC.jpg";
 import webDevelopment from "../../assets/Webdevp.jpg";
 
 import metanmore from "../../assets/Marketingp.jpg";
@@ -84,7 +84,7 @@ function SwiperCard() {
       link:"design"
     },
     {
-      title: "Meta N More ",
+      title: "Marketing & Consultation",
       description:
         "With our team of experts marketers, get your Crypto project reached up by good investors in the market.",
       image: metanmore,

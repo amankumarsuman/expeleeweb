@@ -94,6 +94,14 @@ function Footer() {
             Expelee Audits
           </Typography>
           </Link>
+          <Link to="/expe-vetting" style={{cursor:"pointer"}}>
+
+          <Typography
+            sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
+          >
+            Expelee Vetting
+          </Typography>
+          </Link>
 
           <Link to="/expe-diligence">
 
@@ -108,7 +116,15 @@ function Footer() {
           <Typography
             sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
           >
-            Expe Design
+            Contract Design
+          </Typography>
+          </Link>
+          <Link to="/expe-creator">
+         
+          <Typography
+            sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
+          >
+            Expe dApp Creator
           </Typography>
           </Link>
           
@@ -117,7 +133,7 @@ function Footer() {
           onClick={()=>handleNavigate("https://metanmore.com/")}
             sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
           >
-            Meta N More(Marketing)
+            Marketing & Consultation
           </Typography>
           <Link to="nft">
           
@@ -136,21 +152,14 @@ function Footer() {
           </Typography>
           </Link>
          
-          <Typography
+          {/* <Typography
                     style={{cursor:"pointer"}}
                     onClick={()=>handleNavigate("https://metanmore.com/")}
             sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
           >
             Expelee Consultors
-          </Typography>
-          <Link to="/coinLevel">
+          </Typography> */}
           
-          <Typography
-            sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
-          >
-            Coin Level
-          </Typography>
-          </Link>
         </Grid>
         <Grid item xs={12} md={2}>
           <Typography
@@ -164,6 +173,16 @@ function Footer() {
           >
             Services
           </Typography>
+
+          <Link to="/coinLevel">
+          
+          <Typography
+            sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
+          >
+            Coin Level
+          </Typography>
+          </Link>
+
           <Link to="/blockChainDevelopment">
           
           
@@ -178,7 +197,7 @@ function Footer() {
           <Typography
             sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
           >
-            Live Chart
+           Expe Crypto Hunter
           </Typography>
           </Link>
           <Link to="/scam">
@@ -186,7 +205,7 @@ function Footer() {
           <Typography
             sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
           >
-            Scam Page
+            Expe Scam Hunter
           </Typography>
           </Link>
           <Link to="/blogs">
@@ -195,7 +214,7 @@ function Footer() {
           <Typography
             sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
           >
-            Blogs
+            Expe Blogs
           </Typography>
           </Link>
           <Link to="/hyperledger">
@@ -281,7 +300,7 @@ function Footer() {
                       <span
                       style={{marginRight:"7px"}}
                         className={styles.linkDecoration}
-                        onClick={() => handleNavigate("https://t.me/Expelee")}
+                        onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
                       >
                         {/* <CircleDiv icon={<TelegramIcon />} name="telegram" /> */}
                         <Avatar

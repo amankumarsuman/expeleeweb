@@ -21,6 +21,9 @@ import Diversity3Icon from "@mui/icons-material/Diversity3";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import BookIcon from "@mui/icons-material/Book";
 import ForkRightIcon from "@mui/icons-material/ForkRight";
+import AddTaskIcon from '@mui/icons-material/AddTask';
+import HowToRegIcon from '@mui/icons-material/HowToReg';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 export const links = [
   {
     name: "Products",
@@ -38,7 +41,7 @@ export const links = [
           {
             name: "Expelee Vetting",
             link: "/expe-vetting",
-            logo: <VerifiedUserIcon />,
+            logo: <HowToRegIcon />,
           },
 
           { name: "Contract Design", link: "/design", logo: <ArchitectureIcon /> },
@@ -54,12 +57,12 @@ export const links = [
           {
             name: "Expe dApp Creator",
             link: "/expe-creator",
-            logo: <PhoneInTalkIcon />,
+            logo: <AddTaskIcon />,
           },
           {
-            name: "Meta N More",
+            name: "Marketing & Consultation",
             link: "https://metanmore.com/",
-            logo: <CurrencyBitcoinIcon />,
+            logo: <SupportAgentIcon />,
           },
           {
             name: "Expe Diligence(KYC)",
@@ -85,7 +88,7 @@ export const links = [
         // Head: "Blockchain",
         sublink: [
           {
-            name: "BlockChain Development",
+            name: "Blockchain Development",
             link: "/blockChainDevelopment",
             logo: <CurrencyBitcoinIcon />,
           },
@@ -115,7 +118,7 @@ export const links = [
         sublink: [
           {
             name: "Telegram",
-            link: "https://t.me/Expelee",
+            link: "https://t.me/Ritz_Expelee",
             logo: <TelegramIcon />,
           },
           {
@@ -138,7 +141,7 @@ export const links = [
             link: "https://github.com/expelee-co",
             logo: <GitHubIcon />,
           },
-          { name: "Medium", link: "https://medium.com/@expelee", logo: "" },
+          { name: "Medium", link: "https://medium.com/@expelee", logo: <img src={medium} width="80%"/> },
         ],
       },
     ],

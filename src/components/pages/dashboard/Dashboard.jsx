@@ -146,7 +146,7 @@ function Dashboard() {
               </Grid> */}
               <Grid item xs={12} md={6}>
                 <SimpleButton
-                  onClick={() => handleNavigate("https://t.me/Expelee")}
+                  onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
                   sx={{
                     width: "14vu",
                     padding: "1.5em",

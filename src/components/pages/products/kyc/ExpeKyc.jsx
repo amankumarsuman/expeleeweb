@@ -3,7 +3,7 @@ import React from "react";
 import { FormMainHeadingContainer } from "../../../coreComponents/FormMainHeadingContainer";
 import kyc from "../../../assets/KYCNew.png";
 import styles from "./expeKyc.module.css";
-import kycbg from "../../../assets/kycbg.png";
+import kycbg from "../../../assets/kyc.png";
 import { SimpleButton } from "../../services/tokenGeneration/CustomButton";
 import GoToTop from "../../../coreComponents/GoToTop";
 function ExpeKyc() {
@@ -15,7 +15,7 @@ function ExpeKyc() {
       <FormMainHeadingContainer headingText="Expe KYC">
         <Grid sx={{ marginTop: "2em" }} container>
           <Grid item xs={12} md={6}>
-            <img style={{ marginTop: "1em" }} src={kyc} alt="vetting pic" />
+            <img style={{ marginTop: "1em" }} src={kycbg} alt="vetting pic" />
           </Grid>
           <Grid item xs={12} md={6}>
             <Paper
@@ -159,7 +159,7 @@ function ExpeKyc() {
             </Paper>
           </Grid>
           <Grid sx={{ textAlign: "center" }} item xs={12} md={12}>
-            <img src={kycbg} alt="vettingprocess" />
+            <img src={kyc} alt="vettingprocess" />
           </Grid>
         </Grid>
         <Grid

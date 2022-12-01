@@ -10,7 +10,7 @@ const Button = () => {
     
     <button
    
-    onClick={() => handleNavigate("https://t.me/Expelee")}
+    onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
       style={{ marginTop: "-5px", fontWeight: "bold",   }}
       className="bg-primary text-white  px-6 p-4 mr-5  "
     >

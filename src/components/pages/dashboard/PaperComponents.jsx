@@ -3,7 +3,7 @@ import { Divider, Grid, Paper, Typography, useTheme } from "@mui/material";
 import styles from "./dashboard.module.css";
 import CountUp from "react-countup";
 import { tokens } from "../../../theme";
-function PaperComponent({count1="10",name1="Products",count2="2000",name2="Community Members",count3="20",name3="Partners",count4="100",name4="Happy Clients"}) {
+function PaperComponent({count1="10",name1="Products",count2="2000",name2="Community Members",count3="10",name3="Partners",count4="100",name4="Happy Clients"}) {
  
   const theme = useTheme();
   // const theme = useTheme();

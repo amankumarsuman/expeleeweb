@@ -51,7 +51,7 @@ function RoadMap() {
               roadmap we will be following in our journey.
             </Typography>
             <AnimatedButton
-              onClick={() => handleNavigate("https://t.me/Expelee")}
+              onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
               text={"Get Started"}
             />
           </div>

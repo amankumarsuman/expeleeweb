@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,lazy } from "react";
 import Navbar from "./components/navbar/Navbar.jsx";
 import styles from "./app.module.css";
 import Dashboard from "./components/pages/dashboard/Dashboard.jsx";

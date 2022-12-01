@@ -1,4 +1,5 @@
 import {
+  Avatar,
   List,
   ListItem,
   ListItemButton,
@@ -131,10 +132,10 @@ const handleClick=()=>{
                                   <CustomizedListText primary={slink.name} />
                                   {/* </Link> */}
                                 </ListItemButton>
-                              ) : slink.link === "https://t.me/Expelee" ? (
+                              ) : slink.link === "https://t.me/Ritz_Expelee" ? (
                                 <ListItemButton
                                   onClick={() =>
-                                    handleNavigate("https://t.me/Expelee")
+                                    handleNavigate("https://t.me/Ritz_Expelee")
                                   }
                                 >
                                   <ListItemIcon>
@@ -222,9 +223,18 @@ const handleClick=()=>{
                                     )
                                   }
                                 >
-                                  <ListItemIcon>
+                                  <ListItemIcon 
+                                  sx={{background:"transparent"}}
+                                  
+                                  >
                                     {/* <VerifiedUserIcon /> */}
+                                    <Avatar
+                                  sx={{background:"transparent",marginLeft:-1}}
+                                    
+                                    >
+
                                     {slink.logo}
+                                    </Avatar>
                                   </ListItemIcon>
                                   <Link to={slink.link}>
                                     <CustomizedListText primary={slink.name} />
@@ -284,10 +294,10 @@ const handleClick=()=>{
                                   <CustomizedListText primary={slink.name} />
                                   {/* </Link> */}
                                 </ListItemButton>
-                              ) : slink.link === "https://t.me/Expelee" ? (
+                              ) : slink.link === "https://t.me/Ritz_Expelee" ? (
                                 <ListItemButton
                                   onClick={() =>
-                                    handleNavigate("https://t.me/Expelee")
+                                    handleNavigate("https://t.me/Ritz_Expelee")
                                   }
                                 >
                                   <ListItemIcon>
@@ -374,10 +384,20 @@ const handleClick=()=>{
                                       "https://medium.com/@expelee"
                                     )
                                   }
+                               
                                 >
-                                  <ListItemIcon>
-                                    {/* <VerifiedUserIcon /> */}
+                                  <ListItemIcon
+                                  sx={{background:"transparent"}}
+                                  
+                                  >
+                                    <Avatar
+                                  sx={{background:"transparent",marginLeft:-1}}
+                                    
+                                    >
+
                                     {slink.logo}
+                                    </Avatar>
+                                    {/* <VerifiedUserIcon /> */}
                                   </ListItemIcon>
                                   <Link to={slink.link}>
                                     <CustomizedListText primary={slink.name} />
@@ -446,23 +466,54 @@ const handleClick=()=>{
                   >
                     {slinks.sublink.map((slink) => (
                       <List>
+                        
                         <ListItem disablePadding>
-                          <ListItemButton  
+                          {slink.link ===
+                                "https://medium.com/@expelee" ? (
+                                <ListItemButton
+                                  onClick={() =>
+                                    handleNavigate(
+                                      "https://medium.com/@expelee"
+                                    )
+                                  }
+                               
+                                >
+                                  <ListItemIcon
+                                  sx={{background:"transparent"}}
+                                  
+                                  >
+                                    <Avatar
+                                  sx={{background:"transparent",marginLeft:-1}}
+                                    
+                                    >
+
+                                    {slink.logo}
+                                    </Avatar>
+                                    {/* <VerifiedUserIcon /> */}
+                                  </ListItemIcon>
+                                  <Link to={slink.link} >
+                                    <CustomizedListTextMobile primary={slink.name} />
+                                  </Link>
+                                </ListItemButton>
+                              ) :
+                              <ListItemButton  
                           
-                          // onClick={() => {
-                          //   setOpen(false)
-                          //   setshows(false)
-                          //   }}
-                          onClick={handleClick}
-                            
-                            >
-                            <ListItemIcon sx={{ color: "white" }}>
-                              {slink.logo}
-                            </ListItemIcon>
-                            <Link to={slink.link}>
-                              <CustomizedListTextMobile primary={slink.name} />
-                            </Link>
-                          </ListItemButton>
+                              // onClick={() => {
+                              //   setOpen(false)
+                              //   setshows(false)
+                              //   }}
+                              onClick={handleClick}
+                                
+                                >
+                                <ListItemIcon sx={{ color: "white" }}>
+                                  {slink.logo}
+                                </ListItemIcon>
+                                <Link to={slink.link}>
+                                  <CustomizedListTextMobile primary={slink.name} />
+                                </Link>
+                              </ListItemButton>
+                              }
+                        
                         </ListItem>
                       </List>
                       // <li className="py-3 pl-14">

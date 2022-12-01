@@ -35,7 +35,7 @@ import {
 import "react-alice-carousel/lib/alice-carousel.css";
 import ProductCard from "./ProductCard";
 // import { margin } from '@mui/system';
-import chart from "../../assets/chart.jpg";
+import chart from "../../assets/cryptohunter.jpg";
 import ServiceCard from "./ServiceCards";
 
 function SwiperCard() {
