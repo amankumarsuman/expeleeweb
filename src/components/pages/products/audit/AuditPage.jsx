@@ -137,13 +137,13 @@ function AuditPage() {
         <img src={auditProcess} alt="auditprocess" />
         {/* <Grid item md={12}> */}
         <PaperComponent
-          count="100"
+          count1="100"
           name1="PROJECT AUDITED"
           count2="100"
           name2="MILLION DOLLARS SAVED"
           count3="1000"
           name3="VULNERABILITIES FIXED"
-          count4="5"
+          count4="10"
           name4="LAUNCHPADS"
         />
         {/* </Grid> */}
