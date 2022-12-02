@@ -73,8 +73,8 @@ function Team() {
             name="Aman Kumar"
             image={aman}
             desg="Front End Developer"
-            linkedLink="https://www.linkedin.com/in/divyesh16/"
-            telegramLink="https://t.me/DG_Expelee"
+            linkedLink="https://www.linkedin.com/in/aman-kumar-b683b614b/"
+            telegramLink="https://t.me/fortuneprime"
             resize={true}
             imageResize={1}
           />
