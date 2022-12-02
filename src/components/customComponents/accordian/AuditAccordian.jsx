@@ -12,7 +12,8 @@ const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
   "& .css-v84d5j-MuiSvgIcon-root":{
-display:"none"
+
+    display:"none"
   },
   border: `1px solid ${theme.palette.divider}`,
   "&:not(:last-child)": {
