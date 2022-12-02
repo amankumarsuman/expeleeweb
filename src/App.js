@@ -51,6 +51,7 @@ import {
 } from "react-scroll-motion";
 import ResponsiveAppBar from "./components/navbar/NavbarResponsive.jsx";
 import NavbarResponsive from "./components/navbar/NavbarResponsive.jsx";
+import ExpeDapp from "./components/pages/products/dapp/DappCreator.jsx";
 
 function App() {
   let { id } = useParams();
@@ -103,6 +104,7 @@ function App() {
           <Route path="/hyperledger" element={<ExpeHyperLedger />} />
 
           <Route path="/live-chart" element={<Homepage />} />
+          <Route path="/expe-creator" element={<ExpeDapp />} />
 
           <Route
             path="/blockChainDevelopment"
