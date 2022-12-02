@@ -13,7 +13,7 @@ const Accordion = styled((props) => (
 ))(({ theme }) => ({
   "& .css-v84d5j-MuiSvgIcon-root":{
 
-    display:"none"
+    display:"none !important"
   },
   border: `1px solid ${theme.palette.divider}`,
   "&:not(:last-child)": {
