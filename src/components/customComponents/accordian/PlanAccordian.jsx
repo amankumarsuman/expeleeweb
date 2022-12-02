@@ -15,7 +15,7 @@ import yearCardHeading from "../../assets/yearPlanHeader.png";
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters={true} elevation={0} square {...props} />
 ))(({ theme }) => ({
-  "& .css-v84d5j-MuiSvgIcon-root":{
+  "& .MuiSvgIcon-root":{
     display:"none"
       },
   // root: {
