@@ -132,6 +132,22 @@ const Shoes = styled(motion.div)`
     user-select: none;
   }
 `;
+const ImageFrame = styled(motion.div)`
+  width: auto;
+  height: 200px;
+  z-index: 99;
+  user-select: none;
+  // margin-right: 3em;
+  // margin-left: 2em;
+  // margin-top: 1em;
+  z: 10000;
+
+  img {
+    width: auto;
+    height: 103%;
+    user-select: none;
+  }
+`;
 const amanpics = styled(motion.div)`
   width: auto;
   height: 200px;
@@ -196,6 +212,7 @@ export function TeamCard(props) {
   const rotateY = useTransform(x, [-100, 100], [-30, 30]);
 
   return (
+    // {imageResize?}
     <CardWrapper>
       <CardContainer
         style={{ x, y, rotateX, rotateY, z: 100 }}
@@ -205,7 +222,47 @@ export function TeamCard(props) {
         whileTap={{ cursor: "grabbing" }}
       >
         <TopContainer>
-          {props.resize ? (
+          <CircleWrapper>
+            <Circle />
+          </CircleWrapper>
+          <ShoesWrapper>
+            {props.imageResize ? (
+              <ImageFrame
+                style={{
+                  x,
+                  y,
+                  rotateX,
+                  rotateY,
+                  // rotate: "-25deg",
+                  z: 100000,
+                  borderRadius: "15px",
+                }}
+                drag
+                dragElastic={0.12}
+                whileTap={{ cursor: "grabbing" }}
+              >
+                <img src={props.image} />
+              </ImageFrame>
+            ) : (
+              <Shoes
+                style={{
+                  x,
+                  y,
+                  rotateX,
+                  rotateY,
+                  // rotate: "-25deg",
+                  z: 100000,
+                  borderRadius: "15px",
+                }}
+                drag
+                dragElastic={0.12}
+                whileTap={{ cursor: "grabbing" }}
+              >
+                <img src={props.image} />
+              </Shoes>
+            )}
+          </ShoesWrapper>
+          {/* {props.resize ? (
             <CircleWrapperResize>
               <CircleResize />
             </CircleWrapperResize>
@@ -213,11 +270,9 @@ export function TeamCard(props) {
             <CircleWrapper>
               <Circle />
             </CircleWrapper>
-          )}
-          {/* <CircleWrapper>
-            <Circle />
-          </CircleWrapper> */}
-          {props.resize ? (
+          )} */}
+
+          {/* {props.resize ? (
             <ShoesWrapperResize>
               <ShoesResize
                 style={{
@@ -240,11 +295,6 @@ export function TeamCard(props) {
             <ShoesWrapperAdedo>
               <ShoesAdedo
                 style={{
-                  // x,
-                  // y,
-                  // rotateX,
-                  // rotateY,
-                  // rotate: "-25deg",
                   z: 100000,
                   borderRadius: "15px",
                 }}
@@ -260,11 +310,6 @@ export function TeamCard(props) {
               {props.width ? (
                 <amanPics
                   style={{
-                    // x,
-                    // y,
-                    // rotateX,
-                    // rotateY,
-                    // rotate: "-25deg",
                     z: 100000,
                     borderRadius: "15px",
                   }}
@@ -277,11 +322,6 @@ export function TeamCard(props) {
               ) : (
                 <Shoes
                   style={{
-                    // x,
-                    // y,
-                    // rotateX,
-                    // rotateY,
-                    // rotate: "-25deg",
                     z: 100000,
                     borderRadius: "15px",
                   }}
@@ -293,8 +333,7 @@ export function TeamCard(props) {
                 </Shoes>
               )}
             </ShoesWrapper>
-          )}
-          {/* <NikeText>EXPELEE TEAM</NikeText> */}
+          )} */}
         </TopContainer>
         <BottomContainer>
           <TeamDetails

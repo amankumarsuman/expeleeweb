@@ -52,7 +52,8 @@ function Team() {
             desg="Technical Officer"
             linkedLink="https://www.linkedin.com/in/anay-indani-b84b08197/"
             telegramLink="https://t.me/Anay_Expelee"
-            resize={true}
+            // resize={true}
+            imageResize={1}
           />
         </Grid>
         <Grid item xs={12} md={3}>
@@ -63,6 +64,7 @@ function Team() {
             linkedLink="https://www.linkedin.com/in/divyesh16/"
             telegramLink="https://t.me/DG_Expelee"
             resize={true}
+            imageResize={1}
           />
         </Grid>
         <Grid sx={{ marginTop: "3em" }} item xs={12} md={3}>
@@ -74,6 +76,7 @@ function Team() {
             linkedLink="https://www.linkedin.com/in/divyesh16/"
             telegramLink="https://t.me/DG_Expelee"
             resize={true}
+            imageResize={1}
           />
         </Grid>
         <Grid sx={{ marginTop: "3em" }} item xs={12} md={3}>
@@ -85,6 +88,7 @@ function Team() {
             linkedLink="https://www.linkedin.com/in/divyesh16/"
             telegramLink="https://t.me/DG_Expelee"
             // resize={true}
+            imageResize={1}
           />
         </Grid>
       </Grid>
