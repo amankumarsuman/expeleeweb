@@ -46,6 +46,7 @@ function Blogs() {
             heading="Breaking into the Blockchain Space"
             description="The financial and social globe has evolved in a very unique way in the past decade, making data the most precious asset one possesses. Data has become one of the sole reasons for a company’s growth and success. It helps one predict trends, identify opportunities and stay ahead in the competition by providing insights on customer behavior and market situations before they actually happen."
             link="https://medium.com/@expelee/breaking-into-the-blockchain-space-246e3940401d"
+            center={true}
           />
         </Grid>
         <Grid item xs={12} md={3}>

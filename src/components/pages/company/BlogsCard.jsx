@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import styles from "./blogsCard.module.css";
 import { SimpleButton } from "../services/tokenGeneration/CustomButton";
-export default function BlogsCard({ image, heading, description, link,padding }) {
+export default function BlogsCard({ image, heading, description, link,padding,center }) {
   const handleNavigate = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
   };
@@ -54,7 +54,7 @@ export default function BlogsCard({ image, heading, description, link,padding })
           >
             Get Your KYC
           </SimpleButton> */}
-        {padding? <CardActions sx={{marginTop:`${padding}em`,display:"flex",justifyContent:"center",}}>
+        {padding ? <CardActions sx={{marginTop:`${padding}em`,display:"flex",justifyContent:"center",}}>
         <SimpleButton
         
           onClick={() => handleNavigate(link)}
@@ -70,7 +70,7 @@ export default function BlogsCard({ image, heading, description, link,padding })
         >
           Read More
         </SimpleButton>
-      </CardActions>: <CardActions >
+      </CardActions>: <CardActions sx={{display:"flex",justifyContent:"center"}} >
         <SimpleButton
         
           onClick={() => handleNavigate(link)}

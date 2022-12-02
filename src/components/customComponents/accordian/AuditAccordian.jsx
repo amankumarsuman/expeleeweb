@@ -11,6 +11,9 @@ import { Grid } from "@mui/material";
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
+  "& .css-v84d5j-MuiSvgIcon-root":{
+display:"none"
+  },
   border: `1px solid ${theme.palette.divider}`,
   "&:not(:last-child)": {
     borderBottom: 0,
@@ -66,6 +69,7 @@ export default function CustomizedAccordions({
   return (
     <div style={{ marginTop: "5em" }}>
       <Accordion
+      
         sx={{ background: "transparent" }}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}

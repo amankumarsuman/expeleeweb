@@ -15,7 +15,9 @@ import yearCardHeading from "../../assets/yearPlanHeader.png";
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters={true} elevation={0} square {...props} />
 ))(({ theme }) => ({
-
+  "& .css-v84d5j-MuiSvgIcon-root":{
+    display:"none"
+      },
   // root: {
   //   "&$expanded": {
   //     margin: "auto"
@@ -39,7 +41,7 @@ const AccordionSummary = styled((props) => (
   />
 ))(({ theme }) => ({
   top:30,
-  left:-10,
+  left:3,
   backgroundColor:
     theme.palette.mode === 'dark'
       ? 'rgba(255, 255, 255, .05)'
@@ -100,7 +102,7 @@ export default function PlanAccordian() {
           {/* <Typography> */}
         <img 
               style={{position:"relative",left:8,borderRadius:"0 10px 20px 20px"}}
-              width="93% !important"
+              width="98% !important"
 
         src={blockchain}/>
           {/* </Typography> */}
@@ -159,7 +161,7 @@ export default function PlanAccordian() {
           <Typography>
           <img
               style={{position:"relative",left:8,borderRadius:"0 0px 20px 20px"}}
-              width="93% !important"
+              width="98% !important"
           
           src={threeYearPlanCard} />
           </Typography>
