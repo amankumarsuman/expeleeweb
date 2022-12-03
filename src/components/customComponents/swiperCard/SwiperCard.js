@@ -1,44 +1,28 @@
 import React from "react";
-import hedgepay from "../../assets/hedge-pay.png";
-import hamiNetwork from "../../assets/hami.png";
-import gemped from "../../assets/gempad.png";
-import lbank from "../../assets/lbank.png";
-import luxpad from "../../assets/luxpad.png";
-import newToken from "../../assets/newtokenlogo.png";
-import pandasale from "../../assets/pandasale.png";
-import phoenix from "../../assets/phoenix.png";
-import probit from "../../assets/probit.png";
-import presale from "../../assets/presaleworld.png";
-import bitcourier from "../../assets/bitcourierNew.png";
+
 import audit from "../../assets/Auditp.jpg";
-import coinLevel from "../../assets/coinp.jpg";
+
 import expeDesign from "../../assets/Designp.jpg";
 import AliceCarousel from "react-alice-carousel";
 import kyc from "../../assets/KYC.jpg";
 import webDevelopment from "../../assets/Webdevp.jpg";
 
 import metanmore from "../../assets/Marketingp.jpg";
-import dapp from "../../assets/dApp.jpg";
+import dapp from "../../assets/dappn.jpg";
 import launchpad from "../../assets/Launchpadp.jpg";
 import vettingpic from "../../assets/Vettingp.jpg";
 import scanner from "../../assets/Scannerp.jpg";
 import nft from "../../assets/NFTp.jpg";
 
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
+
 import "react-alice-carousel/lib/alice-carousel.css";
 import ProductCard from "./ProductCard";
 // import { margin } from '@mui/system';
 
 function SwiperCard() {
-  const handleNavigate = (link) => {
-    window.open(link, "_blank", "noopener,noreferrer");
-  };
+  // const handleNavigate = (link) => {
+  //   window.open(link, "_blank", "noopener,noreferrer");
+  // };
   const item = [
     {
       title: "Expe Diligence (KYC)",
