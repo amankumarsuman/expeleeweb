@@ -45,7 +45,7 @@ import {
 } from "react-scroll-motion";
 import AliceCarousel from "react-alice-carousel";
 import PartnerAliceCarousel from "./PartnerAliceCarousel";
-import dashboardPic from "../../assets/bg.png";
+import dashboardPic from "../../assets/bg1.png";
 import GoToTop from "../../coreComponents/GoToTop";
 
 function Dashboard() {

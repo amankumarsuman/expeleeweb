@@ -38,6 +38,7 @@ import { Paper,  Container,
   Select,
   MenuItem,
   Grid, } from "@mui/material";
+import { CssTextField } from "../../coreComponents/CustomInputField";
 
 
 export function numberWithCommas(x) {
@@ -132,11 +133,11 @@ export default function CoinsTable() {
         </Typography>
        
         {/* <Header/> */}
-        <TextField
+        <CssTextField
           label="Search For a Crypto Currency.."
           variant="outlined"
           
-          style={{ marginBottom: 20, width: "100%",background:"#3d75ed" }}
+          style={{ marginBottom: 20, width: "100%",background:"white",borderColor:"blue" }}
           onChange={(e) => setSearch(e.target.value)}
         />
              <div style={{background:"transparent",marginBottom:"2em",padding:"10px",display:"flex",justifyContent:"space-between"}}>
@@ -145,7 +146,7 @@ export default function CoinsTable() {
 
 </div>
 <Select
-sx={{background:"#3d75ed",textAlign:"end"}}
+sx={{background:"white",textAlign:"end"}}
       variant="outlined"
       labelId="demo-simple-select-label"
       id="demo-simple-select"

@@ -42,8 +42,10 @@ function ExpeDapp() {
             </Typography>
             <Grid item xs={12} md={12}>
             <Typography
-              variant="h4"
+              variant="h6"
               textAlign="center"
+              fontWeight="bold"
+
               className={styles.textGradient}
             >
               How Do We Create Successful dApps at Expelee? (Five Steps)

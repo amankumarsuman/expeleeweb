@@ -5,20 +5,20 @@ import TextField from "@mui/material/TextField";
 
 export const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
-    color: "black",
+    color: "green",
   },
   "& .MuiInput-underline:after": {
-    borderBottomColor: "black",
+    borderBottomColor: "blue",
   },
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
-      borderColor: "grey",
+      borderColor: "blue",
     },
     "&:hover fieldset": {
-      borderColor: "black",
+      borderColor: "green",
     },
     "&.Mui-focused fieldset": {
-      borderColor: "black",
+      borderColor: "blue",
     },
   },
 });

@@ -23,13 +23,19 @@ console.log(shows,"shows")
             >
               <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
             </div>
+            <div className="md:hidden sm:block">
 
+            <Link to="/" >
+                Home
+              </Link>
+            </div>
             <Link
               style={{
                 marginLeft: "3em",
               }}
               to="/"
             >
+           
               <img
                 src={Logo}
                 width="45%"
@@ -37,6 +43,7 @@ console.log(shows,"shows")
                 className="md:cursor-pointer sm:cursor-pointer"
               />
             </Link>
+           
           </div>
           <ul className="md:flex hidden   items-center gap-5 mr-10 font-[Poppins]">
             <li>
@@ -75,7 +82,7 @@ console.log(shows,"shows")
               }}
               className="sticky top-0 z-50"
             >
-             <NavLinks shows={shows} setShows={setShows} setOpen={open} />
+             <NavLinks shows={shows} setShows={setShows} setOpen={setOpen} />
             </div>:null}
             
           </ul>

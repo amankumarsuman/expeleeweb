@@ -52,6 +52,9 @@ import {
 import ResponsiveAppBar from "./components/navbar/NavbarResponsive.jsx";
 import NavbarResponsive from "./components/navbar/NavbarResponsive.jsx";
 import ExpeDapp from "./components/pages/products/dapp/DappCreator.jsx";
+import ScamCard from "./components/pages/services/scam/ScamCard.jsx";
+import Scam from "./components/pages/services/scam/Scam.jsx";
+import GenerateToken from "./components/pages/services/tokenGeneration/TokenGeneration.jsx";
 
 function App() {
   let { id } = useParams();
@@ -89,6 +92,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="audit" element={<AuditPage />} />
+          <Route path="scam" element={<Scam />} />
+          <Route path="token" element={<GenerateToken />} />
+
           <Route path="audit/all-audit" element={<AllAudit />} />
           <Route path="scanner" element={<Scanner />} />
           <Route path="expe-vetting" element={<ExpeVetting />} />

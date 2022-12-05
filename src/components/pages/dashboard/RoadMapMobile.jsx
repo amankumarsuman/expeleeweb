@@ -88,7 +88,7 @@ export default function CustomizedAccordions() {
         >
         <img 
               style={{left:10,borderRadius:"0 10px 20px 20px",marginLeft:"0.3em"}}
-              width="89% !important"
+              width="91% !important"
 
         src={blockchain}/>
         </AccordionDetails>
@@ -111,7 +111,7 @@ export default function CustomizedAccordions() {
         <AccordionDetails>
         <img 
              style={{left:8,borderRadius:"0 0 20px 20px",marginLeft:"0.3em"}}
-             width="78% !important"
+             width="91% !important"
           
           src={quarterPlanCard}/>
         </AccordionDetails>
@@ -130,7 +130,7 @@ export default function CustomizedAccordions() {
         <AccordionDetails>
         <img
               style={{borderRadius:"0 0px 20px 20px",marginLeft:"0.3em"}}
-              width="90% !important"
+              width="91% !important"
           
           src={threeYearPlanCard} />
         </AccordionDetails>

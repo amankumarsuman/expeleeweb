@@ -31,15 +31,7 @@ function Blogs() {
 
           />
         </Grid>
-        <Grid item xs={12} md={3}>
-          <BlogsCard
-            image={brain}
-            heading="Exposing Brain Soup Token Scam"
-            description="A project that had undergone auditing and KYC procedures launched its pre-sale on PinkSale.finance and ran off with 500 BNB from investors. though how? Read the blog to know how this occurred and what can be done to prevent similar events from occurring in the future."
-            // link="https://medium.com/@expelee/breaking-into-the-blockchain-space-246e3940401d"
-            padding={4}
-          />
-        </Grid>
+     
         <Grid item xs={12} md={3}>
           <BlogsCard
             image={blockchainblog}

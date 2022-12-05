@@ -24,6 +24,7 @@ import ForkRightIcon from "@mui/icons-material/ForkRight";
 import AddTaskIcon from '@mui/icons-material/AddTask';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import AttractionsIcon from '@mui/icons-material/Attractions';
 export const links = [
   {
     name: "Products",
@@ -105,6 +106,7 @@ export const links = [
             logo: <EventSeatIcon />,
           },
           { name: "Coin Level", link: "/coinLevel", logo: <LeaderboardIcon /> },
+          { name: "Generate Token", link: "/token", logo: <AttractionsIcon /> },
         ],
       },
     ],

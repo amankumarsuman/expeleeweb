@@ -3,7 +3,7 @@ import { Divider, Grid, Paper, TextField, Typography } from "@mui/material";
 import { useState } from "react";
 import { Box } from "@mui/system";
 import styles from "./generateToken.module.css";
-import { ColorButton } from "./CustomButton";
+import { ColorButton, SimpleButton } from "./CustomButton";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import { FormMainHeadingContainer } from "../../../coreComponents/FormMainHeadingContainer";
 import TokenIcon from "@mui/icons-material/Token";
@@ -47,13 +47,16 @@ function GenerateToken() {
   //console to show the data
   console.log(formData);
 
+  const handleNavigate = (link) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
   //dynamic title show
   useDocumentTitle("GenerateToken-Expelee");
   return (
-    <div style={{ padding: "1em", marginTop: "5em" }}>
+    <div style={{ padding: "1em", marginTop: "2em" }}>
       <FormMainHeadingContainer
-        headingText="GENERATE TOKEN"
-        headingIcon={<TokenIcon />}
+        headingText="Generate Token"
+        headingIcon=""
       >
         <form onSubmit={handleSubmit}>
           <Paper
@@ -73,7 +76,7 @@ function GenerateToken() {
                 </Typography>
               </Grid>
               <Grid item xs={12} md={8}>
-                <Paper elevation={5}>
+                <Paper sx={{background:"#C0C0C0"}} elevation={5}>
                   <div className={styles.textFieldDiv}>
                     <CssTextField
                       label="TOKEN NAME[eg:ETHEREUM,BITCOIN]"
@@ -119,9 +122,9 @@ function GenerateToken() {
               </Grid>
             </Grid>
             <Divider className={styles.divider} />
-            <Grid container spacing={2} sx={{ marginTop: "2%" }}>
+            <Grid container spacing={2} sx={{ marginTop: "2%", }}>
               <Grid item xs={12} md={4}>
-                <h1>Buy Taxes</h1>
+                <h1 className={styles.heading}>Buy Taxes</h1>
                 <Typography>
                   provide buy tax rates across in range of 0 to 10%
                 </Typography>
@@ -132,6 +135,7 @@ function GenerateToken() {
                   sx={{
                     paddingBottom: "2em",
                     paddingTop: "2em",
+                    background:"#C0C0C0"
                   }}
                 >
                   <div className={styles.textFieldDiv}>
@@ -182,7 +186,7 @@ function GenerateToken() {
 
             <Grid container spacing={2} sx={{ marginTop: "2%" }}>
               <Grid item xs={12} md={4}>
-                <h1>Sell Taxes</h1>
+                <h1 className={styles.heading}>Sell Taxes</h1>
                 <Typography>
                   provide sell tax rates across in range of 0 to 10%
                 </Typography>
@@ -193,6 +197,7 @@ function GenerateToken() {
                   sx={{
                     paddingBottom: "2em",
                     paddingTop: "2em",
+                    background:"#C0C0C0"
                   }}
                 >
                   <div className={styles.textFieldDiv}>
@@ -239,12 +244,24 @@ function GenerateToken() {
                 </Paper>
                 <Grid container>
                   <Grid item xs={12} md={12}>
-                    <ColorButton type="submit" fullWidth variant="contained">
-                      <span className={styles.saveText}>SUBMIT</span>
-                      <span className={styles.saveBtn}>
-                        <TelegramIcon className={styles.telegramIcon} />
-                      </span>
-                    </ColorButton>
+                    
+            <SimpleButton
+              onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
+              sx={{
+                width: "250px",
+
+                padding: "1.5em",
+                // fontFamily: "poppins",
+                color: "white",
+                // fontSize: "15px",
+                fontSize: "1em",
+                fontWeight: "bold",
+                background: "#3d75ed",
+              }}
+              variant="contained"
+            >
+              Contact Us
+            </SimpleButton>
                   </Grid>
                 </Grid>
               </Grid>
