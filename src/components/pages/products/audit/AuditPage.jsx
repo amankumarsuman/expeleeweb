@@ -25,6 +25,10 @@ import PaperComponent from "./PaperComponent";
 import GoToTop from "../../../coreComponents/GoToTop";
 // import { MdOutlineSchedule } from 'react-icons';
 function AuditPage() {
+  const handleNavigate = (link) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
+
   const data = [
     {
       title: "Fomo Lab",
@@ -232,9 +236,9 @@ function AuditPage() {
           ))}
         </Grid>
         <Grid sx={{ textAlign: "center", marginTop: "2em" }} xs={12} md={12}>
-          <Link to="/audit/all-audit">
+          {/* <Link to="/audit/all-audit"> */}
             <SimpleButton
-              // onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
+              onClick={() => handleNavigate("https://github.com/expelee-co")}
               sx={{
                 width: "50% !important",
                 padding: "1.5em",
@@ -249,7 +253,7 @@ function AuditPage() {
             >
               See All Audit
             </SimpleButton>
-          </Link>
+          {/* </Link> */}
         </Grid>
         {/* </Paper> */}
         <Grid sx={{ marginTop: "3em" }} item xs={12} md={12}>
