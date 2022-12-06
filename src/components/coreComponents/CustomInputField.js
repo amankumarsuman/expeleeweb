@@ -5,7 +5,7 @@ import TextField from "@mui/material/TextField";
 
 export const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
-    color: "green",
+    color: "blue",
   },
   "& .MuiInput-underline:after": {
     borderBottomColor: "blue",
@@ -15,7 +15,7 @@ export const CssTextField = styled(TextField)({
       borderColor: "blue",
     },
     "&:hover fieldset": {
-      borderColor: "green",
+      borderColor: "blue",
     },
     "&.Mui-focused fieldset": {
       borderColor: "blue",

@@ -4,6 +4,7 @@ import Logo from "../assets/ExpeleeLogoLight.png";
 import { ScrollToChangeNavbarColor } from "../coreComponents/themeStyle";
 import Button from "./Button";
 import NavLinks from "./NavLinks";
+import HomeIcon from '@mui/icons-material/Home';
 const NewNavbar = ({shows,setShows}) => {
   const [open, setOpen] = useState(false);
 //  const [shows,setShows]=useState(true)
@@ -25,9 +26,9 @@ console.log(shows,"shows")
             </div>
             <div className="md:hidden sm:block">
 
-            <Link to="/" >
+            {/* <Link to="/" >
                 Home
-              </Link>
+              </Link> */}
             </div>
             <Link
               style={{
@@ -82,6 +83,10 @@ console.log(shows,"shows")
               }}
               className="sticky top-0 z-50"
             >
+              <Link onClick={()=>setOpen(false)} style={{paddingTop:"2em !important"}} to="/">
+<HomeIcon/>
+                Home
+              </Link>
              <NavLinks shows={shows} setShows={setShows} setOpen={setOpen} />
             </div>:null}
             

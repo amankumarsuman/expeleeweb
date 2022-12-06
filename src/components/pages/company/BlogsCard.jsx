@@ -22,7 +22,7 @@ export default function BlogsCard({ image, heading, description, link,padding,ce
           <Typography
             className={styles.textGradient}
             gutterBottom
-            variant="h5"
+            variant="h6"
             component="div"
           >
             {heading}

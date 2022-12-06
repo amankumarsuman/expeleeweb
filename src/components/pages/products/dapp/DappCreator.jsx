@@ -42,7 +42,8 @@ function ExpeDapp() {
             </Typography>
             <Grid item xs={12} md={12}>
             <Typography
-              variant="h6"
+              variant="h5"
+              fontSize="1.6em"
               textAlign="center"
               fontWeight="bold"
 

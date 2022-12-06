@@ -65,6 +65,7 @@ function GenerateToken() {
               width: "100%",
               margin: "auto",
               padding: "2em",
+              background:"transparent"
             }}
             className={styles.bodyBackground}
           >
@@ -248,9 +249,9 @@ function GenerateToken() {
             <SimpleButton
               onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
               sx={{
-                width: "250px",
+                width: "200px",
 
-                padding: "1.5em",
+                padding: "1.2em",
                 // fontFamily: "poppins",
                 color: "white",
                 // fontSize: "15px",

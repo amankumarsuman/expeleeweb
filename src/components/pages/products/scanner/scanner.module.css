@@ -5,13 +5,9 @@
     margin: auto;
     border-radius: 25px;
     /* border: 1px solid red; */
-    background: linear-gradient(to right bottom,
-            #1e1e1e,
-            black,
-            #2E2A34,
-            black,
-            #1e1e1e);
-    padding: 1em 0;
+    background-color: #17121F !important;
+   
+    /* padding: 1em 0; */
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

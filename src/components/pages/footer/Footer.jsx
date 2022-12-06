@@ -266,14 +266,19 @@ function Footer() {
             </Typography>
             <ListItem>
               <ListItemAvatar>
+                <span style={{cursor:"pointer"}}>
+
                 <Avatar
+                onClick={() => window.location = 'mailto:business@expelee.com'}
+                // href="mailto:business@expelee.com"
                   sx={{
                     border: "1.5px dotted white",
                     backgroundColor: "#3d75ed",
                   }}
                 >
-                  <MailIcon />
+                  <MailIcon  />
                 </Avatar>
+                </span>
               </ListItemAvatar>
               <CustomizedListText
                 primary="EMAIL"

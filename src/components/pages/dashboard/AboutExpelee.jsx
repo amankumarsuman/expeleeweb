@@ -42,7 +42,7 @@ function AboutExpelee() {
                 // fontFamily: "Sono",
                 fontSize: "3em",
                 // width: "65%",
-                textAlign: "center",
+                // textAlign: "center",
               }}
               className={styles.textGradient}
               variant="h3"

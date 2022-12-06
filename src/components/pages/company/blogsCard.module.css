@@ -21,8 +21,10 @@
   }
   .textGradient {
       /* border: 1px solid red; */
-font-weight: bold;
-      background: -webkit-linear-gradient(white, #33BBCF);
+font-weight: bold !important;
+      /* background: -webkit-linear-gradient(white, #33BBCF); */
+    background: #3d75ed;
+
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 /* font-family:"poppins"; */

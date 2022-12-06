@@ -203,10 +203,10 @@ sx={{background:"white",textAlign:"end"}}
                           }}
                         >
                           <img
-                          width="10% !important"
+                          width="23px !important"
                             src={row?.image}
                             alt={row.name}
-                            height="40"
+                            height="25px"
                             style={{ marginBottom: 10 }}
                           />
                           <div

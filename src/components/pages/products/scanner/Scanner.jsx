@@ -474,6 +474,7 @@ function Scanner() {
               variant="h3"
               className={styles.textGradient}
               // fontFamily="poppins"
+              fontWeight="bold"
               textAlign="center"
               padding="1em"
             >
