@@ -18,7 +18,7 @@ import CircleDiv from "./CircleDiv";
 import mediumLogo from "../../assets/mediumLogoW.png";
 const CustomizedListText = styled(ListItemText)`
   color: white;
-  
+  cursor:pointer;
 // font-weight:bold;
   // :hover {
   //   color: rgb(173, 181, 189);
@@ -281,6 +281,8 @@ function Footer() {
                 </span>
               </ListItemAvatar>
               <CustomizedListText
+                onClick={() => window.location = 'mailto:business@expelee.com'}
+
                 primary="EMAIL"
                 secondary="business@expelee.com"
               />

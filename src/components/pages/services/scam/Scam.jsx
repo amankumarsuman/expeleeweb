@@ -5,9 +5,11 @@ import brain from "../../../assets/brain.png";
 import { Grid } from "@mui/material";
 import GoToTop from "../../../coreComponents/GoToTop";
 import ScamCard from "./ScamCard";
+import ScamBanner from "./ScamBanner";
 function Scam() {
   return (
     <>
+    <ScamBanner/>
       <Grid sx={{ width: "90%" }} margin="auto" container spacing={3}>
      
      

@@ -7,9 +7,12 @@ import brain from "../../assets/brain.png";
 import blockchainblog2 from "../../assets/blockchain2.jpg";
 import { Grid } from "@mui/material";
 import GoToTop from "../../coreComponents/GoToTop";
+import BlogsBanner from "./BlogsHeader";
 function Blogs() {
   return (
     <>
+    
+        <BlogsBanner/>
       <Grid sx={{ width: "90%" }} margin="auto" container spacing={3}>
         <Grid item xs={12} md={3}>
           <BlogsCard

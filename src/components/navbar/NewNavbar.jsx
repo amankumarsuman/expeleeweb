@@ -83,10 +83,14 @@ console.log(shows,"shows")
               }}
               className="sticky top-0 z-50"
             >
-              <Link onClick={()=>setOpen(false)} style={{paddingTop:"2em !important"}} to="/">
-<HomeIcon/>
+              <div style={{paddingLeft:"15px",paddingTop:"15px"}}>
+              <Link onClick={()=>setOpen(false)} style={{padding:"2em !important",width:"100%"}} to="/">
+<div style={{width:"50px"}}></div>
                 Home
               </Link>
+              </div>
+
+     
              <NavLinks shows={shows} setShows={setShows} setOpen={setOpen} />
             </div>:null}
             
