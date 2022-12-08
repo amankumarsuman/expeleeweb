@@ -465,6 +465,41 @@ function Scanner() {
         console.log(r);
       });
   }, []);
+const initialState={
+  address:"",
+  token_id:0,
+}
+
+  const [input,setInput]=useState(initialState)
+
+const handleChange=(e)=>{
+  const {name,value}=e.target
+setInput({...input,[name]:value})
+}
+const key="71gnO93jUr6531AFIFZgp9v4HqTF6RU8dYJXsSHm9wj8yQMWcl9rYgj8oq3riEwy"
+
+const handleContract=()=>{
+  
+const options = {
+  method: 'GET',
+  url: 'https://deep-index.moralis.io/api/v2/erc20/metadata',
+  params: {chain: 'eth', addresses: input?.address},
+  headers: {accept: 'application/json', 'X-API-Key': key}
+};
+
+axios
+  .request(options)
+  .then(function (response) {
+    console.log(response.data);
+  })
+  .catch(function (error) {
+    console.error(error);
+  });
+}
+  // useEffect(()=>{
+
+ 
+  // },[])
   return (
     <div>
       <Grid container spacing={2}>
@@ -482,7 +517,7 @@ function Scanner() {
             </Typography>
           </Grid>
         </Paper>
-        <Grid
+        {/* <Grid
           sx={{ background: "white", textAlign: "center", padding: "0.6em" }}
           item
           xs={12}
@@ -529,9 +564,27 @@ function Scanner() {
             onChange={handleInputChange}
             value={contract}
           />
+        </Grid> */}
+        <Grid sx={{background:"white"}} item xs={12} md={6}>
+<TextField
+name="address"
+label="Address"
+onChange={handleChange}
+value={input?.address}
+variant="outlined"
+/>
+        </Grid>
+        <Grid sx={{background:"white"}} item xs={12} md={6}>
+<TextField
+name="token_id"
+label="Token ID"
+onChange={handleChange}
+value={input?.token_id}
+variant="outlined"
+/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Button onClick={handleSubmit} variant="contained">
+          <Button onClick={handleContract} variant="contained">
             submit
           </Button>
         </Grid>
