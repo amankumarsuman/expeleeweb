@@ -1,11 +1,17 @@
 import {
   Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
   FormControl,
   Grid,
   InputLabel,
   MenuItem,
   Paper,
   Select,
+  Slide,
   TextField,
   Typography,
 } from "@mui/material";
@@ -16,7 +22,10 @@ import { CssTextField } from "../../../coreComponents/CustomInputField";
 import { StyledActionTableCell } from "../../../customComponents/tableStyle/tableComponent";
 import styles from "./scanner.module.css";
 import ScannerDetails from "./ScannerDetails";
-
+import WarningIcon from "@mui/icons-material/Warning";
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 function ScannerComponent() {
   const init = {
     address: "",
@@ -24,20 +33,36 @@ function ScannerComponent() {
   };
   const [input, setInput] = useState(init);
   const [isLoading, setIsLoading] = useState(false);
+  const [isErr, setIsErr] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     setInput({ ...input, [name]: value });
   };
   const [data, setData] = useState([init]);
-  const handleSubmit = () => {
-    axios
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleSubmit = async () => {
+    await axios
       .get(
         `https://api-scanner.blocksafu.com/scan?address=${input?.address}&chainid=${input?.chainid}`
       )
       .then((res) => {
         setIsLoading(true);
         setData(res?.data);
+        console.log(res);
+      })
+      .catch((err) => {
+        setIsErr(err);
+        setOpen(true);
       });
   };
   console.log(data, "data");
@@ -116,7 +141,51 @@ function ScannerComponent() {
           </Paper>
         </Grid>
       </Grid>
-      {isLoading ? <ScannerDetails data={data} /> : null}
+      {isLoading ? (
+        <ScannerDetails data={data} />
+      ) : isErr ? (
+        <>
+          <Dialog
+            open={open}
+            TransitionComponent={Transition}
+            keepMounted
+            onClose={handleClose}
+            aria-describedby="alert-dialog-slide-description"
+          >
+            <DialogTitle sx={{ textAlign: "center" }}>
+              {"Oops Something Went Wrong"}
+            </DialogTitle>
+            <div style={{ textAlign: "center" }}>
+              <WarningIcon />
+            </div>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-slide-description">
+                Please Choose correct Network and Add correct Address.Either
+                your address or your network is incorrect
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button
+                sx={{
+                  background: "#C0C0C0",
+                  border: "1px solid grey",
+                  color: "black",
+                }}
+                onClick={handleClose}
+              >
+                Disagree
+              </Button>
+              <Button
+                sx={{ background: "blue", color: "white" }}
+                variant="contained"
+                onClick={handleClose}
+              >
+                Agree
+              </Button>
+            </DialogActions>
+          </Dialog>
+        </>
+      ) : null}
     </>
   );
 }

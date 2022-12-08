@@ -19,6 +19,7 @@ function CircularProgressWithLabel(props) {
           alignItems: "center",
           justifyContent: "center",
           color: "red",
+          border: "1px solid red",
         }}
       >
         <Typography variant="caption" color="text.secondary">
