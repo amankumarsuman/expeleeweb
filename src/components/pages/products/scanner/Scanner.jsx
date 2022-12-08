@@ -17,6 +17,7 @@ import axios from "axios";
 import { ethers } from "ethers";
 import ScannerDataTable from "./ScannerDataTable";
 import GoToTop from "../../../coreComponents/GoToTop";
+import { instance } from "./axios";
 function Scanner() {
   let allresultsElements = [
     "tokenName",
@@ -465,41 +466,73 @@ function Scanner() {
         console.log(r);
       });
   }, []);
-const initialState={
-  address:"",
-  token_id:0,
-}
+  const api_key = "";
+  const [address, setAddress] = useState("");
 
-  const [input,setInput]=useState(initialState)
+  const handleSubmitAPI = () => {
+    // const options = {
+    //   method: "GET",
+    //   url: `https://deep-index.moralis.io/api/v2/${address}/nft`,
+    //   params: { chain: "eth", format: "decimal", normalizeMetadata: "false" },
+    //   headers: {
+    //     accept: "application/json",
+    //     "X-API-Key":
+    //       "X6xEHWARdiZLjZRbneWLNQKNpn2paVVCMagJsgKP3xQpsvCEfa7FSzHdMzH9vP5v",
+    //   },
+    // };
+    // axios
+    //   .request(options)
+    //   .then(function (response) {
+    //     console.log(response.data);
+    //   })
+    //   .catch(function (error) {
+    //     console.error(error);
+    //   });
+    // {
+    //   Headers: {
+    //     // "blockchain":"ethereum",
+    //     // "network":"goerli",
+    //     "Content-Type": "application/json",
+    //     "X-Api-Key": "1fe2cac8dc314d7ca46d7d7a1ea08e932a7db5b9",
+    //   },
+    // headers: {
+    //   "Content-Type": "application/json,text/plain",
+    //   //"Content-Type": "application/x-www-form-urlencoded",
+    //   "Access-Control-Allow-Origin": "*",
+    //   "Access-Control-Allow-Credentials": "true",
+    //   "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+    //   // "Access-Control-Allow-Origin": "https://localhost:3000",
+    //   "Access-Control-Allow-Headers":
+    //     "Origin, X-Requested-With, Content-Type, Accept",
+    //   "X-Api-Key": "1fe2cac8dc314d7ca46d7d7a1ea08e932a7db5b9",
+    // },
+    // }
+    // {
+    //   params: {
+    //     chain: "eth",
+    //     format: "decimal",
+    //     normalizeMetadata: "false",
+    //   },
+    // "https://rest.cryptoapis.io/blockchain-data/ethereum/goerli/addresses/0x534bD102153EF199abAe8296a2FaE4599fC44Cdc/contract?context=yourExampleString"
+    // instance.get(
+    //   "ethereum/transaction/0x6786707adfa339f4076becbd9af9fa9e4af6b79c03596cf2e5233dabd2c05b85"
+    // );
+    // axios.get(
+    //   "https://rest.cryptoapis.io/blockchain-data/ethereum/goerli/addresses/0x534bD102153EF199abAe8296a2FaE4599fC44Cdc/contract?context=yourExampleString",
+    //   {
+    //     headers: {
+    //       // Accept: "*/*",
+    //       "Content-Type": "application/json",
+    //       "X-Api-Key": "1fe2cac8dc314d7ca46d7d7a1ea08e932a7db5b9",
+    //     },
+    //   }
+    // );
 
-const handleChange=(e)=>{
-  const {name,value}=e.target
-setInput({...input,[name]:value})
-}
-const key="71gnO93jUr6531AFIFZgp9v4HqTF6RU8dYJXsSHm9wj8yQMWcl9rYgj8oq3riEwy"
+    axios.get(
+      "https://api-scanner.blocksafu.com/scan?address=0x32bFd701655EDF95809EaA5e525F0024ea571267&chainid=56"
+    );
+  };
 
-const handleContract=()=>{
-  
-const options = {
-  method: 'GET',
-  url: 'https://deep-index.moralis.io/api/v2/erc20/metadata',
-  params: {chain: 'eth', addresses: input?.address},
-  headers: {accept: 'application/json', 'X-API-Key': key}
-};
-
-axios
-  .request(options)
-  .then(function (response) {
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
-}
-  // useEffect(()=>{
-
- 
-  // },[])
   return (
     <div>
       <Grid container spacing={2}>
@@ -565,26 +598,16 @@ axios
             value={contract}
           />
         </Grid> */}
-        <Grid sx={{background:"white"}} item xs={12} md={6}>
-<TextField
-name="address"
-label="Address"
-onChange={handleChange}
-value={input?.address}
-variant="outlined"
-/>
-        </Grid>
-        <Grid sx={{background:"white"}} item xs={12} md={6}>
-<TextField
-name="token_id"
-label="Token ID"
-onChange={handleChange}
-value={input?.token_id}
-variant="outlined"
-/>
+        <Grid sx={{ background: "white" }} item xs={12} md={6}>
+          <TextField
+            name="address"
+            label="Enter Address"
+            onChange={(e) => setAddress(e.target.value)}
+            value={address}
+          />
         </Grid>
         <Grid item xs={12} md={4}>
-          <Button onClick={handleContract} variant="contained">
+          <Button onClick={handleSubmitAPI} variant="contained">
             submit
           </Button>
         </Grid>
