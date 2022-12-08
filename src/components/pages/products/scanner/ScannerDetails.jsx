@@ -8,7 +8,9 @@ function ScannerDetails({ data }) {
   return (
     <>
       {data?.length === 0 ? (
-        <ProgressWithLabel />
+        <div style={{ border: "1px solid red" }}>
+          <ProgressWithLabel />
+        </div>
       ) : (
         <Grid
           sx={{ marginTop: "15px", width: "95%", margin: "auto" }}
@@ -31,17 +33,64 @@ function ScannerDetails({ data }) {
               >
                 Token Identity Information
               </Typography>
-              <div style={{ display: "flex", justifyContent: "space-around" }}>
-                <Typography>Token Name:</Typography>
-                <Typography>{data?.dataMarket?.name}</Typography>
+              <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <Typography
+                  sx={{
+                    border: "1px solid grey",
+                    padding: "10px",
+                    width: "40%",
+                  }}
+                >
+                  Token Name:
+                </Typography>
+                <Typography
+                  sx={{
+                    border: "1px solid grey",
+                    padding: "10px",
+                    width: "40%",
+                  }}
+                >
+                  {data?.dataMarket?.name}
+                </Typography>
               </div>
               <div style={{ display: "flex", justifyContent: "space-around" }}>
-                <Typography>Token Symbol:</Typography>
-                <Typography>{data?.dataMarket?.symbols[0]}</Typography>
+                <Typography
+                  sx={{
+                    border: "1px solid grey",
+                    padding: "10px",
+                    width: "40%",
+                  }}
+                >
+                  Token Symbol:
+                </Typography>
+                <Typography
+                  sx={{
+                    border: "1px solid grey",
+                    padding: "10px",
+                    width: "40%",
+                  }}
+                >
+                  {data?.dataMarket?.symbols[0]}
+                </Typography>
               </div>
               <div style={{ display: "flex", justifyContent: "space-around" }}>
-                <Typography>Contract Address::</Typography>
-                <Typography>
+                <Typography
+                  sx={{
+                    border: "1px solid grey",
+                    padding: "10px",
+                    width: "40%",
+                  }}
+                >
+                  Contract Address::
+                </Typography>
+
+                <Typography
+                  sx={{
+                    border: "1px solid grey",
+                    padding: "10px",
+                    width: "40%",
+                  }}
+                >
                   {data?.dataMarket?.address?.slice(0, 6)}...
                   {data?.dataMarket?.address?.slice(
                     data?.dataMarket?.address.length - 3,
