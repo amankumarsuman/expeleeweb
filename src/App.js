@@ -1,4 +1,4 @@
-import React, { useState,lazy } from "react";
+import React, { useState, lazy } from "react";
 import Navbar from "./components/navbar/Navbar.jsx";
 import styles from "./app.module.css";
 import Dashboard from "./components/pages/dashboard/Dashboard.jsx";
@@ -55,6 +55,7 @@ import ExpeDapp from "./components/pages/products/dapp/DappCreator.jsx";
 import ScamCard from "./components/pages/services/scam/ScamCard.jsx";
 import Scam from "./components/pages/services/scam/Scam.jsx";
 import GenerateToken from "./components/pages/services/tokenGeneration/TokenGeneration.jsx";
+import ScannerComponent from "./components/pages/products/scanner/ScannerComponent.jsx";
 
 function App() {
   let { id } = useParams();
@@ -66,7 +67,7 @@ function App() {
     },
   });
   const classes = useStyle();
-  const [shows,setShows] =useState(true)
+  const [shows, setShows] = useState(true);
   return (
     <>
       <ScrollContainer>
@@ -78,7 +79,7 @@ function App() {
       className="h-screen 
       font-[Poppins] md:bg-top bg-center"
     > */}
-        <NewNavbar  shows={shows} setShows={setShows}/>
+        <NewNavbar shows={shows} setShows={setShows} />
         {/* <NavbarResponsive /> */}
         {/* <ResponsiveAppBar /> */}
 
@@ -96,7 +97,7 @@ function App() {
           <Route path="token" element={<GenerateToken />} />
 
           <Route path="audit/all-audit" element={<AllAudit />} />
-          <Route path="scanner" element={<Scanner />} />
+          <Route path="scanner" element={<ScannerComponent />} />
           <Route path="expe-vetting" element={<ExpeVetting />} />
           <Route path="expe-diligence" element={<ExpeKyc />} />
           <Route path="/design" element={<ExpeDesign />} />
