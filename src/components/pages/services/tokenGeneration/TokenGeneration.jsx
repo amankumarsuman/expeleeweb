@@ -261,7 +261,7 @@ function GenerateToken() {
               }}
               variant="contained"
             >
-              Contact Us
+              Generate
             </SimpleButton>
                   </Grid>
                 </Grid>

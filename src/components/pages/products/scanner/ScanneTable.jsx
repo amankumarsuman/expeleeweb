@@ -11,7 +11,7 @@ import { Typography } from "@mui/material";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: "#3d75ed",
+    // backgroundColor: "#3d75ed",
     color: theme.palette.common.white,
     fontWeight: "bold",
     fontSize: "20px",
@@ -38,7 +38,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function ScannerTable({ data }) {
   return (
-    <TableContainer sx={{ background: "#C0C0C0" }} component={Paper}>
+    <TableContainer  component={Paper}>
       <Typography
         sx={{
           textAlign: "center",
@@ -63,7 +63,7 @@ export default function ScannerTable({ data }) {
               Token Name
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataSecurity?.token_name}
+              {data?.name}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
@@ -71,7 +71,7 @@ export default function ScannerTable({ data }) {
               Token Symbol
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataSecurity?.token_symbol}
+              {data?.symbol}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
@@ -84,26 +84,26 @@ export default function ScannerTable({ data }) {
           </StyledTableRow>
           <StyledTableRow>
             <StyledTableCell align="center" component="th" scope="row">
-              Listed on Dex
+              Block Number
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataSecurity?.dex?.length >= 1 ? "Yes" : "No"}
+              {data?.block_number}
+            </StyledTableCell>
+          </StyledTableRow>
+          {/* <StyledTableRow>
+            <StyledTableCell align="center" component="th" scope="row">
+              Block Number Minted
+            </StyledTableCell>
+            <StyledTableCell align="center">
+              {data?.block_number_minted}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
             <StyledTableCell align="center" component="th" scope="row">
-              Dex List
+              Contract Tpye
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataSecurity?.dex?.map((el) => el.name)?.join(", ")}
-            </StyledTableCell>
-          </StyledTableRow>
-          <StyledTableRow>
-            <StyledTableCell align="center" component="th" scope="row">
-              Price
-            </StyledTableCell>
-            <StyledTableCell align="center">
-              {data?.dataMarket?.priceUSD?.toFixed(2)}
+              {data?.contract_type}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
@@ -153,7 +153,7 @@ export default function ScannerTable({ data }) {
             <StyledTableCell align="center">
               ${data?.dataMarket?.marketCap?.toFixed(2)}
             </StyledTableCell>
-          </StyledTableRow>
+          </StyledTableRow> */}
         </TableBody>
       </Table>
     </TableContainer>

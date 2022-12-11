@@ -11,7 +11,7 @@ import { Typography } from "@mui/material";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: "#3d75ed",
+    // backgroundColor: "#3d75ed",
     color: theme.palette.common.white,
     fontWeight: "bold",
     fontSize: "20px",
@@ -38,7 +38,10 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function SecurityInfo({ data }) {
   return (
-    <TableContainer sx={{ background: "#C0C0C0" }} component={Paper}>
+
+    <>
+    
+    <TableContainer  component={Paper}>
       <Typography
         sx={{
           textAlign: "center",
@@ -48,7 +51,7 @@ export default function SecurityInfo({ data }) {
         }}
         variant="h5"
       >
-        Security Infomation
+        Additional Infomation
       </Typography>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead sx={{ backgroundColor: "#3d75ed" }}>
@@ -60,102 +63,59 @@ export default function SecurityInfo({ data }) {
         <TableBody>
           <StyledTableRow>
             <StyledTableCell align="center" component="th" scope="row">
-              Token Name
+            Block Number Minted
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataSecurity?.token_name}
+              {data?.block_number_minted}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
             <StyledTableCell align="center" component="th" scope="row">
-              Token Symbol
+            Contract Type
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataSecurity?.token_symbol}
+              {data?.contract_type}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
             <StyledTableCell align="center" component="th" scope="row">
-              Total Supply
+            Last MetaData Sync
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataSecurity?.total_supply}
+              {data?.last_metadata_sync}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
             <StyledTableCell align="center" component="th" scope="row">
-              Listed on Dex
+           Last Token uri Sync
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataSecurity?.dex?.length >= 1 ? "Yes" : "No"}
+              {data?.last_token_uri_sync}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
             <StyledTableCell align="center" component="th" scope="row">
-              Dex List
+            Minter Address
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataSecurity?.dex?.map((el) => el.name)?.join(", ")}
+              {data?.minter_address?.slice(0, 8)}...
+                  {data?.owner_of?.slice(
+                    data?.owner_of.length - 3,
+                    data?.owner_of.length)}
             </StyledTableCell>
           </StyledTableRow>
           <StyledTableRow>
             <StyledTableCell align="center" component="th" scope="row">
-              Price
+            Token ID
             </StyledTableCell>
             <StyledTableCell align="center">
-              {data?.dataMarket?.priceUSD?.toFixed(2)}
+              {data?.token_id}
             </StyledTableCell>
           </StyledTableRow>
-          <StyledTableRow>
-            <StyledTableCell align="center" component="th" scope="row">
-              Volume 24H(USD)
-            </StyledTableCell>
-            <StyledTableCell align="center">
-              ${data?.dataMarket?.volume24hUSD?.toFixed(2)}
-            </StyledTableCell>
-          </StyledTableRow>
-          <StyledTableRow>
-            <StyledTableCell align="center" component="th" scope="row">
-              Volume 24H(ETH)
-            </StyledTableCell>
-            <StyledTableCell align="center">
-              ${data?.dataMarket?.volume24hETH?.toFixed(2)}
-            </StyledTableCell>
-          </StyledTableRow>
-          <StyledTableRow>
-            <StyledTableCell align="center" component="th" scope="row">
-              Liquidity(USD)
-            </StyledTableCell>
-            <StyledTableCell align="center">
-              ${data?.dataMarket?.liquidityUSD?.toFixed(2)}
-            </StyledTableCell>
-          </StyledTableRow>
-          <StyledTableRow>
-            <StyledTableCell align="center" component="th" scope="row">
-              Liquidity(ETH)
-            </StyledTableCell>
-            <StyledTableCell align="center">
-              ${data?.dataMarket?.liquidityETH?.toFixed(2)}
-            </StyledTableCell>
-          </StyledTableRow>
-          <StyledTableRow>
-            <StyledTableCell align="center" component="th" scope="row">
-              Txn Count
-            </StyledTableCell>
-            <StyledTableCell align="center">
-              ${data?.dataMarket?.txns24h}
-            </StyledTableCell>
-          </StyledTableRow>
-          <StyledTableRow>
-            <StyledTableCell align="center" component="th" scope="row">
-              Market Cap
-            </StyledTableCell>
-            <StyledTableCell align="center">
-              ${data?.dataMarket?.marketCap?.toFixed(2)}
-            </StyledTableCell>
-          </StyledTableRow>
+       
         </TableBody>
       </Table>
     </TableContainer>
+    </>
   );
 }
