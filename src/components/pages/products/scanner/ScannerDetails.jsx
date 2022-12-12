@@ -32,6 +32,7 @@ function ScannerDetails({ data }) {
                   color: "#3d75ed",
                   fontWeight: "bold",
                   marginBottom: "1em",
+                  
                 }}
               >
                 Token Identity Information

@@ -23,3 +23,7 @@
     -webkit-text-fill-color: transparent;
     /* font-family: Teko; */
 }
+.scorebg{
+  background-image: url("../../../assets/expeScore.png");
+  background-repeat: no-repeat;
+}

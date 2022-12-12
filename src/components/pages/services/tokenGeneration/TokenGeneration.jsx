@@ -127,149 +127,149 @@ function GenerateToken() {
                   </div>
                 </Paper>
               </Grid>
-            </Grid>
-            <Divider className={styles.divider} />
-            <Grid container spacing={2} sx={{ marginTop: "2%" }}>
-              <Grid item xs={12} md={4}>
-                <h1 className={styles.heading}>Buy Taxes</h1>
-                <Typography>
-                  provide buy tax rates across in range of 0 to 10%
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={8}>
-                <Paper
-                  elevation={5}
-                  sx={{
-                    paddingBottom: "2em",
-                    paddingTop: "2em",
-                    background: "#C0C0C0",
-                  }}
-                >
-                  <div className={styles.textFieldDiv}>
-                    <Grid container spacing={2}>
-                      <Grid item xs={12} md={4}>
-                        <CssTextField
-                          label="Burn"
-                          placeholder="0 to 10%"
-                          className={styles.textField}
-                          fullWidth
-                          onChange={handleChange}
-                          name="buyBurn"
-                          variant="outlined"
-                          value={input.buyBurn}
-                        />
-                      </Grid>
+              <Divider className={styles.divider} />
+              <Grid container spacing={2} sx={{ marginTop: "2%" }}>
+                <Grid item xs={12} md={4}>
+                  <h1 className={styles.heading}>Buy Taxes</h1>
+                  <Typography>
+                    provide buy tax rates across in range of 0 to 10%
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} md={8}>
+                  <Paper
+                    elevation={5}
+                    sx={{
+                      paddingBottom: "2em",
+                      paddingTop: "2em",
+                      background: "#C0C0C0",
+                    }}
+                  >
+                    <div className={styles.textFieldDiv}>
+                      <Grid container spacing={2}>
+                        <Grid item xs={12} md={4}>
+                          <CssTextField
+                            label="Burn"
+                            placeholder="0 to 10%"
+                            className={styles.textField}
+                            fullWidth
+                            onChange={handleChange}
+                            name="buyBurn"
+                            variant="outlined"
+                            value={input.buyBurn}
+                          />
+                        </Grid>
 
-                      <Grid item xs={12} md={4}>
-                        <CssTextField
-                          label="Dev"
-                          placeholder="0 to 10%"
-                          className={styles.textField}
-                          fullWidth
-                          onChange={handleChange}
-                          name="buyDev"
-                          value={input.buyDev}
-                          variant="outlined"
-                        />
+                        <Grid item xs={12} md={4}>
+                          <CssTextField
+                            label="Dev"
+                            placeholder="0 to 10%"
+                            className={styles.textField}
+                            fullWidth
+                            onChange={handleChange}
+                            name="buyDev"
+                            value={input.buyDev}
+                            variant="outlined"
+                          />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                          <CssTextField
+                            label="Liquidity"
+                            placeholder="0 to 10%"
+                            className={styles.textField}
+                            fullWidth
+                            onChange={handleChange}
+                            name="buyLiquidity"
+                            value={input.buyLiquidity}
+                            variant="outlined"
+                          />
+                        </Grid>
                       </Grid>
-                      <Grid item xs={12} md={4}>
-                        <CssTextField
-                          label="Liquidity"
-                          placeholder="0 to 10%"
-                          className={styles.textField}
-                          fullWidth
-                          onChange={handleChange}
-                          name="buyLiquidity"
-                          value={input.buyLiquidity}
-                          variant="outlined"
-                        />
+                    </div>
+                  </Paper>
+                </Grid>
+              </Grid>
+              <Divider className={styles.divider} />
+
+              <Grid container spacing={2} sx={{ marginTop: "2%" }}>
+                <Grid item xs={12} md={4}>
+                  <h1 className={styles.heading}>Sell Taxes</h1>
+                  <Typography>
+                    provide sell tax rates across in range of 0 to 10%
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} md={8}>
+                  <Paper
+                    elevation={5}
+                    sx={{
+                      paddingBottom: "2em",
+                      paddingTop: "2em",
+                      background: "#C0C0C0",
+                    }}
+                  >
+                    <div className={styles.textFieldDiv}>
+                      <Grid container spacing={2}>
+                        <Grid item xs={12} md={4}>
+                          <CssTextField
+                            label="Burn"
+                            placeholder="0 to 10%"
+                            className={styles.textField}
+                            fullWidth
+                            onChange={handleChange}
+                            name="sellBurn"
+                            value={input.sellBurn}
+                            variant="outlined"
+                          />
+                        </Grid>
+
+                        <Grid item xs={12} md={4}>
+                          <CssTextField
+                            label="Dev"
+                            placeholder="0 to 10%"
+                            className={styles.textField}
+                            fullWidth
+                            onChange={handleChange}
+                            name="sellDev"
+                            value={input.sellDev}
+                            variant="outlined"
+                          />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                          <CssTextField
+                            label="Liquidity"
+                            placeholder="0 to 10%"
+                            className={styles.textField}
+                            fullWidth
+                            onChange={handleChange}
+                            name="sellLiquidity"
+                            value={input.sellLiquidity}
+                            variant="outlined"
+                          />
+                        </Grid>
                       </Grid>
+                    </div>
+                  </Paper>
+                  <Grid container>
+                    <Grid item xs={12} md={12}>
+                      <SimpleButton
+                        onClick={() =>
+                          handleNavigate("https://t.me/Ritz_Expelee")
+                        }
+                        sx={{
+                          width: "200px",
+
+                          padding: "1.2em",
+                          // fontFamily: "poppins",
+                          color: "white",
+                          // fontSize: "15px",
+                          fontSize: "1em",
+                          fontWeight: "bold",
+                          background: "#3d75ed",
+                        }}
+                        variant="contained"
+                      >
+                        Generate Token
+                      </SimpleButton>
                     </Grid>
-                  </div>
-                </Paper>
-              </Grid>
-            </Grid>
-            <Divider className={styles.divider} />
-
-            <Grid container spacing={2} sx={{ marginTop: "2%" }}>
-              <Grid item xs={12} md={4}>
-                <h1 className={styles.heading}>Sell Taxes</h1>
-                <Typography>
-                  provide sell tax rates across in range of 0 to 10%
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={8}>
-                <Paper
-                  elevation={5}
-                  sx={{
-                    paddingBottom: "2em",
-                    paddingTop: "2em",
-                    background: "#C0C0C0",
-                  }}
-                >
-                  <div className={styles.textFieldDiv}>
-                    <Grid container spacing={2}>
-                      <Grid item xs={12} md={4}>
-                        <CssTextField
-                          label="Burn"
-                          placeholder="0 to 10%"
-                          className={styles.textField}
-                          fullWidth
-                          onChange={handleChange}
-                          name="sellBurn"
-                          value={input.sellBurn}
-                          variant="outlined"
-                        />
-                      </Grid>
-
-                      <Grid item xs={12} md={4}>
-                        <CssTextField
-                          label="Dev"
-                          placeholder="0 to 10%"
-                          className={styles.textField}
-                          fullWidth
-                          onChange={handleChange}
-                          name="sellDev"
-                          value={input.sellDev}
-                          variant="outlined"
-                        />
-                      </Grid>
-                      <Grid item xs={12} md={4}>
-                        <CssTextField
-                          label="Liquidity"
-                          placeholder="0 to 10%"
-                          className={styles.textField}
-                          fullWidth
-                          onChange={handleChange}
-                          name="sellLiquidity"
-                          value={input.sellLiquidity}
-                          variant="outlined"
-                        />
-                      </Grid>
-                    </Grid>
-                  </div>
-                </Paper>
-                <Grid container>
-                  <Grid item xs={12} md={12}>
-                    <SimpleButton
-                      onClick={() =>
-                        handleNavigate("https://t.me/Ritz_Expelee")
-                      }
-                      sx={{
-                        width: "200px",
-
-                        padding: "1.2em",
-                        // fontFamily: "poppins",
-                        color: "white",
-                        // fontSize: "15px",
-                        fontSize: "1em",
-                        fontWeight: "bold",
-                        background: "#3d75ed",
-                      }}
-                      variant="contained"
-                    >
-                      Contact Us
-                    </SimpleButton>
                   </Grid>
                 </Grid>
               </Grid>
