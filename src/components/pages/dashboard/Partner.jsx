@@ -18,7 +18,7 @@ function Partner() {
     window.open(link, "_blank", "noopener,noreferrer");
   };
   return (
-    <Grid sx={{ width: "85vu", margin: "auto" }} container spacing={2}>
+    <Grid sx={{ width: "85%", margin: "auto" }} container spacing={2}>
       <Paper className={styles.partnerPaperDiv} elevation={5}>
         <Grid sx={{ width: "30vu", margin: "auto" }} container spacing={2}>
           <Grid item xs={12} md={12}>

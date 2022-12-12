@@ -13,6 +13,7 @@ import {
   useDocumentTitle,
 } from "../../../coreComponents/useDocumentTitle";
 import { CssTextField } from "../../../coreComponents/CustomInputField";
+import GoToTop from "../../../coreComponents/GoToTop";
 function GenerateToken() {
   //initial state
   const initialState = {
@@ -27,6 +28,14 @@ function GenerateToken() {
     sellDev: "",
     sellLiquidity: "",
   };
+
+  // const address = TodoList.networks[5777].address;
+  // const abi = TodoList.abi;
+
+  // const connect = async () => {
+  //   provider = new ethers.providers.Web3Provider(window.ethereum);
+  //   contract = new ethers.Contract(address, abi, provider.getSigner());
+  // };
 
   //states
   const [input, setInput] = useState(initialState);
@@ -54,10 +63,7 @@ function GenerateToken() {
   useDocumentTitle("GenerateToken-Expelee");
   return (
     <div style={{ padding: "1em", marginTop: "2em" }}>
-      <FormMainHeadingContainer
-        headingText="Generate Token"
-        headingIcon=""
-      >
+      <FormMainHeadingContainer headingText="Generate Token" headingIcon="">
         <form onSubmit={handleSubmit}>
           <Paper
             elevation={5}
@@ -65,7 +71,7 @@ function GenerateToken() {
               width: "100%",
               margin: "auto",
               padding: "2em",
-              background:"transparent"
+              background: "transparent",
             }}
             className={styles.bodyBackground}
           >
@@ -77,7 +83,7 @@ function GenerateToken() {
                 </Typography>
               </Grid>
               <Grid item xs={12} md={8}>
-                <Paper sx={{background:"#C0C0C0"}} elevation={5}>
+                <Paper sx={{ background: "#C0C0C0" }} elevation={5}>
                   <div className={styles.textFieldDiv}>
                     <CssTextField
                       label="TOKEN NAME[eg:ETHEREUM,BITCOIN]"
@@ -123,7 +129,7 @@ function GenerateToken() {
               </Grid>
             </Grid>
             <Divider className={styles.divider} />
-            <Grid container spacing={2} sx={{ marginTop: "2%", }}>
+            <Grid container spacing={2} sx={{ marginTop: "2%" }}>
               <Grid item xs={12} md={4}>
                 <h1 className={styles.heading}>Buy Taxes</h1>
                 <Typography>
@@ -136,7 +142,7 @@ function GenerateToken() {
                   sx={{
                     paddingBottom: "2em",
                     paddingTop: "2em",
-                    background:"#C0C0C0"
+                    background: "#C0C0C0",
                   }}
                 >
                   <div className={styles.textFieldDiv}>
@@ -198,7 +204,7 @@ function GenerateToken() {
                   sx={{
                     paddingBottom: "2em",
                     paddingTop: "2em",
-                    background:"#C0C0C0"
+                    background: "#C0C0C0",
                   }}
                 >
                   <div className={styles.textFieldDiv}>
@@ -245,24 +251,25 @@ function GenerateToken() {
                 </Paper>
                 <Grid container>
                   <Grid item xs={12} md={12}>
-                    
-            <SimpleButton
-              onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
-              sx={{
-                width: "200px",
+                    <SimpleButton
+                      onClick={() =>
+                        handleNavigate("https://t.me/Ritz_Expelee")
+                      }
+                      sx={{
+                        width: "200px",
 
-                padding: "1.2em",
-                // fontFamily: "poppins",
-                color: "white",
-                // fontSize: "15px",
-                fontSize: "1em",
-                fontWeight: "bold",
-                background: "#3d75ed",
-              }}
-              variant="contained"
-            >
-              Contact Us
-            </SimpleButton>
+                        padding: "1.2em",
+                        // fontFamily: "poppins",
+                        color: "white",
+                        // fontSize: "15px",
+                        fontSize: "1em",
+                        fontWeight: "bold",
+                        background: "#3d75ed",
+                      }}
+                      variant="contained"
+                    >
+                      Contact Us
+                    </SimpleButton>
                   </Grid>
                 </Grid>
               </Grid>
@@ -270,6 +277,7 @@ function GenerateToken() {
           </Paper>
         </form>
       </FormMainHeadingContainer>
+      <GoToTop />
     </div>
   );
 }
