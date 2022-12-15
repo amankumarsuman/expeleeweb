@@ -142,9 +142,9 @@ const handleClick=()=>{
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://twitter.com/expeleeofficial" ? (
@@ -159,9 +159,9 @@ const handleClick=()=>{
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://www.linkedin.com/company/expelee/" ? (
@@ -176,9 +176,9 @@ const handleClick=()=>{
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://www.instagram.com/expeleeofficial/" ? (
@@ -193,9 +193,9 @@ const handleClick=()=>{
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://github.com/expelee-co" ? (
@@ -210,9 +210,9 @@ const handleClick=()=>{
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://medium.com/@expelee" ? (
@@ -236,9 +236,9 @@ const handleClick=()=>{
                                     {slink.logo}
                                     </Avatar>
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : (
                                 <ListItemButton>
@@ -294,19 +294,19 @@ const handleClick=()=>{
                                   <CustomizedListText primary={slink.name} />
                                   {/* </Link> */}
                                 </ListItemButton>
-                              ) : slink.link === "https://t.me/Ritz_Expelee" ? (
+                              ) : slink.link === "https://t.me/Expelee" ? (
                                 <ListItemButton
                                   onClick={() =>
-                                    handleNavigate("https://t.me/Ritz_Expelee")
+                                    handleNavigate("https://t.me/Expelee")
                                   }
                                 >
                                   <ListItemIcon>
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://twitter.com/expeleeofficial" ? (
@@ -321,9 +321,9 @@ const handleClick=()=>{
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://www.linkedin.com/company/expelee/" ? (
@@ -338,9 +338,9 @@ const handleClick=()=>{
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://www.instagram.com/expeleeofficial/" ? (
@@ -355,9 +355,9 @@ const handleClick=()=>{
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://github.com/expelee-co" ? (
@@ -372,9 +372,9 @@ const handleClick=()=>{
                                     {/* <VerifiedUserIcon /> */}
                                     {slink.logo}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : slink.link ===
                                 "https://medium.com/@expelee" ? (
@@ -399,9 +399,9 @@ const handleClick=()=>{
                                     </Avatar>
                                     {/* <VerifiedUserIcon /> */}
                                   </ListItemIcon>
-                                  <Link to={slink.link}>
+                                  {/* <Link to={slink.link}> */}
                                     <CustomizedListText primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
                               ) : (
                                 <ListItemButton>
@@ -468,8 +468,9 @@ const handleClick=()=>{
                       <List>
                         
                         <ListItem disablePadding>
-                          {slink.link ===
-                                "https://medium.com/@expelee" ? (
+                          {
+                          slink.link ===
+                                "https://medium.com/@expelee" ? 
                                 <ListItemButton
                                   onClick={() =>
                                     handleNavigate(
@@ -491,11 +492,117 @@ const handleClick=()=>{
                                     </Avatar>
                                     {/* <VerifiedUserIcon /> */}
                                   </ListItemIcon>
-                                  <Link to={slink.link} >
+                                  {/* <Link to={slink.link} > */}
                                     <CustomizedListTextMobile primary={slink.name} />
-                                  </Link>
+                                  {/* </Link> */}
                                 </ListItemButton>
-                              ) :
+                               :slink.link==="https://github.com/expelee-co"?  <ListItemButton
+                              onClick={() =>
+                                handleNavigate(
+                                  "https://github.com/expelee-co"
+                                )
+                              }
+                            >
+                              <ListItemIcon
+                                  sx={{color:"white"}}
+                              
+                              >
+                                {/* <VerifiedUserIcon /> */}
+                                {slink.logo}
+                              </ListItemIcon>
+                              {/* <Link to={slink.link}> */}
+                                <CustomizedListTextMobile primary={slink.name} />
+                              {/* </Link> */}
+                            </ListItemButton>:slink.link==="https://t.me/Expelee"?  <ListItemButton
+                              onClick={() =>
+                                handleNavigate(
+                                  "https://t.me/Expelee"
+                                )
+                              }
+                            >
+                              <ListItemIcon
+                                  sx={{color:"white"}}
+                              
+                              >
+                                {/* <VerifiedUserIcon /> */}
+                                {slink.logo}
+                              </ListItemIcon>
+                              {/* <Link to={slink.link}> */}
+                                <CustomizedListTextMobile primary={slink.name} />
+                              {/* </Link> */}
+                            </ListItemButton>:
+                            slink.link==="https://www.instagram.com/expeleeofficial/"?  <ListItemButton
+                            onClick={() =>
+                              handleNavigate(
+                                "https://www.instagram.com/expeleeofficial/"
+                              )
+                            }
+                          >
+                            <ListItemIcon
+                                sx={{color:"white"}}
+                            
+                            >
+                              {/* <VerifiedUserIcon /> */}
+                              {slink.logo}
+                            </ListItemIcon>
+                            {/* <Link to={slink.link}> */}
+                              <CustomizedListTextMobile primary={slink.name} />
+                            {/* </Link> */}
+                          </ListItemButton>:
+                          slink.link==="https://www.linkedin.com/company/expelee/"?  <ListItemButton
+                          onClick={() =>
+                            handleNavigate(
+                              "https://www.linkedin.com/company/expelee/"
+                            )
+                          }
+                        >
+                          <ListItemIcon
+                              sx={{color:"white"}}
+                          
+                          >
+                            {/* <VerifiedUserIcon /> */}
+                            {slink.logo}
+                          </ListItemIcon>
+                          {/* <Link to={slink.link}> */}
+                            <CustomizedListTextMobile primary={slink.name} />
+                          {/* </Link> */}
+                        </ListItemButton>:
+                        slink.link==="https://twitter.com/expeleeofficial"?  <ListItemButton
+                        onClick={() =>
+                          handleNavigate(
+                            "https://twitter.com/expeleeofficial"
+                          )
+                        }
+                      >
+                        <ListItemIcon
+                            sx={{color:"white"}}
+                        
+                        >
+                          {/* <VerifiedUserIcon /> */}
+                          {slink.logo}
+                        </ListItemIcon>
+                        {/* <Link to={slink.link}> */}
+                          <CustomizedListTextMobile primary={slink.name} />
+                        {/* </Link> */}
+                      </ListItemButton>:
+                      slink.link==="https://metanmore.com/"?  <ListItemButton
+                      onClick={() =>
+                        handleNavigate(
+                          "https://metanmore.com/"
+                        )
+                      }
+                    >
+                      <ListItemIcon
+                          sx={{color:"white"}}
+                      
+                      >
+                        {/* <VerifiedUserIcon /> */}
+                        {slink.logo}
+                      </ListItemIcon>
+                      {/* <Link to={slink.link}> */}
+                        <CustomizedListTextMobile primary={slink.name} />
+                      {/* </Link> */}
+                    </ListItemButton>:
                               <ListItemButton  
                           
                               // onClick={() => {

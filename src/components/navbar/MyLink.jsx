@@ -123,7 +123,7 @@ export const links = [
         sublink: [
           {
             name: "Telegram",
-            link: "https://t.me/Ritz_Expelee",
+            link: "https://t.me/Expelee",
             logo: <TelegramIcon />,
           },
           {

@@ -307,7 +307,7 @@ function Footer() {
                       <span
                       style={{marginRight:"7px"}}
                         className={styles.linkDecoration}
-                        onClick={() => handleNavigate("https://t.me/Ritz_Expelee")}
+                        onClick={() => handleNavigate("https://t.me/Expelee")}
                       >
                         {/* <CircleDiv icon={<TelegramIcon />} name="telegram" /> */}
                         <Avatar
