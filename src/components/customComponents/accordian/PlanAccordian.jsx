@@ -10,7 +10,7 @@ import quarterPlanCard from "../../assets/q22.png";
 import talent from "../../assets/threeYearPlan.png";
 import threeYearPlanCard from "../../assets/q33.png";
 import blockchain from "../../assets/q11.png";
-import yearCardHeading from "../../assets/yearPlanHeader.png";
+import yearCardHeading from "../../assets/year.png";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters={true} elevation={0} square {...props} />
@@ -104,7 +104,7 @@ export default function PlanAccordian() {
               style={{position:"relative",left:8,borderRadius:"0 10px 20px 20px"}}
               width="98% !important"
 
-        src={blockchain}/>
+        src={quarterPlanCard}/>
           {/* </Typography> */}
         </AccordionDetails>
       </Accordion>
@@ -133,7 +133,7 @@ export default function PlanAccordian() {
              style={{position:"relative",left:8,borderRadius:"0 0 20px 20px"}}
              width="91% !important"
           
-          src={quarterPlanCard}/>
+          src={blockchain}/>
           </Typography>
         </AccordionDetails>
       </Accordion>

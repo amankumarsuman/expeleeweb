@@ -1,4 +1,4 @@
-import { Button, Grid, Paper, Typography } from "@mui/material";
+import { Button, Grid, Hidden, Paper, Typography } from "@mui/material";
 import React from "react";
 import { SimpleButton } from "../../services/tokenGeneration/CustomButton";
 import styles from "./audit.module.css";
@@ -23,6 +23,7 @@ import AboutAudit from "./aboutaudit/AboutAudit";
 import { fontWeight } from "@mui/system";
 import PaperComponent from "./PaperComponent";
 import GoToTop from "../../../coreComponents/GoToTop";
+import AllAuditMobile from "./AllAuditMobile";
 // import { MdOutlineSchedule } from 'react-icons';
 function AuditPage() {
   const handleNavigate = (link) => {
@@ -222,7 +223,8 @@ function AuditPage() {
     </Paper>
 </Grid> */}
           {data?.map((el) => (
-            <Grid item xs={12} key={el.title} md={4}>
+            <>
+            <Grid item xs={12} sx={{display:{xs:"none",md:"block"}}} key={el.title} md={4}>
               <AllAuditCard
                 title={el.title}
                 image={el.image}
@@ -233,6 +235,19 @@ function AuditPage() {
                 date={el.date}
               />
             </Grid>
+            <Grid item xs={12} sx={{display:{xs:"block",md:"none"}}} key={el.title} >
+              <AllAuditMobile
+                title={el.title}
+                image={el.image}
+                description={el.description}
+                contract={el.contract}
+                nft={el.nft}
+                audit={el.audit}
+                date={el.date}
+              />
+            </Grid>
+            </>
+
           ))}
         </Grid>
         <Grid sx={{ textAlign: "center", marginTop: "2em" }} xs={12} md={12}>

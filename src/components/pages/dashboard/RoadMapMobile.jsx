@@ -10,7 +10,7 @@ import quarterPlanCard from "../../assets/q11.png";
 import talent from "../../assets/threeYearPlan.png";
 import threeYearPlanCard from "../../assets/q33.png";
 import blockchain from "../../assets/q22.png";
-import yearCardHeading from "../../assets/yearPlanHeader.png";
+import yearCardHeading from "../../assets/year.png";
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
