@@ -113,8 +113,8 @@ function ScannerComponent() {
           </Grid>
         </Paper>
 
-        <Grid item xs={12} md={3}></Grid>
-        <Grid item xs={12} md={5}>
+        <Grid item xs={12} md={2}></Grid>
+        <Grid item xs={12} md={6}>
           <Paper
             sx={{
               padding: "3em",
@@ -187,7 +187,7 @@ function ScannerComponent() {
             </Box>
           </Paper> */}
         {/* </Grid> */}
-        <Grid item xs={12} md={2}>
+        {/* <Grid item xs={12} md={2}> */}
           {/* <Paper
             sx={{ background: "transparent", padding: "3em" }}
             elevation={5}
@@ -217,7 +217,7 @@ function ScannerComponent() {
             See Details
           </SimpleButton> */}
           {/* </Paper> */}
-        </Grid>
+        {/* </Grid> */}
         <Grid item xs={12} md={2}></Grid>
       </Grid>
       {isLoading ? (

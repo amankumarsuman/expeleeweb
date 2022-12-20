@@ -3,6 +3,8 @@ import {
   CircularProgress,
   Grid,
   Paper,
+  Toolbar,
+  Tooltip,
   Typography,
 } from "@mui/material";
 import React from "react";
@@ -10,6 +12,7 @@ import { ProgressWithLabel } from "../../../coreComponents/ProgressWithLabel";
 import ScannerTable from "./ScanneTable";
 import SecurityInfo from "./SecurityInfo";
 import styles from "./scanner.module.css";
+import PrintIcon from '@mui/icons-material/Print';
 function ScannerDetails({ data }) {
   return (
     <>
@@ -36,6 +39,10 @@ function ScannerDetails({ data }) {
                 }}
               >
                 Token Identity Information
+                <Tooltip title="Print" >
+
+              <PrintIcon />
+                </Tooltip>
               </Typography>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <Paper
@@ -264,11 +271,11 @@ function ScannerDetails({ data }) {
           <Grid item xs={12} md={6}>
             <ScannerTable data={data} />
           </Grid>
-          <Grid item xs={12} md={3}></Grid>
-          <Grid item xs={12} md={6}>
+          {/* <Grid item xs={12} md={3}></Grid> */}
+          <Grid item xs={12} md={12}>
             <SecurityInfo data={data} />
           </Grid>
-          <Grid item xs={12} md={3}></Grid>
+          {/* <Grid item xs={12} md={3}></Grid> */}
         </Grid>
       )}
     </>

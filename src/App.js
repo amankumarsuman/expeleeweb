@@ -90,6 +90,8 @@ function App() {
         {/* <AuditPage/> */}
 
         {/* </section> */}
+        <div className="gradient-bg-welcome">
+
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="audit" element={<AuditPage />} />
@@ -125,6 +127,7 @@ function App() {
         {/* <AnimatedDashboard /> */}
         {/* </ThemeProvider> */}
         {/* </ColorModeContext.Provider> */}
+        </div>
       </ScrollContainer>
     </>
   );
