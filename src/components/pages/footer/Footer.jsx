@@ -130,7 +130,7 @@ function Footer() {
           
           <Typography
           style={{cursor:"pointer"}}
-          onClick={()=>handleNavigate("https://metanmore.com/")}
+          onClick={()=>handleNavigate("https://metanmore.expelee.com/")}
             sx={{ color: "grey", fontFamily: "poppins", fontSize: "1" }}
           >
            Expe Marketing

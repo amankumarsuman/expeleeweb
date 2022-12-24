@@ -65,7 +65,7 @@ export const links = [
           },
           {
             name: "Expe Marketing",
-            link: "https://metanmore.com/",
+            link: "https://metanmore.expelee.com/",
             logo: <SupportAgentIcon />,
           },
           {

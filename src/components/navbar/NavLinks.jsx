@@ -119,7 +119,7 @@ const handleClick=()=>{
                           // </li>
                           <List>
                             <ListItem disablePadding>
-                              {slink.link === "https://metanmore.com/" ? (
+                              {slink.link === "https://metanmore.expelee.com/" ? (
                                 <ListItemButton
                                 
                                   onClick={() => handleNavigate(slink.link)}
@@ -281,7 +281,7 @@ const handleClick=()=>{
                           // </li>
                           <List>
                             <ListItem disablePadding>
-                              {slink.link === "https://metanmore.com/" ? (
+                              {slink.link === "https://metanmore.expelee.com/" ? (
                                 <ListItemButton
                                 
                                   onClick={() => handleNavigate(slink.link)}
@@ -585,10 +585,10 @@ const handleClick=()=>{
                           <CustomizedListTextMobile primary={slink.name} />
                         {/* </Link> */}
                       </ListItemButton>:
-                      slink.link==="https://metanmore.com/"?  <ListItemButton
+                      slink.link==="https://metanmore.expelee.com/"?  <ListItemButton
                       onClick={() =>
                         handleNavigate(
-                          "https://metanmore.com/"
+                          "https://metanmore.expelee.com/"
                         )
                       }
                     >

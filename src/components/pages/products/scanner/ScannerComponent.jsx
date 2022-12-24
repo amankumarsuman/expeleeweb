@@ -74,7 +74,7 @@ function ScannerComponent() {
     const options = {
       method: "GET",
       url: `https://deep-index.moralis.io/api/v2/${input?.address}/nft`,
-      params: { chain: "eth", format: "decimal", normalizeMetadata: "false" },
+      params: { chain: "eth,bsc", format: "decimal", normalizeMetadata: "false" },
       headers: { accept: "application/json", "X-API-Key": api_key },
     };
 
