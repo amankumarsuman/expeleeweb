@@ -51,7 +51,7 @@ function Team() {
             linkedLink="https://www.linkedin.com/in/divyesh16/"
             telegramLink="https://t.me/DG_Expelee"
             resize={true}
-            imageResize={1}
+            // imageResize={1}
           />
         </Grid>
         <Grid  item xs={12} md={3}>
