@@ -26,6 +26,8 @@ import HowToRegIcon from '@mui/icons-material/HowToReg';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import AttractionsIcon from '@mui/icons-material/Attractions';
 import HomeIcon from '@mui/icons-material/Home';
+import {RxDiscordLogo} from "react-icons/rx"
+import {SiMedium} from "react-icons/si"
 export const links = [
   {
     name: "Products",
@@ -147,6 +149,8 @@ export const links = [
             logo: <GitHubIcon />,
           },
           { name: "Medium", link: "https://medium.com/@expelee", logo: <img src={medium} width="80%"/> },
+          // { name: "Medium", link: "https://medium.com/@expelee", logo: <SiMedium size={28}/> },
+          { name: "Discord", link: "https://discord.gg/pApdJyrjMg", logo: <RxDiscordLogo size={28}/> },
         ],
       },
     ],

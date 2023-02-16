@@ -214,7 +214,8 @@ const handleClick=()=>{
                                     <CustomizedListText primary={slink.name} />
                                   {/* </Link> */}
                                 </ListItemButton>
-                              ) : slink.link ===
+                              ) : 
+                              slink.link ===
                                 "https://medium.com/@expelee" ? (
                                 <ListItemButton
                                   onClick={() =>
@@ -227,7 +228,7 @@ const handleClick=()=>{
                                   sx={{background:"transparent"}}
                                   
                                   >
-                                    {/* <VerifiedUserIcon /> */}
+                                   
                                     <Avatar
                                   sx={{background:"grey",marginLeft:-1,color:"grey"}}
                                     
@@ -240,7 +241,24 @@ const handleClick=()=>{
                                     <CustomizedListText primary={slink.name} />
                                   {/* </Link> */}
                                 </ListItemButton>
-                              ) : (
+                              ): slink.link==="https://discord.gg/pApdJyrjMg"?  <ListItemButton
+                              onClick={() =>
+                                handleNavigate(
+                                  "https://discord.gg/pApdJyrjMg"
+                                )
+                              }
+                              >
+                              <ListItemIcon
+                                  sx={{color:"white"}}
+                              
+                              >
+                                {/* <VerifiedUserIcon /> */}
+                                {slink.logo}
+                              </ListItemIcon>
+                              {/* <Link to={slink.link}> */}
+                                <CustomizedListTextMobile primary={slink.name} />
+                              {/* </Link> */}
+                              </ListItemButton> : (
                                 <ListItemButton>
                                   <ListItemIcon>
                                     {/* <VerifiedUserIcon /> */}
@@ -403,7 +421,25 @@ const handleClick=()=>{
                                     <CustomizedListText primary={slink.name} />
                                   {/* </Link> */}
                                 </ListItemButton>
-                              ) : (
+                              ) : slink.link==="https://discord.gg/pApdJyrjMg"?  <ListItemButton
+                              onClick={() =>
+                                handleNavigate(
+                                  "https://discord.gg/pApdJyrjMg"
+                                )
+                              }
+                              >
+                              <ListItemIcon
+                              sx={{background:"transparent",color:"grey",}}
+
+                              
+                              >
+                                {/* <VerifiedUserIcon /> */}
+                                {slink.logo}
+                              </ListItemIcon>
+                              {/* <Link to={slink.link}> */}
+                                <CustomizedListText primary={slink.name} />
+                              {/* </Link> */}
+                              </ListItemButton>:(
                                 <ListItemButton>
                                   <ListItemIcon>
                                     {/* <VerifiedUserIcon /> */}
@@ -603,6 +639,25 @@ const handleClick=()=>{
                         <CustomizedListTextMobile primary={slink.name} />
                       {/* </Link> */}
                     </ListItemButton>:
+
+slink.link==="https://discord.gg/pApdJyrjMg"?  <ListItemButton
+onClick={() =>
+  handleNavigate(
+    "https://discord.gg/pApdJyrjMg"
+  )
+}
+>
+<ListItemIcon
+    sx={{color:"white"}}
+
+>
+  {/* <VerifiedUserIcon /> */}
+  {slink.logo}
+</ListItemIcon>
+{/* <Link to={slink.link}> */}
+  <CustomizedListTextMobile primary={slink.name} />
+{/* </Link> */}
+</ListItemButton>:
                               <ListItemButton  
                           
                               // onClick={() => {
