@@ -10,6 +10,8 @@ import phoenix from "../../assets/phoenix.png";
 import probit from "../../assets/probit.png";
 import presale from "../../assets/presaleworld.png";
 import bitcourier from "../../assets/bitcourierNew.png";
+import tokenworld from "../../assets/tokenworlds.png";
+import eightbit from "../../assets/8bit.png";
 import styles from "./tryourServices.module.css";
 import AliceCarousel from 'react-alice-carousel';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
@@ -20,7 +22,7 @@ function PartnerAliceCarousel() {
   const handleNavigate = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
   };
-    const item=[{img:hedgepay,link:"https://hedgepay.org/"},{img:hamiNetwork,link:"https://hami.network/"},{img:gemped,link:"https://gempad.app/presales"},{img:lbank,link:"https://www.lbank.info/"},{img:luxpad,link:"https://luxpad.io/"},{img:newToken,link:"https://newtokenmarket.com/"},{img:pandasale,link:"https://pandasale.finance/"},{img:phoenix,link:"https://t.me/phoenixholdings"},{img:probit,link:"https://www.probit.com/en-us/"},{img:presale,link:"https://presale.world/"},{img:bitcourier,link:"https://bitcourier.co.uk/news/expelee-interview"}]
+    const item=[{img:hedgepay,link:"https://hedgepay.org/"},{img:hamiNetwork,link:"https://hami.network/"},{img:gemped,link:"https://gempad.app/presales"},{img:lbank,link:"https://www.lbank.info/"},{img:luxpad,link:"https://luxpad.io/"},{img:newToken,link:"https://newtokenmarket.com/"},{img:pandasale,link:"https://pandasale.finance/"},{img:phoenix,link:"https://t.me/phoenixholdings"},{img:probit,link:"https://www.probit.com/en-us/"},{img:presale,link:"https://presale.world/"},{img:bitcourier,link:"https://bitcourier.co.uk/news/expelee-interview"},{img:tokenworld,link:"https://token-world.co/"},{img:eightbit,link:"https://www.8bitearn.com/"}]
   
     const responsive = {
       0: {

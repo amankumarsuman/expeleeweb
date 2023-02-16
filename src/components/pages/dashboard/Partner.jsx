@@ -11,6 +11,8 @@ import phoenix from "../../assets/phoenix.png";
 import probit from "../../assets/probit.png";
 import presale from "../../assets/presale.png";
 import bitcourier from "../../assets/bitcourierNew.png";
+import tokenworld from "../../assets/tokenworld.png";
+import eightbit from "../../assets/8bit.png";
 import styles from "./tryourServices.module.css";
 import GoToTop from "../../coreComponents/GoToTop";
 function Partner() {
@@ -110,7 +112,7 @@ function Partner() {
           <img src={bitcourier} width="70%" alt="bit courier logo" />
         </Grid>
 
-        <Grid item md={2}></Grid>
+        {/* <Grid item md={2}></Grid> */}
         <Grid
           item
           md={3}
@@ -138,6 +140,30 @@ function Partner() {
           md={3}
         >
           <img src={phoenix} alt="phoenix logo" />
+        </Grid>
+        <Grid
+          sx={{ cursor: "pointer" }}
+          onClick={() => handleNavigate("https://token-world.co/")}
+          item
+          xs={12}
+          md={3}
+        >
+          <img src={tokenworld} alt="tokenworld logo" width="50%" />
+        </Grid>
+        <Grid item xs={12} md={3}>
+
+        </Grid>
+        <Grid item xs={12} md={1}>
+
+        </Grid>
+        <Grid
+          sx={{ cursor: "pointer" }}
+          onClick={() => handleNavigate("https://www.8bitearn.com/")}
+          item
+          xs={12}
+          md={3}
+        >
+          <img src={eightbit} alt="eightbit logo" width="90%" />
         </Grid>
         {/* <Grid item xs={12} md={3}>
       </Grid>

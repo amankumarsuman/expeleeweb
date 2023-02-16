@@ -56,6 +56,7 @@ import ScamCard from "./components/pages/services/scam/ScamCard.jsx";
 import Scam from "./components/pages/services/scam/Scam.jsx";
 import GenerateToken from "./components/pages/services/tokenGeneration/TokenGeneration.jsx";
 import ScannerComponent from "./components/pages/products/scanner/ScannerComponent.jsx";
+import AuditReport from "./components/pages/auditReport/AuditReport.jsx";
 
 function App() {
   let { id } = useParams();
@@ -91,7 +92,7 @@ function App() {
 
         {/* </section> */}
         <div className="gradient-bg-welcome">
-
+{/* <AuditReport/> */}
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="audit" element={<AuditPage />} />

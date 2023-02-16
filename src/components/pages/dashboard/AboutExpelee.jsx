@@ -47,7 +47,7 @@ function AboutExpelee() {
               className={styles.textGradient}
               variant="h3"
             >
-              About Expelee Visionary Projects
+              About Expelee 
             </Typography>
             <Typography
               sx={{
@@ -60,11 +60,7 @@ function AboutExpelee() {
                 marginTop: "2em",
               }}
             >
-              Expelee is a product-based aspirational Web3 Start-up. Coping up
-              with numerous solutions for blockchain Security and constructing a
-              Web3 Ecosystem from Deal making platform to developer hosting open
-              platform, while also developing our own commercial and sustainable
-              blockchain.
+             We offer a comprehensive suite of blockchain services designed to meet the diverse needs of businesses and individuals. Whether you're looking to get your Smart Contract audited, or a want decentralized application, we've got you covered. Our experienced team of blockchain experts work closely with you to understand your unique requirements and provide tailored solutions that drive innovation and growth. This Product Brochure will give you brief summary of various Services we offer.
             </Typography>
 
             <div style={{ textAlign: "center" }}>

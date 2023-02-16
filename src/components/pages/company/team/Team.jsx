@@ -1,12 +1,9 @@
 import { TeamCard } from "./card";
-import styled from "styled-components";
 import { Grid } from "@mui/material";
 import anandhu from "../../../assets/anandhuNew.png";
 import ritik from "../../../assets/ritikNew.png";
-import anay from "../../../assets/anayNew.png";
 import divyesh from "../../../assets/divyeshNew.png";
 import aman from "../../../assets/aman.png";
-import adedoyin from "../../../assets/adedoyin.png";
 import GoToTop from "../../../coreComponents/GoToTop";
 // const TeamContainer = styled.div`
 //   width: 100%;
@@ -45,52 +42,31 @@ function Team() {
             telegramLink="https://t.me/Ritz_Expelee"
           />
         </Grid>
-        <Grid item xs={12} md={3}>
-          <TeamCard
-            name="Anay Indani"
-            image={anay}
-            desg="Technical Officer"
-            linkedLink="https://www.linkedin.com/in/anay-indani-b84b08197/"
-            telegramLink="https://t.me/Anay_Expelee"
-            // resize={true}
-            imageResize={1}
-          />
-        </Grid>
+   
         <Grid item xs={12} md={3}>
           <TeamCard
             name="Divyesh Gupta"
             image={divyesh}
-            desg="Designer & Digital Marketer"
+            desg="Co-Founder - Design & Marketing"
             linkedLink="https://www.linkedin.com/in/divyesh16/"
             telegramLink="https://t.me/DG_Expelee"
             resize={true}
             imageResize={1}
           />
         </Grid>
-        <Grid sx={{ marginTop: "3em" }} item xs={12} md={3}>
+        <Grid  item xs={12} md={3}>
           <TeamCard
             width={true}
             name="Aman Kumar"
             image={aman}
-            desg="Front End Developer"
+            desg="Technical Lead"
             linkedLink="https://www.linkedin.com/in/aman-kumar-b683b614b/"
-            telegramLink="https://t.me/fortuneprime"
+            telegramLink="https://t.me/Expe_tech"
             resize={true}
             imageResize={1}
           />
         </Grid>
-        <Grid sx={{ marginTop: "3em" }} item xs={12} md={3}>
-          <TeamCard
-            name="Temitayo Adedoyin"
-            image={adedoyin}
-            height={100}
-            desg="Content Strategist and Technical Writer"
-            linkedLink="https://www.linkedin.com/in/divyesh16/"
-            telegramLink="https://t.me/DG_Expelee"
-            // resize={true}
-            imageResize={1}
-          />
-        </Grid>
+  
       </Grid>
       <GoToTop />
     </>

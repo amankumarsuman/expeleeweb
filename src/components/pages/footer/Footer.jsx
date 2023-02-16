@@ -11,7 +11,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import MailIcon from "@mui/icons-material/Mail";
-
+import linktree from "../../assets/linktree.png"
 import TelegramIcon from "@mui/icons-material/Telegram";
 import { Link, useNavigate } from "react-router-dom";
 import CircleDiv from "./CircleDiv";
@@ -454,6 +454,29 @@ function Footer() {
                           name="medium"
                         />
                       </span> */}
+                    </div>
+                    <div style={{ marginTop: "3%",display:"flex" }}>
+                      <span
+                      style={{marginRight:"7px"}}
+                        className={styles.linkDecoration}
+                        onClick={() =>
+                          handleNavigate(
+                            "https://discord.gg/pApdJyrjMg"
+                          )
+                        }
+                      >
+                        {/* <CircleDiv icon={<InstagramIcon />} name="insta" /> */}
+                        <Avatar
+                        sx={{border: "1.5px dotted white",
+                        backgroundColor: "#3d75ed",}}
+                        >
+<img src="https://cdn.logojoy.com/wp-content/uploads/20210422095037/discord-mascot.png"/>
+                        </Avatar>
+                      </span>
+                     
+                     
+
+            
                     </div>
                   </>
                 }
