@@ -1,7 +1,7 @@
 import React from "react";
 import hedgepay from "../../assets/hedge-pay.png";
 import hamiNetwork from "../../assets/hami.png";
-import gemped from "../../assets/gempad.png";
+import gemped from "../../assets/pinksale.png";
 import lbank from "../../assets/lbank.png";
 import luxpad from "../../assets/luxpad.png";
 import newToken from "../../assets/newtokenlogo.png";
@@ -52,7 +52,7 @@ function SwiperCard() {
       buttonText: "Know Details",
       margintop: 5,
       marginIn: 7,
-      link:"blockChainDevelopment"
+      link: "blockChainDevelopment",
     },
     {
       title: "Coin Level",
@@ -63,7 +63,7 @@ function SwiperCard() {
       buttonText: "Know Details",
       // marginbelow:true,
       marginIn: 7,
-      link:"coinLevel"
+      link: "coinLevel",
     },
     {
       title: "Expe Crypto Hunter",
@@ -73,7 +73,7 @@ function SwiperCard() {
       alt: "chart",
       buttonText: "Know Details",
       marginIn: 5.3,
-      link:"live-chart"
+      link: "live-chart",
     },
     {
       title: "Expe Scam Hunter",
@@ -84,7 +84,7 @@ function SwiperCard() {
       buttonText: "Know Details",
       marginbelow: true,
       marginIn: 9,
-      link:"scam"
+      link: "scam",
     },
     {
       title: "Expe Blogs",
@@ -95,7 +95,7 @@ function SwiperCard() {
       buttonText: "Know Details",
       // marginbelow:true,
       marginIn: 7,
-      link:"blogs"
+      link: "blogs",
     },
     {
       title: "Hyperledger Development",
@@ -106,7 +106,7 @@ function SwiperCard() {
       buttonText: "Know Details",
       // marginbelow:true,
       marginIn: 7,
-      link:"hyperledger"
+      link: "hyperledger",
     },
   ];
 
