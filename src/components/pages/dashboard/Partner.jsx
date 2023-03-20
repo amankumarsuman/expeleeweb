@@ -2,7 +2,7 @@ import { Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 import hedgepay from "../../assets/hedgepay.png";
 import hamiNetwork from "../../assets/hami.png";
-import gemped from "../../assets/gempad.png";
+import gemped from "../../assets/pinksale.png";
 import lbank from "../../assets/lbank.png";
 import luxpad from "../../assets/luxpad.png";
 import newToken from "../../assets/newtokenlogo.png";
@@ -40,12 +40,12 @@ function Partner() {
       <Grid container sx={{ width: "85%", margin: "auto" }} spacing={2}>
         <Grid
           sx={{ cursor: "pointer" }}
-          onClick={() => handleNavigate("https://gempad.app/presales")}
+          onClick={() => handleNavigate("https://www.pinksale.finance/?chain=Arbitrum")}
           item
           xs={6}
           md={3}
         >
-          <img src={gemped} alt="gemped logo" />
+          <img src={gemped} style={{height:"0px !important"}} alt="pinksale logo" />
         </Grid>
         <Grid
           sx={{ cursor: "pointer" }}
