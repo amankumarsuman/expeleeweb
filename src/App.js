@@ -168,6 +168,7 @@ function App() {
 
             <Route path="/live-chart" element={<Homepage />} />
             <Route path="/expe-creator" element={<ExpeDapp />} />
+            <Route path="/events" element={<EventList events={events} />} />
 
             <Route
               path="/blockChainDevelopment"
