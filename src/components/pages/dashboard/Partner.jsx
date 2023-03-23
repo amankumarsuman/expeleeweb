@@ -40,12 +40,14 @@ function Partner() {
       <Grid container sx={{ width: "85%", margin: "auto" }} spacing={2}>
         <Grid
           sx={{ cursor: "pointer" }}
-          onClick={() => handleNavigate("https://www.pinksale.finance/?chain=Arbitrum")}
+          onClick={() =>
+            handleNavigate("https://www.pinksale.finance/?chain=Arbitrum")
+          }
           item
           xs={6}
           md={3}
         >
-          <img src={gemped} style={{height:"0px !important"}} alt="pinksale logo" />
+          <img src={gemped} alt="pinksale logo" />
         </Grid>
         <Grid
           sx={{ cursor: "pointer" }}
@@ -150,12 +152,8 @@ function Partner() {
         >
           <img src={tokenworld} alt="tokenworld logo" width="50%" />
         </Grid>
-        <Grid item xs={12} md={3}>
-
-        </Grid>
-        <Grid item xs={12} md={1}>
-
-        </Grid>
+        <Grid item xs={12} md={3}></Grid>
+        <Grid item xs={12} md={1}></Grid>
         <Grid
           sx={{ cursor: "pointer" }}
           onClick={() => handleNavigate("https://www.8bitearn.com/")}

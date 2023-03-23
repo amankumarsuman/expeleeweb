@@ -21,24 +21,23 @@ import Diversity3Icon from "@mui/icons-material/Diversity3";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import BookIcon from "@mui/icons-material/Book";
 import ForkRightIcon from "@mui/icons-material/ForkRight";
-import AddTaskIcon from '@mui/icons-material/AddTask';
-import HowToRegIcon from '@mui/icons-material/HowToReg';
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import AttractionsIcon from '@mui/icons-material/Attractions';
-import HomeIcon from '@mui/icons-material/Home';
-import {RxDiscordLogo} from "react-icons/rx"
-import {SiMedium} from "react-icons/si"
+import AddTaskIcon from "@mui/icons-material/AddTask";
+import HowToRegIcon from "@mui/icons-material/HowToReg";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import AttractionsIcon from "@mui/icons-material/Attractions";
+import HomeIcon from "@mui/icons-material/Home";
+import { RxDiscordLogo } from "react-icons/rx";
+import { SiMedium } from "react-icons/si";
+import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 export const links = [
   {
     name: "Products",
-    
+
     submenu: true,
     sublinks: [
       {
         // Head: "Product List",
         sublink: [
-          
-         
           {
             name: "Expelee Audits",
             link: "/audit",
@@ -50,12 +49,13 @@ export const links = [
             logo: <HowToRegIcon />,
           },
 
-          { name: "Contract Design", link: "/design", logo: <ArchitectureIcon /> },
+          {
+            name: "Contract Design",
+            link: "/design",
+            logo: <ArchitectureIcon />,
+          },
           { name: "Expe NFT", link: "/nft", logo: <TokenIcon /> },
-        
-         
         ],
-        
       },
       {
         // Head: "Product List 2",
@@ -83,8 +83,6 @@ export const links = [
         ],
       },
     ],
-
-   
   },
   {
     name: "Services",
@@ -98,8 +96,16 @@ export const links = [
             link: "/blockChainDevelopment",
             logo: <CurrencyBitcoinIcon />,
           },
-          { name: "Expe Crypto Hunter", link: "/live-chart", logo: <PieChartIcon /> },
-          { name: "Expe Scam Hunter", link: "/scam", logo: <NewReleasesIcon /> },
+          {
+            name: "Expe Crypto Hunter",
+            link: "/live-chart",
+            logo: <PieChartIcon />,
+          },
+          {
+            name: "Expe Scam Hunter",
+            link: "/scam",
+            logo: <NewReleasesIcon />,
+          },
           {
             name: "Expe Blogs ",
             link: "/blogs",
@@ -148,9 +154,17 @@ export const links = [
             link: "https://github.com/expelee-co",
             logo: <GitHubIcon />,
           },
-          { name: "Medium", link: "https://medium.com/@expelee", logo: <img src={medium} width="80%"/> },
+          {
+            name: "Medium",
+            link: "https://medium.com/@expelee",
+            logo: <img src={medium} width="80%" />,
+          },
           // { name: "Medium", link: "https://medium.com/@expelee", logo: <SiMedium size={28}/> },
-          { name: "Discord", link: "https://discord.gg/pApdJyrjMg", logo: <RxDiscordLogo size={28}/> },
+          {
+            name: "Discord",
+            link: "https://discord.gg/pApdJyrjMg",
+            logo: <RxDiscordLogo size={28} />,
+          },
         ],
       },
     ],
@@ -171,6 +185,7 @@ export const links = [
           },
           { name: "Partners", link: "/partners", logo: <HandshakeIcon /> },
           { name: "Roadmap", link: "/roadmap", logo: <ForkRightIcon /> },
+          { name: "Events", link: "/events", logo: <EventAvailableIcon /> },
         ],
       },
     ],

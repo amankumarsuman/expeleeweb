@@ -1,0 +1,112 @@
+/* .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.event {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.event.show {
+    opacity: 1;
+}
+
+.event:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .event-list {
+        width: 80%;
+        margin: 0 auto;
+    }
+} */
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.root {
+/* background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%); */
+background-image: linear-gradient(135deg, #404056 10%, #1B1C25 100%);
+
+/* background-image: linear-gradient(135deg, #283E51 10%, #0A2342 100%); */
+padding: 24px;
+    border-radius: 10px;
+    
+    animation: fadeIn 1s;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.event {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-out;
+}
+
+.event.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.event:nth-of-type(odd):hover {
+    transform: translateX(10%);
+}
+
+.event:nth-of-type(even):hover {
+    transform: translateX(-10%);
+}
+
+@media (min-width: 768px) {
+    .event-list {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .event:nth-of-type(odd) {
+        transform-origin: left;
+    }
+
+    .event:nth-of-type(even) {
+        transform-origin: right;
+    }
+
+    .event:nth-of-type(odd):hover {
+        transform: rotateY(5deg) translateX(5%);
+    }
+
+    .event:nth-of-type(even):hover {
+        transform: rotateY(-5deg) translateX(-5%);
+    }
+}
