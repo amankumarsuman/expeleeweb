@@ -57,8 +57,61 @@ import Scam from "./components/pages/services/scam/Scam.jsx";
 import GenerateToken from "./components/pages/services/tokenGeneration/TokenGeneration.jsx";
 import ScannerComponent from "./components/pages/products/scanner/ScannerComponent.jsx";
 import AuditReport from "./components/pages/auditReport/AuditReport.jsx";
-
+import EventList from "./components/events/Events.jsx";
+import ActionAreaCard from "./components/events/Cards.jsx";
+import img1 from "./components/assets/blockchaindev.jpg";
 function App() {
+  const events = [
+    {
+      title: "web3 dubai",
+      description:
+        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
+      date: "27,August 2023",
+      img: img1,
+    },
+    {
+      title: "web3 dubai",
+      description:
+        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
+      date: "27,August 2023",
+      img: img1,
+    },
+    {
+      title: "web3 dubai",
+      description:
+        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
+      date: "27,August 2023",
+      img: img1,
+    },
+    {
+      title: "web3 dubai",
+      description:
+        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
+      date: "27,August 2023",
+      img: img1,
+    },
+    {
+      title: "web3 dubai",
+      description:
+        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
+      date: "27,August 2023",
+      img: img1,
+    },
+    {
+      title: "web3 dubai",
+      description:
+        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
+      date: "27,August 2023",
+      img: img1,
+    },
+    {
+      title: "web3 dubai",
+      description:
+        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
+      date: "27,August 2023",
+      img: img1,
+    },
+  ];
   let { id } = useParams();
   console.log(id);
   const [theme, colorMode] = useMode("dark");
@@ -92,42 +145,44 @@ function App() {
 
         {/* </section> */}
         <div className="gradient-bg-welcome">
-{/* <AuditReport/> */}
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="audit" element={<AuditPage />} />
-          <Route path="scam" element={<Scam />} />
-          <Route path="token" element={<GenerateToken />} />
+          {/* <AuditReport/> */}
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="audit" element={<AuditPage />} />
+            <Route path="scam" element={<Scam />} />
+            <Route path="token" element={<GenerateToken />} />
 
-          <Route path="audit/all-audit" element={<AllAudit />} />
-          <Route path="scanner" element={<ScannerComponent />} />
-          <Route path="expe-vetting" element={<ExpeVetting />} />
-          <Route path="expe-diligence" element={<ExpeKyc />} />
-          <Route path="/design" element={<ExpeDesign />} />
-          <Route path="/nft" element={<ExpeNft />} />
-          <Route path="/coinLevel" element={<ExpeCoin />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/about-us" element={<AboutExpelee />} />
-          <Route path="/roadmap" element={<RoadMap />} />
-          <Route path="/partners" element={<Partner />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/hyperledger" element={<ExpeHyperLedger />} />
+            <Route path="audit/all-audit" element={<AllAudit />} />
+            <Route path="scanner" element={<ScannerComponent />} />
+            <Route path="expe-vetting" element={<ExpeVetting />} />
+            <Route path="expe-diligence" element={<ExpeKyc />} />
+            <Route path="/design" element={<ExpeDesign />} />
+            <Route path="/nft" element={<ExpeNft />} />
+            <Route path="/coinLevel" element={<ExpeCoin />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/about-us" element={<AboutExpelee />} />
+            <Route path="/roadmap" element={<RoadMap />} />
+            <Route path="/partners" element={<Partner />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/hyperledger" element={<ExpeHyperLedger />} />
 
-          <Route path="/live-chart" element={<Homepage />} />
-          <Route path="/expe-creator" element={<ExpeDapp />} />
+            <Route path="/live-chart" element={<Homepage />} />
+            <Route path="/expe-creator" element={<ExpeDapp />} />
 
-          <Route
-            path="/blockChainDevelopment"
-            element={<BlockchainDevelopment />}
-          />
-          <Route path="/coins/:id" element={<CoinPage />} exact />
-        </Routes>
-        {/* <CoinPage/> */}
-        <Footer />
-        {/* </div> */}
-        {/* <AnimatedDashboard /> */}
-        {/* </ThemeProvider> */}
-        {/* </ColorModeContext.Provider> */}
+            <Route
+              path="/blockChainDevelopment"
+              element={<BlockchainDevelopment />}
+            />
+            <Route path="/coins/:id" element={<CoinPage />} exact />
+          </Routes>
+          {/* <CoinPage/> */}
+          {/* <EventList events={events} /> */}
+          {/* <ActionAreaCard /> */}
+          <Footer />
+          {/* </div> */}
+          {/* <AnimatedDashboard /> */}
+          {/* </ThemeProvider> */}
+          {/* </ColorModeContext.Provider> */}
         </div>
       </ScrollContainer>
     </>
