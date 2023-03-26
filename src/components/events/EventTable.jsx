@@ -45,6 +45,13 @@ const rows = [
     { name: 'AW3 Summit 2023', date: "2023-03-30 To 2023-04-01", city: "Singapore", link: "https://www.techstorm.tv/summitx-2023/" },
     { name: 'Miami NFT Week 2023', date: "2023-03-31 To 2023-04-02", city: "Miami, FL", link: "https://miaminftweek.com/" },
     { name: 'Western Australia Web Conference', date: "2023-04-05 To 2023-04-06", city: "Nedlands", link: "https://waweb3.org/" },
+    //change link from here
+    { name: 'NFT.NYC2023', date: "2023-04-12 To 2023-04-14", city: "Timesquare, NY", link: "https://waweb3.org/" },
+    { name: 'Devconnect', date: "2023-04-18 To 2023-04-25", city: "Amsterdam, The Netherlands", link: "https://waweb3.org/" },
+    { name: 'MIT Bitcoin Expo 2023', date: "2023-04-22 To 2023-04-23", city: "MIT Innovation Headquarters, Cambridge", link: "https://waweb3.org/" },
+    { name: 'Consensus 2023', date: "2023-04-26 To 2023-04-29", city: "Austin, TX, USA", link: "https://waweb3.org/" },
+    { name: 'Tel Aviv Blockchain Week', date: "2023-05-01 To 2023-05-02", city: "Tel Aviv-Yafo, Israel", link: "https://waweb3.org/" },
+    { name: 'W3W', date: "2023-05-08 To 2023-05-13", city: "Jakarta, Yogyakarta, Bali, Indonesia", link: "https://waweb3.org/" },
 
 ];
 
