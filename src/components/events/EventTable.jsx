@@ -37,12 +37,14 @@ function createData(name, date, city, link,) {
 // 2023-03-27
 const rows = [
     { name: 'Bitcoin Energy Summit', date: "2023-03-27 To 2023-03-29", city: "Miami, FL, USA", link: "https://www.bitcoinenergysummit.com/" },
-    { name: 'Fintech India and Blockchain Summit', date: "Mar 27, 2023–Mar 30, 2023", city: "New Delhi, India", link: "https://www.fintechindiaexpo.com/" },
-    { name: "FinTech India Expo", date: "Mar 27, 2023–Mar 29, 2023", city: "New Delhi, India", link: "https://www.fintechindiaexpo.com/" },
-    { name: 'Prague Gaming & TECH Summit', date: "Mar 29, 2023- Mar 31, 2023", city: "Prague, Czechia", link: "https://hipther.com/events/prague/" },
-    { name: 'Wow Summit World of Web3', date: "Mar 29, 2023- Mar 30, 2023", city: "Hong Kong", link: "https://wowsummit.net/hong-kong-mar-2023/" },
-    { name: 'American Metaverse Awards', date: "Mar 29, 2023- Mar 30, 2023", city: "Miami, Florida", link: "https://www.americanmetaverseawards.com/" },
-    { name: 'AW3 Summit 2023', date: "Mar 30, 2023- Apr 1, 2023", city: "Singapore", link: "https://www.techstorm.tv/summitx-2023/" },
+    { name: 'Fintech India and Blockchain Summit', date: "2023-03-27 To 2023-03-30", city: "New Delhi, India", link: "https://www.fintechindiaexpo.com/" },
+    { name: "FinTech India Expo", date: "2023-03-27 To 2023-03-29", city: "New Delhi, India", link: "https://www.fintechindiaexpo.com/" },
+    { name: 'Prague Gaming & TECH Summit', date: "2023-03-29 To 2023-03-31", city: "Prague, Czechia", link: "https://hipther.com/events/prague/" },
+    { name: 'Wow Summit World of Web3', date: "2023-03-29 To 2023-03-30", city: "Hong Kong", link: "https://wowsummit.net/hong-kong-mar-2023/" },
+    { name: 'American Metaverse Awards', date: "Mar 29, 2023 To 2023-03-30", city: "Miami, Florida", link: "https://www.americanmetaverseawards.com/" },
+    { name: 'AW3 Summit 2023', date: "2023-03-30 To 2023-04-01", city: "Singapore", link: "https://www.techstorm.tv/summitx-2023/" },
+    { name: 'Miami NFT Week 2023', date: "2023-03-31 To 2023-04-02", city: "Miami, FL", link: "https://miaminftweek.com/" },
+    { name: 'Western Australia Web Conference', date: "2023-04-05 To 2023-04-06", city: "Nedlands", link: "https://waweb3.org/" },
 
 ];
 
