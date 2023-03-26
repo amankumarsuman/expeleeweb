@@ -67,6 +67,39 @@ const rows = [
     { name: 'Web3 Tales', date: "2023-06-01 To 2023-06-02", city: "Zagreb, Croatia", link: "https://web3tales.io/" },
     { name: 'Crypto Valley Conference', date: "2023-06-01 To 2023-06-02", city: "Rotkreuz, Switzerland", link: "https://www.cryptovalleyconference.com/" },
     { name: 'Non-fungible Conference', date: "2023-06-07 To 2023-06-08", city: "Lisbon, Portugal", link: "https://www.nonfungibleconference.com/" },
+    { name: 'Blockchaincon Latam 2023', date: "2023-06-08 To 2023-06-10", city: "Lima, PE", link: "https://blockchaincon.la/" },
+    //LINK TO BE CHANGE
+    { name: 'Epick Web3 Conference', date: "2023-06-09 To 2023-06-09", city: "Lisbon, Portugal", link: "https://blockchaincon.la/" },
+    { name: 'Coin Bureau Live', date: "2023-06-10 To 2023-06-10", city: "London", link: "https://blockchaincon.la/" },
+    { name: 'FANS LOVE IT! Web3 Football and Sports Conference', date: "2023-06-10 To 2023-06-10", city: "Istanbul, Turkey", link: "https://blockchaincon.la/" },
+    { name: 'Metaverse Summit', date: "2023-06-12 To 2023-06-13", city: "Paris, France", link: "https://blockchaincon.la/" },
+    { name: '2nd Blockchain Oracle Summit', date: "2023-06-20 To 2023-06-22", city: "Stephanstraße 41, 10559 Berlin, Germany", link: "https://blockchaincon.la/" },
+    { name: 'Blockchance 23', date: "2023-06-27 To 2023-06-30", city: "Hamburg, Germany", link: "https://blockchaincon.la/" },
+    { name: 'BlockDown Festival 2023', date: "2023-06-28 To 2023-06-30", city: "Albufeira, Portugal", link: "https://blockchaincon.la/" },
+    { name: 'IVS Crypto 2023 Kyoto', date: "2023-06-28 To 2023-06-30", city: "Kyoto, Japan", link: "https://blockchaincon.la/" },
+    
+    
+    { name: 'Block3000:Blockchain Battle', date: "2023-07-06 To 2023-06-07", city: "Lisbon, Portugal", link: "https://blockchaincon.la/" },
+    { name: 'Blockchain and Internet of Things Conference', date: "2023-07-07 To 2023-07-09", city: "Osaka, Japan", link: "https://blockchaincon.la/" },
+    { name: 'Blockdown Portugal 23', date: "2023-07-10 To 2023-07-12", city: "Algarve, Portugal", link: "https://blockchaincon.la/" },
+    { name: 'International Congress on Blockchain', date: "2023-07-12 To 2023-07-14", city: "Portugal and Online", link: "https://blockchaincon.la/" },
+    { name: 'ETHCC Paris', date: "2023-07-17 To 2023-07-20", city: "Paris, France", link: "https://blockchaincon.la/" },
+    { name: 'ETHWomen', date: "2023-08-13 To 2023-08-16", city: "Toronto, Canada", link: "https://blockchaincon.la/" },
+    { name: 'ETHToronto', date: "2023-08-13 To 2023-08-16", city: "Toronto, Canada", link: "https://blockchaincon.la/" },
+    { name: 'Blockchain Futurist Conference', date: "2023-08-15 To 2023-08-16", city: "Toronto, Canada", link: "https://blockchaincon.la/" },
+    { name: 'Coinfest Asia 2023', date: "2023-08-24 To 2023-08-25", city: "Bali, Indonesia", link: "https://blockchaincon.la/" },
+    { name: 'COINFEST ASIA', date: "2023-08-24 To 2023-08-25", city: "Bali, Indonesia", link: "https://blockchaincon.la/" },
+    { name: 'The Science of Blockchain Conference 2023', date: "2023-08-28 To 2023-08-30", city: "Stanford, CA", link: "https://blockchaincon.la/" },
+    { name: 'Nordic Blockchain Conference 2023', date: "2023-09-07 To 2023-09-08", city: "Copenhagen, Denmark", link: "https://blockchaincon.la/" },
+    { name: 'Permissionless', date: "2023-09-11 To 2023-09-13", city: "Austin, Texas, USA", link: "https://blockchaincon.la/" },
+    { name: 'Token 2049', date: "2023-09-13 To 2023-09-14", city: "Singapore", link: "https://blockchaincon.la/" },
+    { name: 'DMEXCO 2023', date: "2023-09-20 To 2023-09-21", city: "Cologne, Germany", link: "https://blockchaincon.la/" },
+    { name: 'Blockchain Expo Europe', date: "2023-09-26 To 2023-09-27", city: "Rai, Amsterdam, The Netherlands", link: "https://blockchaincon.la/" },
+    { name: 'Pacific Bitcoin Festival 2023', date: "2023-10-05 To 2023-10-06", city: "Sta. Monica, California", link: "https://www.pacificbitcoin.com/" },
+    { name: 'DeGameFi', date: "2023-10-07 To 2023-06-08", city: "Tbilisi, Georgia", link: "https://degamefi.io/" },
+    { name: 'Future Blockchain Summit', date: "2023-10-15 To 2023-10-18", city: "Dubai", link: "https://www.futureblockchainsummit.com/welcome" },
+    { name: 'European Metaverse Summit and Awards', date: "2023-10-25 To 2023-10-25", city: "Berlin, Germany", link: "https://www.europeanmetaverseawards.com/" },
+
 
 ];
 
