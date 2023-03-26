@@ -100,6 +100,11 @@ const rows = [
     { name: 'Future Blockchain Summit', date: "2023-10-15 To 2023-10-18", city: "Dubai", link: "https://www.futureblockchainsummit.com/welcome" },
     { name: 'European Metaverse Summit and Awards', date: "2023-10-25 To 2023-10-25", city: "Berlin, Germany", link: "https://www.europeanmetaverseawards.com/" },
 
+    //2nd
+    { name: 'Paris Blockchain Week', date: "2023-03-20 To 2023-03-24", city: "Paris, France", link: "https://www.parisblockchainweek.com/" },
+    { name: 'American Metaverse Award', date: "2023-03-29 To 2023-03-30", city: "Miami, FL", link: "https://www.americanmetaverseawards.com/" },
+    
+
 
 ];
 
