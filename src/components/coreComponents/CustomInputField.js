@@ -23,6 +23,28 @@ export const CssTextField = styled(TextField)({
     },
   },
 });
+export const CustomTextFieldForTable = styled(TextField)({
+  "& label.Mui-focused": {
+    color: "white",
+  },
+  "& .MuiInput-underline": {
+    borderBottomColor: "White",
+  },
+  "& .MuiInput-underline:after": {
+    borderBottomColor: "White",
+  },
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      borderColor: "White",
+    },
+    "&:hover fieldset": {
+      borderColor: "white",
+    },
+    "&.Mui-focused fieldset": {
+      borderColor: "white",
+    },
+  },
+});
 
 export const ScannerTextField = styled(TextField)({
   "& .MuiInputBase-root": {

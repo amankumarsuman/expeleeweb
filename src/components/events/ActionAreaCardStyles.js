@@ -79,6 +79,13 @@ const useStyles = makeStyles((theme) => ({
     animation: "$shuffle-animation-right 0.5s ease",
     animationDelay: "0.3s",
   },
+  lists: {
+   
+    '& li:nth-child(even)': {
+      color: "red !important",
+    },
+  },
+
 }));
 
 export { useStyles };

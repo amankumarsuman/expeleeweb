@@ -61,13 +61,19 @@ export default function ActionAreaCard({ events }) {
     };
   }, [classes.card]);
 
+
+
+  const handleNavigate = (link) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <Card
       sx={{ background: "black", color: "white" }}
       className={`${classes.card} ${show ? classes.show : ""}`}
       //   sx={classes.card}
     >
-      <CardActionArea>
+      <CardActionArea onClick={() => handleNavigate(events.link)}>
         <CardMedia
           className={classes.media}
           component="img"
@@ -88,7 +94,16 @@ export default function ActionAreaCard({ events }) {
             variant="body2"
             color="text.secondary"
           >
-            {events?.description}
+            {events?.description?.split("\n")?.map((el)=>(
+            
+                <div className={classes.lists} >
+                  <p>
+
+                  {el}
+                  </p>
+                </div>
+             
+            ))}
           </Typography>
           <hr style={{ marginTop: "1em", marginBottom: "1em" }} />
           <Typography

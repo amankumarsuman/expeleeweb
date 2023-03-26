@@ -59,29 +59,36 @@ import ScannerComponent from "./components/pages/products/scanner/ScannerCompone
 import AuditReport from "./components/pages/auditReport/AuditReport.jsx";
 import EventList from "./components/events/Events.jsx";
 import ActionAreaCard from "./components/events/Cards.jsx";
-import img1 from "./components/assets/blockchaindev.jpg";
+import img1 from "./components/assets/event1.avif";
+import img2 from "./components/assets/img2.avif";
+import event3 from "./components/assets/event3.avif";
+import EventTable from "./components/events/EventTable.jsx";
+import EventsAttended from "./components/events/EventHeaders.jsx";
 function App() {
   const events = [
     {
-      title: "web3 dubai",
+      title: "Crypto Founders Rooftop",
       description:
-        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
-      date: "27,August 2023",
+        "Welcome to the Crypto Founders Rooftop to share the secret sauce of product traction and token growth.\n8:30 pm - 9:30 pm - Introductions with secret sauce\n9:30 pm - 10:30 pm - Presentations (DM your deck to apply for a speaking slot, it's free and selective)\n9:30 pm - 11:30 pm - Networking\nHost:Val Preobrazhenskiy, Founder of Latoken",
+      date: "Thursday, March 23 · 8:30 - 11:30pm +04",
       img: img1,
+      link:"https://www.eventbrite.com/e/crypto-chaos-club-lets-talk-about-bitcoin-ethereum-crypto-tickets-537546143987?aff=erellivmlt&lang=en-gb&status=30&locale=en_GB&internal_ref=social&view=listing"
     },
     {
-      title: "web3 dubai",
+      title: "Crypto Chaos Club",
       description:
-        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
-      date: "27,August 2023",
-      img: img1,
+        "Let's Talk about Bitcoin, Ethereum & Crypto\nJoin us for the Let's Talk Crypto meetup hosted by CCC:\nWhether you're a beginner or an OG,it is the perfect opportunity to connect with like-minded individuals,discuss the latest developments in the crypto world!\nThe event's goal is to create a relaxed atmosphere where you can meet people with similar interests, share ideas,and learn more...",
+      date: "24th March 2023-8 pm - 10 pm",
+      img: img2,
+      link:"https://www.eventbrite.com/e/crypto-chaos-club-lets-talk-about-bitcoin-ethereum-crypto-tickets-537546143987?aff=erellivmlt&lang=en-gb&status=30&locale=en_GB&internal_ref=social&view=listing"
     },
     {
-      title: "web3 dubai",
+      title: "The Future is Now",
       description:
-        "Getting right into 2023, these Web3, metaverse, blockchain and NFTs events of 2023 may include conferences, meetups and other gatherings that bring together ...",
-      date: "27,August 2023",
-      img: img1,
+        "Building Relationships over Coffee\nJoin us for a relaxed and informal morning of coffee and conversation at The Future is Now: Building Relationships Over Coffee.\nThis event is the perfect opportunity to network with like-minded individuals and build meaningful connections within the crypto community.\nWith no set agenda, attendees will have the freedom to engage in casual conversations ",
+      date: "Saturday, March 25 · 9am - 12pm +04",
+      img: event3,
+      link:"https://www.eventbrite.co.uk/e/the-future-is-now-building-relationships-over-coffee-tickets-548246679577"
     },
     {
       title: "web3 dubai",
@@ -168,7 +175,8 @@ function App() {
 
             <Route path="/live-chart" element={<Homepage />} />
             <Route path="/expe-creator" element={<ExpeDapp />} />
-            <Route path="/events" element={<EventList events={events} />} />
+            {/* <Route path="/events" element={<EventList events={events} />} /> */}
+            <Route path="/events" element={<EventsAttended events={events} />} />
 
             <Route
               path="/blockChainDevelopment"
