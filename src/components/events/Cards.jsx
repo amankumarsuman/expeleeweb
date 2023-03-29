@@ -61,15 +61,13 @@ export default function ActionAreaCard({ events }) {
     };
   }, [classes.card]);
 
-
-
   const handleNavigate = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
   };
 
   return (
     <Card
-      sx={{ background: "black", color: "white" }}
+      sx={{ background: "black", color: "white", width: "320px" }}
       className={`${classes.card} ${show ? classes.show : ""}`}
       //   sx={classes.card}
     >
@@ -87,22 +85,17 @@ export default function ActionAreaCard({ events }) {
             variant="h5"
             component="div"
           >
-            {events?.title}
+            {events?.name}
           </Typography>
           <Typography
             sx={{ color: "white" }}
             variant="body2"
             color="text.secondary"
           >
-            {events?.description?.split("\n")?.map((el)=>(
-            
-                <div className={classes.lists} >
-                  <p>
-
-                  {el}
-                  </p>
-                </div>
-             
+            {events?.description?.split("\n")?.map((el) => (
+              <div className={classes.lists}>
+                <p>{el}</p>
+              </div>
             ))}
           </Typography>
           <hr style={{ marginTop: "1em", marginBottom: "1em" }} />
@@ -112,6 +105,12 @@ export default function ActionAreaCard({ events }) {
             color="text.secondary"
           >
             {events?.date}
+          </Typography>
+          <Typography
+            sx={{ color: "white", fontWeight: "bold" }}
+            variant="body2"
+          >
+            {events?.city}
           </Typography>
         </CardContent>
       </CardActionArea>

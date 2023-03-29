@@ -27,11 +27,16 @@ export const CustomTextFieldForTable = styled(TextField)({
   "& label.Mui-focused": {
     color: "white",
   },
+  "& root.Mui-focused": {
+    color: "white",
+  },
   "& .MuiInput-underline": {
     borderBottomColor: "White",
+    color: "white",
   },
   "& .MuiInput-underline:after": {
     borderBottomColor: "White",
+    color: "white",
   },
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
@@ -39,9 +44,40 @@ export const CustomTextFieldForTable = styled(TextField)({
     },
     "&:hover fieldset": {
       borderColor: "white",
+      color: "white",
     },
     "&.Mui-focused fieldset": {
       borderColor: "white",
+      color: "white",
+    },
+  },
+});
+export const CustomSelectFieldForTable = styled(Select)({
+  "& label.Mui-focused": {
+    color: "white",
+  },
+  "& root.Mui-focused": {
+    color: "white",
+  },
+  "& .MuiInput-underline": {
+    borderBottomColor: "White",
+    color: "white",
+  },
+  "& .MuiInput-underline:after": {
+    borderBottomColor: "White",
+    color: "white",
+  },
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      borderColor: "White",
+    },
+    "&:hover fieldset": {
+      borderColor: "white",
+      color: "white",
+    },
+    "&.Mui-focused fieldset": {
+      borderColor: "white",
+      color: "white",
     },
   },
 });

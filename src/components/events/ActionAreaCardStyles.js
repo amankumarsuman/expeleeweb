@@ -32,14 +32,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "black",
     maxWidth: 345,
     margin: "1rem",
-    borderRadius: "10px",
+    borderRadius: "20px",
     boxShadow: "none",
     transition: "all 0.5s ease",
     transform: "translateX(-50%)",
     opacity: 0,
     position: "relative",
     overflow: "hidden",
-    border: "2px dotted red",
+    // border: "2px dotted red",
   },
   media: {
     height: 140,
@@ -80,12 +80,10 @@ const useStyles = makeStyles((theme) => ({
     animationDelay: "0.3s",
   },
   lists: {
-   
-    '& li:nth-child(even)': {
+    "& li:nth-child(even)": {
       color: "red !important",
     },
   },
-
 }));
 
 export { useStyles };

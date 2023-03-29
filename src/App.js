@@ -64,8 +64,9 @@ import img2 from "./components/assets/img2.avif";
 import event3 from "./components/assets/event3.avif";
 import EventTable from "./components/events/EventTable.jsx";
 import EventsAttended from "./components/events/EventHeaders.jsx";
+import { rows } from "./components/events/eventData.js";
+
 function App() {
- 
   let { id } = useParams();
   console.log(id);
   const [theme, colorMode] = useMode("dark");
@@ -122,8 +123,8 @@ function App() {
 
             <Route path="/live-chart" element={<Homepage />} />
             <Route path="/expe-creator" element={<ExpeDapp />} />
-            {/* <Route path="/events" element={<EventList events={events} />} /> */}
-            <Route path="/events" element={<EventsAttended  />} />
+            <Route path="/events" element={<EventList events={rows} />} />
+            {/* <Route path="/events" element={<EventsAttended  />} /> */}
 
             <Route
               path="/blockChainDevelopment"

@@ -9,7 +9,7 @@ const EventsAttended = () => {
       <h1 style={{ color: "#3d75ed" }}>Web 3 Events</h1>
       {/* Add your events list or cards here */}
 
-      <EventTable/>
+      {/* <EventTable/> */}
     </Paper>
   );
 };
