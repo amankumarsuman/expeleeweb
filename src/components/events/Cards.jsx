@@ -81,7 +81,7 @@ export default function ActionAreaCard({ events }) {
         />
         <CardContent className={classes.content}>
           <Typography
-            sx={{ color: "green", fontWeight: "bold" }}
+            sx={{ color: "blue", fontWeight: "bold" }}
             gutterBottom
             component="div"
           >

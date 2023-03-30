@@ -5,12 +5,12 @@ import EventTable from "./EventTable";
 
 const EventsAttended = () => {
   return (
-    <Paper className="root" elevation={3}>
+    <div className="root" >
       <h1 style={{ color: "#3d75ed" }}>Web 3 Events</h1>
       {/* Add your events list or cards here */}
 
       {/* <EventTable/> */}
-    </Paper>
+    </div>
   );
 };
 

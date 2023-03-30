@@ -126,7 +126,7 @@ const EventList = ({ events }) => {
               onChange={handleSearchKeys}
               value={searchValues?.name}
               sx={{
-                input: { color: "green", fontSize: "18px", fontWeight: "bold" },
+                input: { color: "white", fontSize: "18px", fontWeight: "bold" },
               }}
               InputLabelProps={{
                 sx: {
@@ -141,51 +141,56 @@ const EventList = ({ events }) => {
             />
           </Grid>
           <Grid item xs={12} md={3}>
-            <Box sx={{ minWidth: 120 }}>
-              <FormControl fullWidth>
-                <InputLabel
-                  sx={{ color: "white" }}
-                  id="demo-simple-select-label"
-                >
-                  Choose City
-                </InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  name="city"
-                  onChange={handleSearchKeys}
-                  value={searchValues?.city}
-                  label="Choose City"
-                  sx={{
-                    input: {
-                      color: "green",
-                      fontSize: "18px",
-                      fontWeight: "bold",
-                    },
-                  }}
-                  InputLabelProps={{
-                    sx: {
-                      // set the color of the label when not shrinked
-                      color: "white",
-                      [`&.${inputLabelClasses.shrink}`]: {
-                        // set the color of the label when shrinked (usually when the TextField is focused)
-                        color: "orange",
-                      },
-                      "& label.Mui-focused": {
-                        color: "white",
-                      },
-                      "& .MuiInput-underline": {
-                        borderBottomColor: "White",
-                      },
-                    },
-                  }}
-                >
-                  {selectValue?.map((el) => (
-                    <MenuItem value={el}>{el}</MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-            </Box>
+          <Box sx={{ minWidth: 120 }}>
+  <FormControl fullWidth>
+    <InputLabel
+      sx={{ color: "white" }}
+      id="demo-simple-select-label"
+    >
+      Choose City
+    </InputLabel>
+    <Select
+      labelId="demo-simple-select-label"
+      id="demo-simple-select"
+      name="city"
+      onChange={handleSearchKeys}
+      value={searchValues?.city}
+      label="Choose City"
+      sx={{
+        input: {
+          color: "white", // set input text color to white
+          fontSize: "18px",
+          fontWeight: "bold",
+        },
+      }}
+      InputLabelProps={{
+        sx: {
+          // set the color of the label when not shrinked
+          color: "white",
+          ["& .MuiSelect-nativeInput"]: {
+            color: "white"
+          },
+          [`&.${inputLabelClasses.shrink}`]: {
+            // set the color of the label when shrinked (usually when the TextField is focused)
+            color: "orange",
+          },
+          "& label.Mui-focused": {
+            color: "white",
+          },
+          "& .MuiInput-underline": {
+            borderBottomColor: "White",
+          },
+        },
+      }}
+      
+    >
+      {selectValue?.map((el) => (
+        <MenuItem value={el}>{el}</MenuItem>
+      ))}
+    </Select>
+  </FormControl>
+</Box>
+
           </Grid>
           {/* <Grid item xs={12} md={3}>
             <CustomTextFieldForTable
