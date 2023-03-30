@@ -51,11 +51,9 @@ const EventList = ({ events }) => {
     if (name === "name") {
       setSearchValues({ name: value });
     } else if (name === "city") {
-      const filterData = data.filter((el) =>
-      el.city.toLowerCase().includes( value?.toLowerCase() )
-    );
-    console.log(filterData,"filtereeee")
-    setData(filterData);
+   
+   
+
       setSearchValues({ city: value });
 
     } else if (name === "date") {
@@ -65,25 +63,31 @@ const EventList = ({ events }) => {
 
   const handleSearch = () => {
     if (searchValues?.name) {
-      const filterData = data.filter((el) =>
-        el.name.toLowerCase().includes(searchValues?.name?.toLowerCase())
+      const filterData = data?.filter((el) =>
+        el?.name?.toLowerCase()?.includes(searchValues?.name?.toLowerCase())
       );
       setData(filterData);
     } else if (searchValues?.city) {
-      const filterData = data.filter((el) =>
-        el.city.toLowerCase().includes(searchValues?.city?.toLowerCase())
+      const filterData = data?.filter((el) =>
+        el?.city?.toLowerCase()?.includes(searchValues?.city?.toLowerCase())
       );
 
       setData(filterData);
-    } else if (searchValues?.date) {
-      const filterData = data.filter((el) =>
-        convertDateRange(el.convertDateRangedate.toLowerCase()).includes(
-          convertDateRange(searchValues?.date?.toLowerCase())
-        )
-      );
-      setData(filterData);
-    }
+    } 
+    
+    // else if (searchValues?.date) {
+    //   const filterData = data?.filter((el) =>
+    //     convertDateRange(el?.convertDateRangedate?.toLowerCase())?.includes(
+    //       convertDateRange(searchValues?.date?.toLowerCase())
+    //     )
+    //   );
+    //   setData(filterData);
+    // }
   };
+
+useEffect(()=>{
+  handleSearch()
+},[searchValues])
 
   Usekey("Enter", handleSearch);
   Usekey("NumpadEnter", handleSearch);
@@ -207,6 +211,10 @@ const EventList = ({ events }) => {
       renderInput={(params) => <CustomTextFieldForTable sx={{
         input: { color: "white", fontSize: "18px", fontWeight: "bold" },
       }}
+      onChange={(event, newValue) => {
+        console.log(newValue,event.target,"new")
+        setSearchValues({ city: event.target.value });
+      }}
       InputLabelProps={{
         sx: {
           // set the color of the label when not shrinked
@@ -217,7 +225,10 @@ const EventList = ({ events }) => {
           },
         },
       }}
-      {...params} onChange={handleSearchKeys} label="Select City" />}
+      {...params} 
+      
+      // onChange={handleSearchKeys}
+       label="Select City" />}
     />
 
           </Grid>
