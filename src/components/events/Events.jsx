@@ -127,9 +127,10 @@ useEffect(()=>{
             "linear-gradient(to right, #0f0c29, #302b63, #24243e)",
           width: "80%",
           margin: "auto",
+         
         }}
       >
-        <Grid container spacing={2} sx={{ width: "95%", margin: "auto" }}>
+        <Grid container spacing={2} sx={{ width: "90%",margin:"auto", }}>
           <Grid item xs={12} md={3}>
             <CustomTextFieldForTable
               variant="outlined"
@@ -148,6 +149,7 @@ useEffect(()=>{
                   [`&.${inputLabelClasses.shrink}`]: {
                     // set the color of the label when shrinked (usually when the TextField is focused)
                     color: "white",
+                    fontWeight:"bold"
                   },
                 },
               }}
@@ -219,7 +221,7 @@ useEffect(()=>{
    
       InputLabelProps={{
         style: {
-          color: params.shrink ? "white" : "inherit"
+          color: params.shrink ? "white" : "white"
         },
         sx: {
           // set the color of the label when not shrinked
@@ -227,6 +229,7 @@ useEffect(()=>{
           [`&.${inputLabelClasses.shrink}`]: {
             // set the color of the label when shrinked (usually when the TextField is focused)
             color: "white",
+            fontWeight:"bold"
           },
         },
       }}
@@ -263,19 +266,19 @@ useEffect(()=>{
               }}
             />
           </Grid> */}
-          <Grid item xs={12} md={1.5}>
+          <Grid item xs={12} md={3}>
             <Button
               onClick={handleSearch}
-              sx={{ marginRight: "1em", padding: "1em" }}
+              sx={{width:"80%", marginRight: "1em", padding: "1em",textTransform:"none",fontWeight:"bold" }}
               variant="contained"
               fullWidth
             >
               Search
             </Button>
           </Grid>
-          <Grid item xs={12} md={1.5}>
+          <Grid item xs={12} md={3}>
             <Button
-              sx={{ padding: "1em" }}
+              sx={{width:"80%", padding: "1em",textTransform:"none",fontWeight:"bold" }}
               fullWidth
               variant="outlined"
               onClick={handleReset}
