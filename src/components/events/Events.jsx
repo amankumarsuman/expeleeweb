@@ -1,4 +1,5 @@
 import {
+  Autocomplete,
   Box,
   Button,
   FormControl,
@@ -8,6 +9,7 @@ import {
   Paper,
   Select,
   TablePagination,
+  TextField,
 } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { CustomTextFieldForTable } from "../coreComponents/CustomInputField";
@@ -49,7 +51,13 @@ const EventList = ({ events }) => {
     if (name === "name") {
       setSearchValues({ name: value });
     } else if (name === "city") {
+      const filterData = data.filter((el) =>
+      el.city.toLowerCase().includes( value?.toLowerCase() )
+    );
+    console.log(filterData,"filtereeee")
+    setData(filterData);
       setSearchValues({ city: value });
+
     } else if (name === "date") {
       setSearchValues({ date: value });
     }
@@ -95,7 +103,7 @@ const EventList = ({ events }) => {
   };
 
   const selectValue = events.map((el) => el?.city);
-
+  const uniqueValues = Array.from(new Set(selectValue));
   const styles = {
     floatingLabelFocusStyle: {
       color: "red",
@@ -134,14 +142,14 @@ const EventList = ({ events }) => {
                   color: "white",
                   [`&.${inputLabelClasses.shrink}`]: {
                     // set the color of the label when shrinked (usually when the TextField is focused)
-                    color: "orange",
+                    color: "white",
                   },
                 },
               }}
             />
           </Grid>
           <Grid item xs={12} md={3}>
-          <Box sx={{ minWidth: 120 }}>
+          {/* <Box sx={{ minWidth: 120 }}>
   <FormControl fullWidth>
     <InputLabel
       sx={{ color: "white" }}
@@ -189,7 +197,28 @@ const EventList = ({ events }) => {
       ))}
     </Select>
   </FormControl>
-</Box>
+</Box> */}
+
+   <Autocomplete
+      disablePortal
+      id="combo-box-demo"
+      options={uniqueValues}
+      sx={{ width: "98%" }}
+      renderInput={(params) => <CustomTextFieldForTable sx={{
+        input: { color: "white", fontSize: "18px", fontWeight: "bold" },
+      }}
+      InputLabelProps={{
+        sx: {
+          // set the color of the label when not shrinked
+          color: "white",
+          [`&.${inputLabelClasses.shrink}`]: {
+            // set the color of the label when shrinked (usually when the TextField is focused)
+            color: "white",
+          },
+        },
+      }}
+      {...params} onChange={handleSearchKeys} label="Select City" />}
+    />
 
           </Grid>
           {/* <Grid item xs={12} md={3}>
