@@ -19,7 +19,7 @@ export const rows = [
     img: image1,
   },
   {
-    name: "Fintech India and Blockchain Summit",
+    name: "Fintech India ",
     date: "2023-03-27 To 2023-03-30",
     city: "New Delhi, India",
     img: e7,
@@ -134,7 +134,7 @@ export const rows = [
     link: "https://www.tlvbw.io/",
   },
   {
-    name: "Blockchain Economy Istanbul Summit 2023",
+    name: "Blockchain Economy Istanbul",
     date: "2023-05-08 To 2023-05-11",
     city: "Istanbul, Turkey",
     img: e7,
@@ -174,7 +174,7 @@ export const rows = [
     link: "https://bravenewcoin.com/events/nextech-week-2023-spring",
   },
   {
-    name: "MARE BALTICUM Gaming & TECH Summit",
+    name: "MARE BALTICUM Gaming Summit",
     date: "2023-05-16 To 2023-05-18",
     city: "TRiga, Latvia",
     img: e7,
@@ -222,7 +222,7 @@ export const rows = [
     link: "https://regtechafricaconference.com/",
   },
   {
-    name: "Next Block Expo Warsaw Summit 2023",
+    name: "Next Block Expo Warsaw2023",
     date: "2023-05-24 To 2023-05-25",
     city: "Warsaw, Poland",
     img: e7,
@@ -287,7 +287,7 @@ export const rows = [
     link: "https://live.coinbureau.com/",
   },
   {
-    name: "FANS LOVE IT! Web3 Football and Sports Conference",
+    name: "Web3 Football and Sports Conference",
     date: "2023-06-10 To 2023-06-10",
     city: "Istanbul, Turkey",
     img: e7,
@@ -344,7 +344,7 @@ export const rows = [
     link: "https://block3000.com/",
   },
   {
-    name: "Blockchain and Internet of Things Conference",
+    name: "Blockchain and IOT Conference",
     date: "2023-07-07 To 2023-07-09",
     city: "Osaka, Japan",
     img: e7,
@@ -416,7 +416,7 @@ export const rows = [
     link: "https://coinfest.asia/",
   },
   {
-    name: "The Science of Blockchain Conference 2023",
+    name: "The Science of Blockchain",
     date: "2023-08-28 To 2023-08-30",
     city: "Stanford, CA",
     img: e7,

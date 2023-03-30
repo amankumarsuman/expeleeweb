@@ -16,6 +16,7 @@ import ActionAreaCard from "./Cards";
 import EventsAttended from "./EventHeaders";
 import "./eventsStyle.css";
 import { inputLabelClasses } from "@mui/material/InputLabel";
+import { convertDateRange } from "./ConvertDate";
 const EventList = ({ events }) => {
   const [show, setShow] = useState(false);
 
@@ -32,7 +33,7 @@ const EventList = ({ events }) => {
     city: "",
   };
   const [searchValues, setSearchValues] = React.useState(init);
-
+  console.log(searchValues);
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -44,7 +45,7 @@ const EventList = ({ events }) => {
 
   const handleSearchKeys = (e) => {
     const { name, value } = e.target;
-
+    console.log(value);
     if (name === "name") {
       setSearchValues({ name: value });
     } else if (name === "city") {
@@ -68,7 +69,9 @@ const EventList = ({ events }) => {
       setData(filterData);
     } else if (searchValues?.date) {
       const filterData = data.filter((el) =>
-        el.date.toLowerCase().includes(searchValues?.date?.toLowerCase())
+        convertDateRange(el.convertDateRangedate.toLowerCase()).includes(
+          convertDateRange(searchValues?.date?.toLowerCase())
+        )
       );
       setData(filterData);
     }
@@ -184,7 +187,7 @@ const EventList = ({ events }) => {
               </FormControl>
             </Box>
           </Grid>
-          <Grid item xs={12} md={3}>
+          {/* <Grid item xs={12} md={3}>
             <CustomTextFieldForTable
               name="date"
               label="Event Date"
@@ -209,7 +212,7 @@ const EventList = ({ events }) => {
                 },
               }}
             />
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} md={1.5}>
             <Button
               onClick={handleSearch}

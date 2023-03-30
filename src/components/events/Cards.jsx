@@ -36,6 +36,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { useStyles } from "./ActionAreaCardStyles.js";
+import { convertDateRange } from "./ConvertDate.js";
 
 export default function ActionAreaCard({ events }) {
   const classes = useStyles();
@@ -82,7 +83,6 @@ export default function ActionAreaCard({ events }) {
           <Typography
             sx={{ color: "green", fontWeight: "bold" }}
             gutterBottom
-            variant="h5"
             component="div"
           >
             {events?.name}
@@ -104,7 +104,7 @@ export default function ActionAreaCard({ events }) {
             variant="body2"
             color="text.secondary"
           >
-            {events?.date}
+            {convertDateRange(events?.date)}
           </Typography>
           <Typography
             sx={{ color: "white", fontWeight: "bold" }}

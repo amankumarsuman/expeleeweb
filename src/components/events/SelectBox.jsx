@@ -23,9 +23,6 @@ export default function BasicSelect({ data }) {
           label="Choose City"
           onChange={handleChange}
         >
-          {/* <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem> */}
           {data?.map((el) => (
             <MenuItem value={el}>{el}</MenuItem>
           ))}
