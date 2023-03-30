@@ -35,7 +35,7 @@ const EventList = ({ events }) => {
     city: "",
   };
   const [searchValues, setSearchValues] = React.useState(init);
-  console.log(searchValues);
+ 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -47,7 +47,7 @@ const EventList = ({ events }) => {
 
   const handleSearchKeys = (e) => {
     const { name, value } = e.target;
-    console.log(value);
+  
     if (name === "name") {
       setSearchValues({ name: value });
     } else if (name === "city") {
@@ -141,6 +141,7 @@ useEffect(()=>{
                 input: { color: "white", fontSize: "18px", fontWeight: "bold" },
               }}
               InputLabelProps={{
+                shrink: Boolean(searchValues?.name) ,
                 sx: {
                   // set the color of the label when not shrinked
                   color: "white",
@@ -212,10 +213,14 @@ useEffect(()=>{
         input: { color: "white", fontSize: "18px", fontWeight: "bold" },
       }}
       onChange={(event, newValue) => {
-        console.log(newValue,event.target,"new")
+       
         setSearchValues({ city: event.target.value });
       }}
+   
       InputLabelProps={{
+        style: {
+          color: params.shrink ? "white" : "inherit"
+        },
         sx: {
           // set the color of the label when not shrinked
           color: "white",
