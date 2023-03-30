@@ -7,6 +7,24 @@ import e6 from "../assets/e6.png";
 import e7 from "../assets/e7.png";
 import e9 from "../assets/e9.png";
 import e10 from "../assets/e10.webp";
+import e11 from "../assets/e11.webp";
+import e12 from "../assets/e12.png";
+import e13 from "../assets/e13.webp";
+import e14 from "../assets/e14.webp";
+import e15 from "../assets/e15.jpg";
+import e17 from "../assets/e17.webp";
+import e18 from "../assets/e18.jpeg";
+import e19 from "../assets/e19.png";
+import e20 from "../assets/e20.webp";
+import e24 from "../assets/e24.webp";
+import e21 from "../assets/21.webp";
+import e22 from "../assets/e22.png";
+import e23 from "../assets/23.jpg";
+
+import e25 from "../assets/e25.png";
+import e26 from "../assets/e26.jpg";
+import e27 from "../assets/e27.png";
+import e28 from "../assets/e28.png";
 
 export const rows = [
   {
@@ -105,7 +123,7 @@ export const rows = [
     name: "Devconnect",
     date: "2023-04-18 To 2023-04-25",
     city: "Amsterdam, The Netherlands",
-    img: e7,
+    img: e11,
 
     link: "https://devconnect.org/",
   },
@@ -113,15 +131,15 @@ export const rows = [
     name: "MIT Bitcoin Expo 2023",
     date: "2023-04-22 To 2023-04-23",
     city: "MIT Innovation Headquarters, Cambridge",
-    img: e7,
+    img: e12,
 
-    link: "hhttps://www.mitbitcoinexpo.org/",
+    link: "https://www.mitbitcoinexpo.org/",
   },
   {
     name: "Consensus 2023",
     date: "2023-04-26 To 2023-04-29",
     city: "Austin, TX, USA",
-    img: e7,
+    img: e13,
 
     link: "hhttps://bravenewcoin.com/events/consensus-2023",
   },
@@ -129,7 +147,7 @@ export const rows = [
     name: "Tel Aviv Blockchain Week",
     date: "2023-05-01 To 2023-05-02",
     city: "Tel Aviv-Yafo, Israel",
-    img: e7,
+    img: e14,
 
     link: "https://www.tlvbw.io/",
   },
@@ -137,7 +155,7 @@ export const rows = [
     name: "Blockchain Economy Istanbul",
     date: "2023-05-08 To 2023-05-11",
     city: "Istanbul, Turkey",
-    img: e7,
+    img: e15,
 
     link: "https://blockchaineconomy.istanbul/en",
   },
@@ -153,7 +171,7 @@ export const rows = [
     name: "NFT Tallinn",
     date: "2023-05-09 To 2023-05-10",
     city: "Estonia",
-    img: e7,
+    img: e17,
 
     link: "https://nfttallinn.com/",
   },
@@ -161,7 +179,7 @@ export const rows = [
     name: "Security Token Summit 2023",
     date: "2023-05-09 To 2023-05-11",
     city: "New York, NY, USA",
-    img: e7,
+    img: e18,
 
     link: "https://dgh.events/event/security-token-summit",
   },
@@ -169,7 +187,7 @@ export const rows = [
     name: "NexTech Week 2023",
     date: "2023-05-10 To 2023-05-11",
     city: "Tokyo, Japan",
-    img: e7,
+    img: e19,
 
     link: "https://bravenewcoin.com/events/nextech-week-2023-spring",
   },
@@ -177,7 +195,7 @@ export const rows = [
     name: "MARE BALTICUM Gaming Summit",
     date: "2023-05-16 To 2023-05-18",
     city: "TRiga, Latvia",
-    img: e7,
+    img: e20,
 
     link: "https://hipther.com/events/riga/",
   },
@@ -185,7 +203,7 @@ export const rows = [
     name: "TEAMZ Web3.0 Summit",
     date: "2023-05-17 To 2023-05-18",
     city: "Tokyo",
-    img: e7,
+    img: e21,
 
     link: "https://summit.teamz.co.jp/",
   },
@@ -193,7 +211,7 @@ export const rows = [
     name: "Bitcoin Miami",
     date: "2023-05-18 To 2023-05-21",
     city: "Miami, FL, USA",
-    img: e7,
+    img: e22,
 
     link: "https://b.tc/conference/bitcoin2023#about",
   },
@@ -201,7 +219,7 @@ export const rows = [
     name: "Veecon 2022",
     date: "2023-05-18 To 2023-05-20",
     city: "Minneapolis, Minnesota, USA",
-    img: e7,
+    img: e23,
 
     link: "https://veecon.co/",
   },
@@ -209,7 +227,7 @@ export const rows = [
     name: "The Web3 Conference",
     date: "2023-05-19 To 2023-05-19",
     city: "Amsterdam, Netherlands",
-    img: e7,
+    img: e24,
 
     link: "https://www.theweb3.wtf/",
   },
@@ -217,7 +235,7 @@ export const rows = [
     name: "RegTech Africa Conference",
     date: "2023-05-24 To 2023-05-26",
     city: "Lagos, Nigeria",
-    img: e7,
+    img: e25,
 
     link: "https://regtechafricaconference.com/",
   },
@@ -225,7 +243,7 @@ export const rows = [
     name: "Next Block Expo Warsaw2023",
     date: "2023-05-24 To 2023-05-25",
     city: "Warsaw, Poland",
-    img: e7,
+    img: e26,
 
     link: "https://nextblockexpo.com/",
   },
@@ -233,7 +251,7 @@ export const rows = [
     name: "Web3 Live",
     date: "2023-06-01 To 2023-06-02",
     city: "London",
-    img: e7,
+    img: e27,
 
     link: "https://techcircus.io/en/events/web3-live-london",
   },
@@ -241,7 +259,7 @@ export const rows = [
     name: "Web3 Tales",
     date: "2023-06-01 To 2023-06-02",
     city: "Zagreb, Croatia",
-    img: e7,
+    img: e28,
 
     link: "https://web3tales.io/",
   },
