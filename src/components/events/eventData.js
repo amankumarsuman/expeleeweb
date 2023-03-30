@@ -25,6 +25,12 @@ import e25 from "../assets/e25.png";
 import e26 from "../assets/e26.jpg";
 import e27 from "../assets/e27.png";
 import e28 from "../assets/e28.png";
+import e29 from "../assets/e29.jpg";
+import e30 from "../assets/e30.png";
+import e31 from "../assets/e31.jpg";
+import e32 from "../assets/e32.webp";
+import e33 from "../assets/e33.jpg";
+import e34 from "../assets/e34.webp";
 
 export const rows = [
   {
@@ -267,7 +273,7 @@ export const rows = [
     name: "Crypto Valley Conference",
     date: "2023-06-01 To 2023-06-02",
     city: "Rotkreuz, Switzerland",
-    img: e7,
+    img: e29,
 
     link: "https://www.cryptovalleyconference.com/",
   },
@@ -275,7 +281,7 @@ export const rows = [
     name: "Non-fungible Conference",
     date: "2023-06-07 To 2023-06-08",
     city: "Lisbon, Portugal",
-    img: e7,
+    img: e30,
 
     link: "https://www.nonfungibleconference.com/",
   },
@@ -283,7 +289,7 @@ export const rows = [
     name: "Blockchaincon Latam 2023",
     date: "2023-06-08 To 2023-06-10",
     city: "Lima, PE",
-    img: e7,
+    img: e31,
 
     link: "https://blockchaincon.la/",
   },
@@ -292,7 +298,7 @@ export const rows = [
     name: "Epick Web3 Conference",
     date: "2023-06-09 To 2023-06-09",
     city: "Lisbon, Portugal",
-    img: e7,
+    img: e32,
 
     link: "https://www.epicweb3.com/",
   },
@@ -300,7 +306,7 @@ export const rows = [
     name: "Coin Bureau Live",
     date: "2023-06-10 To 2023-06-10",
     city: "London",
-    img: e7,
+    img: e33,
 
     link: "https://live.coinbureau.com/",
   },
@@ -308,7 +314,7 @@ export const rows = [
     name: "Web3 Football and Sports Conference",
     date: "2023-06-10 To 2023-06-10",
     city: "Istanbul, Turkey",
-    img: e7,
+    img: e34,
 
     link: "https://fansloveit.com/",
   },
