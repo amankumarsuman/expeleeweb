@@ -221,8 +221,10 @@ useEffect(()=>{
    
       InputLabelProps={{
         style: {
-          color: params.shrink ? "white" : "white"
+          color: "white"
+          
         },
+        shrink:true,
         sx: {
           // set the color of the label when not shrinked
           color: "white",
