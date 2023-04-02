@@ -37,6 +37,13 @@
     justify-content: center;
     gap: 1rem;
 }
+.my-autocomplete .MuiInputLabel-root {
+    color: white; /* change the label color to red */
+  }
+  
+  .my-autocomplete .MuiSvgIcon-root {
+    color: white; /* change the icon color to blue */
+  }
 .root {
 /* background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%); */
 /* background-image: "transparent"; */

@@ -118,7 +118,7 @@ useEffect(()=>{
     <>
       <EventsAttended />
 
-      <Paper
+      {/* <Paper
         elevation={6}
         sx={{
           marginTop: "2em",
@@ -129,7 +129,7 @@ useEffect(()=>{
           margin: "auto",
          
         }}
-      >
+      > */}
         <Grid container spacing={2} sx={{ width: "90%",margin:"auto", }}>
           <Grid item xs={12} md={3}>
             <CustomTextFieldForTable
@@ -207,6 +207,7 @@ useEffect(()=>{
 </Box> */}
 
    <Autocomplete
+   className="my-autocomplete"
       disablePortal
       id="combo-box-demo"
       options={uniqueValues}
@@ -289,7 +290,7 @@ useEffect(()=>{
             </Button>
           </Grid>
         </Grid>
-      </Paper>
+      {/* </Paper> */}
 
       <div className="event-list">
         {data
